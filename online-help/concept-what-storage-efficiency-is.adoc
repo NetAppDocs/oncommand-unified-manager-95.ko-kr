@@ -1,0 +1,24 @@
+---
+permalink: online-help/concept-what-storage-efficiency-is.html 
+sidebar: sidebar 
+keywords:  
+summary: '스토리지 효율성을 통해 최저 비용으로 최대 용량의 데이터를 저장할 수 있으며 빠른 데이터 증가를 수용하면서도 공간을 덜 사용할 수 있습니다. NetApp의 스토리지 효율성 전략은 핵심 ONTAP 운영 체제 및 WAFL(Write Anywhere File Layout) 파일 시스템이 제공하는 스토리지 가상화 및 유니파이드 스토리지의 내장된 기반을 기반으로 합니다.' 
+---
+= 스토리지 효율성에 대해 설명합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 효율성을 통해 최저 비용으로 최대 용량의 데이터를 저장할 수 있으며 빠른 데이터 증가를 수용하면서도 공간을 덜 사용할 수 있습니다. NetApp의 스토리지 효율성 전략은 핵심 ONTAP 운영 체제 및 WAFL(Write Anywhere File Layout) 파일 시스템이 제공하는 스토리지 가상화 및 유니파이드 스토리지의 내장된 기반을 기반으로 합니다.
+
+스토리지 효율성에는 씬 프로비저닝, 스냅샷 복사본, 중복제거, 데이터 압축, FlexClone ®, SnapVault 및 볼륨 SnapMirror, RAID-DP, Flash Cache, Flash Pool 애그리게이트 및 FabricPool 지원 애그리게이트를 사용하는 씬 복제를 통해 스토리지 활용률을 높이고 스토리지 비용을 절감할 수 있습니다.
+
+통합 스토리지 아키텍처를 사용하면 SAN(Storage Area Network), NAS(Network-Attached Storage) 및 보조 스토리지를 단일 플랫폼으로 효율적으로 통합할 수 있습니다.
+
+Flash Pool 애그리게이트 또는 Flash Cache 및 RAID-DP 기술을 통해 구성된 SATA(Serial Advanced Technology Attachment) 드라이브와 같은 고밀도 디스크 드라이브를 사용하면 성능과 복원력에 영향을 주지 않고 효율성을 높일 수 있습니다.
+
+FabricPool 지원 애그리게이트에는 모든 SSD 애그리게이트는 성능 계층으로, 사용자가 클라우드 계층으로 지정하는 오브젝트 저장소가 포함됩니다. FabricPool를 구성하면 데이터의 액세스 빈도 여부를 기준으로 저장할 스토리지 계층(로컬 성능 계층 또는 클라우드 계층) 데이터를 관리할 수 있습니다.
+
+씬 프로비저닝, 스냅샷 복사본, 중복제거, 데이터 압축, SnapVault 및 volume SnapMirror를 사용한 씬 복제 및 FlexClone과 같은 기술을 통해 비용을 더욱 절감할 수 있습니다. 이러한 기술을 개별적으로 또는 함께 사용하여 최대한의 스토리지 효율성을 달성할 수 있습니다.

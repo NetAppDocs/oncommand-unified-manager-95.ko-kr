@@ -1,0 +1,70 @@
+---
+permalink: install/task-uninstalling-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 프로그램 및 기능 마법사를 사용하거나 명령줄 인터페이스에서 자동 제거를 수행하여 Windows에서 Unified Manager를 제거할 수 있습니다. 
+---
+= Windows에서 Unified Manager 제거
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pp: &#43;&#43;
+
+
+[role="lead"]
+프로그램 및 기능 마법사를 사용하거나 명령줄 인터페이스에서 자동 제거를 수행하여 Windows에서 Unified Manager를 제거할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* Windows 관리자 권한이 있어야 합니다.
+* 소프트웨어를 제거하기 전에 모든 클러스터(데이터 소스)를 Unified Manager 서버에서 제거해야 합니다.
+* Unified Manager 서버는 Graphite와 같은 외부 데이터 공급자에 대한 활성 연결을 가지고 있지 않아야 합니다.
++
+이 경우 Unified Managermaintenance 콘솔을 사용하여 연결을 삭제해야 합니다.
+
+
+
+
+
+== 단계
+
+. 고가용성 설정에 설치된 경우, 두 노드에서 Unified Manager를 제거하기 전에 HA 서비스 그룹 리소스를 제거하고 HA 서비스 그룹을 삭제하십시오.
+. 다음 옵션 중 하나를 선택하여 Unified Manager를 제거합니다.
++
+|===
+| 에서 Unified Manager를 제거하려면... | 그러면... 
+
+
+ a| 
+프로그램 및 기능 마법사
+ a| 
+.. 제어판 * > * 프로그램 및 기능 * 으로 이동합니다.
+.. OnCommand Unified Manager를 선택하고 * 제거 * 를 클릭합니다.
+
+
+
+
+ a| 
+명령줄
+ a| 
+.. 관리자 권한을 사용하여 Windows 명령줄에 로그인합니다.
+.. OnCommand Unified Manager 디렉토리로 이동하여 다음 명령을 실행합니다. `+msiexec /x {A78760DB-7EC0-4305-97DB-E4A89CDFF4E1} /qn /l*v %systemdrive%\UmUnInstall.log+`
+
+
+|===
++
+서버에서 UAC(사용자 계정 컨트롤)가 활성화되어 있고 도메인 사용자로 로그인한 경우 명령줄 제거 방법을 사용해야 합니다.
+
++
+Unified Manager가 시스템에서 제거되었습니다.
+
+. Unified Manager 설치 제거 중에 제거되지 않은 다음 타사 패키지 및 데이터를 제거합니다.
++
+** 타사 패키지: JRE, MySQL, Microsoft Visual C&#43;&#43; 2015 재배포 가능 파일 및 7zip
+** Unified Manager에서 생성된 MySQL 애플리케이션 데이터
+** 응용 프로그램 로그 및 응용 프로그램 데이터 디렉터리의 내용
+
+
+

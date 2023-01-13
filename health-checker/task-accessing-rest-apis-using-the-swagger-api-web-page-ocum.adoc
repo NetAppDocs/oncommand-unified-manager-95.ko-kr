@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-accessing-rest-apis-using-the-swagger-api-web-page-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: REST API는 Swagger 웹 페이지를 통해 표시됩니다. Swagger 웹 페이지에 액세스하여 Unified Manager REST API 설명서를 표시하고 API 호출을 수동으로 실행할 수 있습니다. 
+---
+= Swagger API 웹 페이지를 사용하여 REST API 액세스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST API는 Swagger 웹 페이지를 통해 표시됩니다. Swagger 웹 페이지에 액세스하여 Unified Manager REST API 설명서를 표시하고 API 호출을 수동으로 실행할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* 운영자, 스토리지 관리자 또는 OnCommand 관리자 역할 중 하나가 있어야 합니다.
+* REST API를 실행할 Unified Manager 서버의 IP 주소 또는 정규화된 도메인 이름을 알아야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+Swagger 웹 페이지의 각 REST API에 대해 검토하려는 정보를 반환하는 데 사용할 수 있는 개체 및 속성을 설명하는 예가 제공됩니다.
+
+
+
+== 단계
+
+. Unified Manager REST API에 액세스
++
+|===
+| 옵션을 선택합니다 | 설명 
+
+
+ a| 
+Unified Manager 웹 UI에서 다음을 수행합니다.
+ a| 
+메뉴 표시줄에서 * 도움말 * 버튼을 클릭한 다음 * API 문서 * 를 선택합니다.
+
+
+
+ a| 
+브라우저 창에서 다음을 수행합니다.
+ a| 
+Unified Manager 서버 IP 주소 또는 FQDN을 사용하여 REST API 페이지에 액세스할 URL을 형식으로 입력합니다 `https://<Unified_Manager_IP_address_or_name>/apidocs/`. 예를 들면, 다음과 같습니다. `+https://10.10.10.10/apidocs/+`
+
+|===
++
+API 리소스 유형 또는 범주 목록이 표시됩니다.
+
+. API 리소스 유형을 클릭하여 해당 리소스 유형의 API를 표시합니다.
+

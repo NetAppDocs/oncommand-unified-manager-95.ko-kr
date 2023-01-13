@@ -1,0 +1,16 @@
+---
+permalink: release-notes.html 
+sidebar: sidebar 
+keywords: release notes, oncommand unified manager 
+summary: OnCommand Unified Manager 9.5의 새로운 기능, 제한 사항 및 알려진 문제에 대한 요약을 제공합니다. 
+---
+= 릴리스 정보
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager 9.5의 새로운 기능, 제한 사항 및 알려진 문제에 대한 요약을 제공합니다.
+
+자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2847421["OnCommand Unified Manager 릴리즈 노트"^].

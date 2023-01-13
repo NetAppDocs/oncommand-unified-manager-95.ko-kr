@@ -1,0 +1,75 @@
+---
+permalink: install/task-setting-up-unified-manager-server-with-vcs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: '구성 스크립트를 사용하여 VCS(Veritas Cluster Server)로 Unified Manager를 구성할 수 있습니다.' 
+---
+= 구성 스크립트를 사용하여 VCS로 Unified Manager 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성 스크립트를 사용하여 VCS(Veritas Cluster Server)를 사용하여 Unified Manager를 구성할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* VCS 설정에서 두 노드에 Unified Manager를 설치해야 합니다.
+* XML::LibXML 모듈이 VCS 스크립트가 작동하려면 Perl과 함께 번들로 제공되어야 합니다.
+* 소스 Unified Manager 데이터를 수용하기에 충분한 크기의 공유 LUN을 생성해야 합니다.
+* 스크립트가 작동하려면 절대 마운트 경로를 지정해야 합니다.
++
+마운트 경로 내에 폴더를 생성하면 스크립트가 작동하지 않습니다.
+
+* 을(를) 다운로드해야 합니다 `ha_setup.pl` 스크립트 위치 `/opt/netapp/ocum/scripts`.
+
+
+
+
+== 이 작업에 대해
+
+VCS 설정에서 가상 IP 인터페이스 및 마운트 지점이 활성 상태인 노드는 첫 번째 노드입니다. 다른 노드는 두 번째 노드입니다.
+
+
+
+== 단계
+
+. 클러스터의 첫 번째 노드에 로그인합니다.
++
+고가용성 설정의 두 번째 노드에서 모든 Unified Manager 서비스를 중지해야 합니다.
+
+. VCS 설치 디렉토리를 추가합니다 `/opt/VRTSvcs/bin` 경로 환경 변수에.
+. 기존 Unified Manager 설정을 구성하는 경우 Unified Manager 백업을 생성하고 지원 번들을 생성합니다.
+. 를 실행합니다 `ha_setup.pl` 스크립트: `perl ha_setup.pl --first -t vcs -g group_name -e eth_name -i cluster_ip -m net_mask -n fully_qualified_cluster_name -f mount_path -v volume_group -d disk_group -l install_dir -u user_name -p password`
++
+`perl \ha_setup.pl --first -t vcs -g umgroup -e eth0 -i 10.11.12.13 -m 255.255.255.0 -n cluster.eng.company.com -f /mnt/ocumdb -v ocumdb_SdHv -d ocumdb_SdDg -l /opt/netapp/ -u admin -p wx17yz`
+
+. Veritas Operation Manager 웹 콘솔 또는 VCS Cluster Manager를 사용하여 페일오버 그룹이 생성되고 Unified Manager 서버 서비스, 마운트 지점, 가상 IP, 네트워크 인터페이스 카드(NIC) 및 볼륨 그룹이 클러스터 그룹에 추가되었는지 확인합니다.
+. Unified Manager 서비스 그룹을 보조 노드로 수동으로 이동하고 클러스터 페일오버가 작동하는지 확인합니다.
+. VCS가 클러스터의 두 번째 노드로 전환되었는지 확인합니다.
++
+데이터 마운트, 가상 IP, 볼륨 그룹 및 NIC가 클러스터의 두 번째 노드에서 온라인 상태인지 확인해야 합니다.
+
+. Veritas Operation Manager를 사용하여 Unified Manager를 중지합니다.
+. 를 실행합니다 `perl ha_setup.pl --join -t vcs -f``mount_path` 명령을 실행하여 Unified Manager 서버 데이터가 LUN을 가리키도록 클러스터의 두 번째 노드에 명령을 내립니다.
+. 클러스터의 두 번째 노드에서 Unified Manager 서버 서비스가 제대로 시작되는지 확인합니다.
+. 글로벌 IP 주소를 얻기 위해 구성 스크립트를 실행한 후 Unified Manager 인증서를 다시 생성합니다.
++
+.. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]* 를 입력한 다음 * 설정 * 메뉴에서 * HTTPS 인증서 * 를 클릭합니다.
+.. HTTPS 인증서 다시 생성 * 을 클릭합니다.
+
+
++
+재생성된 인증서는 FQDN(정규화된 도메인 이름)이 아니라 클러스터 IP 주소만 제공합니다. 고가용성에 Unified Manager를 설정하려면 글로벌 IP 주소를 사용해야 합니다.
+
+. 다음을 사용하여 Unified Manager UI에 액세스합니다. `\https://<FQDN of Global IP>`
+
+
+
+
+== 작업을 마친 후
+
+고가용성을 구성한 후에는 공유 백업 위치를 생성해야 합니다. 페일오버 전후에 생성한 백업을 포함하는 데 공유 위치가 필요합니다. 고가용성 설정의 두 노드는 공유 위치에 액세스할 수 있어야 합니다.

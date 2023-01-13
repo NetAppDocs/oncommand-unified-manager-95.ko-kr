@@ -1,0 +1,81 @@
+---
+permalink: config/task-enabling-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'SAML\(Security Assertion Markup Language) 인증을 사용하면 원격 사용자가 Unified Manager 웹 UI에 액세스하기 전에 IDP(Secure Identity Provider)에서 인증을 받을 수 있습니다.' 
+---
+= SAML 인증을 사용하도록 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAML(Security Assertion Markup Language) 인증을 사용하면 원격 사용자가 Unified Manager 웹 UI에 액세스하기 전에 IDP(Secure Identity Provider)에서 인증을 받을 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* 원격 인증을 구성하고 성공적으로 수행되었는지 확인해야 합니다.
+* OnCommand 관리자 역할을 사용하여 하나 이상의 원격 사용자 또는 원격 그룹을 만들어야 합니다.
+* IDP(Identity Provider)는 Unified Manager에서 지원해야 하며 구성해야 합니다.
+* IDP URL 및 메타데이터가 있어야 합니다.
+* IDP 서버에 대한 액세스 권한이 있어야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+Unified Manager에서 SAML 인증을 설정한 후에는 IDP가 Unified Manager 서버 호스트 정보로 구성될 때까지 사용자가 그래픽 사용자 인터페이스에 액세스할 수 없습니다. 따라서 구성 프로세스를 시작하기 전에 연결의 두 부분을 모두 완료할 수 있도록 준비해야 합니다. IDP는 Unified Manager를 구성하기 전이나 후에 구성할 수 있습니다.
+
+SAML 인증이 활성화된 후에는 원격 사용자만 Unified Manager 그래픽 사용자 인터페이스에 액세스할 수 있습니다. 로컬 사용자 및 유지 관리 사용자는 UI에 액세스할 수 없습니다. 이 구성은 유지보수 콘솔, Unified Manager 명령 또는 ZAPI에 액세스하는 사용자에게는 영향을 주지 않습니다.
+
+[NOTE]
+====
+이 페이지에서 SAML 구성을 완료하면 Unified Manager가 자동으로 다시 시작됩니다.
+
+====
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]를 누른 다음 왼쪽 설정 메뉴에서 * 인증 * 을 누릅니다.
+. 설정/인증 * 페이지에서 * SAML 인증 * 탭을 선택합니다.
+. SAML 인증 활성화 * 확인란을 선택합니다.
++
+IDP 연결을 구성하는 데 필요한 필드가 표시됩니다.
+
+. Unified Manager 서버를 IDP 서버에 연결하는 데 필요한 IDP URI 및 IDP 메타데이터를 입력합니다.
++
+IDP 서버에 Unified Manager 서버에서 직접 액세스할 수 있는 경우 IDP URI를 입력한 후 * Fetch IDP Metadata * 버튼을 클릭하여 IDP 메타데이터 필드를 자동으로 채울 수 있습니다.
+
+. Unified Manager 호스트 메타데이터 URI를 복사하거나 호스트 메타데이터를 XML 텍스트 파일에 저장합니다.
++
+이 정보를 사용하여 IDP 서버를 구성할 수 있습니다.
+
+. 저장 * 을 클릭합니다.
++
+구성을 완료하고 Unified Manager를 다시 시작할지 확인하는 메시지 상자가 표시됩니다.
+
+. 확인 및 로그아웃 * 을 클릭하면 Unified Manager가 다시 시작됩니다.
+
+
+
+
+== 결과
+
+다음에 권한이 있는 원격 사용자가 Unified Manager 그래픽 인터페이스에 액세스하려고 할 때 Unified Manager 로그인 페이지 대신 IDP 로그인 페이지에 자격 증명을 입력합니다.
+
+
+
+== 작업을 마친 후
+
+아직 완료되지 않은 경우 IDP에 액세스하고 Unified Manager 서버 URI 및 메타데이터를 입력하여 구성을 완료합니다.
+
+[NOTE]
+====
+ID 공급자로 ADFS를 사용하는 경우 Unified Manager GUI는 ADFS 시간 제한을 적용하지 않으며 Unified Manager 세션 시간 제한에 도달할 때까지 계속 작동합니다. Unified Manager가 Windows, Red Hat 또는 CentOS에 배포되면 다음 Unified Manager CLI 명령을 사용하여 GUI 세션 시간 초과를 변경할 수 있습니다. ``um option set absolute.session.timeout=00:15:00``이 명령은 Unified Manager GUI 세션 시간 초과를 15분으로 설정합니다.
+
+====

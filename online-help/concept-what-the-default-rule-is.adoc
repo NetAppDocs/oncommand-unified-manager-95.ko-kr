@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-the-default-rule-is.html 
+sidebar: sidebar 
+keywords:  
+summary: '기본 규칙은 무한 확장 볼륨을 포함하는 스토리지 가상 머신(SVM\)의 데이터 정책에 존재하는 규칙입니다. 기존 규칙의 조건 중 기록되는 데이터와 일치하는 데이터가 없는 경우 무한 확장 볼륨에 쓴 데이터 배치를 결정하는 데 사용됩니다.' 
+---
+= 기본 규칙은 무엇입니까
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본 규칙은 무한 확장 볼륨을 포함하는 SVM(스토리지 가상 머신)의 데이터 정책에 존재하는 규칙입니다. 기존 규칙의 조건 중 기록되는 데이터와 일치하는 데이터가 없는 경우 무한 확장 볼륨에 쓴 데이터 배치를 결정하는 데 사용됩니다.
+
+기본 규칙은 항상 데이터 정책의 마지막 규칙이며 다시 정렬할 수 없습니다. 예를 들어 세 가지 규칙이 있는 데이터 정책을 가정해 보겠습니다. Rule-1은 모든 .pdf 파일을 __high_performance__storage 클래스에 배치합니다. 규칙-2 는 관리자가 소유한 모든 파일과 *.xls로 끝나는 파일 이름을 _ARCHIVAL_STORANT_STORAGE 클래스에 배치합니다. 세 번째 규칙은 _low_performance_storage 클래스의 기본 규칙입니다.
+
+관리자가 소유하지 않은 *.jpg 파일 집합을 무한 확장 볼륨에 쓴 경우 기본 규칙을 사용하여 이러한 .jpg 파일을 _low_performance_storage 클래스에 배치합니다. 규칙-1 및 규칙-2 는 작성된 데이터가 이러한 규칙과 일치하지 않기 때문에 사용되지 않습니다.

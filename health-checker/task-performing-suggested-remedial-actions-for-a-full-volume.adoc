@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-performing-suggested-remedial-actions-for-a-full-volume.html 
+sidebar: sidebar 
+keywords:  
+summary: '“Volume Space Full(볼륨 공간 부족)” 오류 이벤트가 발생한 후 이벤트 세부 정보 페이지에서 제안된 개선 조치를 검토하고 권장 조치 중 하나를 수행합니다.' 
+---
+= 전체 볼륨에 대해 제안된 개선 작업 수행
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"Volume Space Full(볼륨 공간 부족)" 오류 이벤트가 발생한 후 이벤트 세부 정보 페이지에서 제안된 개선 조치를 검토하고 권장 조치 중 하나를 수행합니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+어떤 역할이라도 하는 사용자는 Unified Manager를 사용하는 이 워크플로우에서 모든 작업을 수행할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+이 예제에서는 Unified ManagerDashboards/Overview 페이지에서 Volume Space Full 오류 이벤트를 보고 이벤트 이름을 클릭했습니다.
+
+전체 볼륨에 대해 수행할 수 있는 개선 조치는 다음과 같습니다.
+
+* 볼륨에 대해 자동 확장, 중복제거 또는 압축을 사용하도록 설정합니다
+* 볼륨 크기 조정 또는 이동
+* 볼륨에서 데이터 삭제 또는 이동
+
+
+이러한 모든 작업은 OnCommand System Manager 또는 ONTAP CLI에서 수행해야 하지만, Unified Manager를 사용하여 수행할 작업을 결정하는 데 필요한 정보를 찾을 수 있습니다.
+
+
+
+== 단계
+
+. Event * details(이벤트 * 세부 정보) 페이지에서 Source(소스) 필드에서 볼륨 이름을 클릭하여 영향을 받는 볼륨에 대한 세부 정보를 봅니다.
+. 상태/볼륨 * 세부 정보 페이지에서 * 구성 * 을 클릭하면 볼륨에서 중복제거 및 압축이 이미 활성화되어 있음을 확인할 수 있습니다.
++
+볼륨 크기를 조정합니다.
+
+. Related Devices * 창에서 호스팅 애그리게이트의 이름을 클릭하여 애그리게이트로 더 큰 볼륨을 수용할 수 있는지 확인합니다.
+. 상태/애그리게이트 * 세부 정보 페이지에는 전체 볼륨을 호스팅하는 애그리게이트에 충분한 커밋되지 않은 용량이 있음을 알 수 있으므로 OnCommand 시스템 관리자를 사용하여 볼륨 크기를 조정함으로써 용량을 더 많이 확보할 수 있습니다.
+

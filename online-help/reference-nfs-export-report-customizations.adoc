@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-nfs-export-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: NFS 엑스포트 보고서를 사용자 지정하여 스토리지 시스템의 볼륨에 대한 NFS 엑스포트 정책 및 규칙에 대한 정보를 분석할 수 있습니다. 예를 들어, 기본 엑스포트 정책으로 액세스할 수 없는 연결 경로 및 볼륨이 있는 볼륨을 표시하도록 보고서를 사용자 지정할 수 있습니다. 
+---
+= NFS 내보내기 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NFS 엑스포트 보고서를 사용자 지정하여 스토리지 시스템의 볼륨에 대한 NFS 엑스포트 정책 및 규칙에 대한 정보를 분석할 수 있습니다. 예를 들어, 기본 엑스포트 정책으로 액세스할 수 없는 연결 경로 및 볼륨이 있는 볼륨을 표시하도록 보고서를 사용자 지정할 수 있습니다.

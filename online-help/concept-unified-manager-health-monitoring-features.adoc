@@ -1,0 +1,54 @@
+---
+permalink: online-help/concept-unified-manager-health-monitoring-features.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager는 서버 인프라를 기반으로 확장성, 지원 가능성 및 향상된 모니터링 및 알림 기능을 제공합니다. Unified Manager는 ONTAP 소프트웨어를 실행하는 시스템의 모니터링을 지원합니다. 
+---
+= Unified Manager 상태 모니터링 기능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager는 서버 인프라를 기반으로 확장성, 지원 가능성 및 향상된 모니터링 및 알림 기능을 제공합니다. Unified Manager는 ONTAP 소프트웨어를 실행하는 시스템의 모니터링을 지원합니다.
+
+Unified Manager에는 다음과 같은 기능이 포함되어 있습니다.
+
+* ONTAP 소프트웨어가 설치된 시스템에 대한 검색, 모니터링 및 알림:
++
+** 물리적 오브젝트: 노드, 디스크, 디스크 쉘프, SFO 쌍, 포트, Flash Cache가 있습니다
+** 논리적 오브젝트: 클러스터, SVM(스토리지 가상 머신), 애그리게이트, 볼륨, LUN, 네임스페이스, Qtree, LIF, 스냅샷 복사본, 접합 경로, NFS 엑스포트, CIFS 공유, 사용자 및 그룹 할당량, 이니시에이터 그룹
+** 프로토콜: CIFS, NFS, FC, iSCSI, NVMe, 및 FCoE를 지원합니다
+** 스토리지 효율성: SSD 애그리게이트, Flash Pool 애그리게이트, FabricPool 애그리게이트, 중복제거, 압축
+** 보호: SnapMirror 관계(동기식 및 비동기식) 및 SnapVault 관계
+
+
+* 클러스터 검색 및 모니터링 상태 보기
+* MetroCluster 구성: 클러스터 구성 요소의 구성, MetroCluster 스위치 및 브리지, 문제 및 연결 상태 보기 및 모니터링
+* 향상된 알림, 이벤트 및 임계값 인프라
+* LDAP, LDAPS, SAML 인증 및 로컬 사용자 지원
+* RBAC(사전 정의된 역할 세트)
+* AutoSupport 및 지원 번들
+* 환경의 용량, 가용성, 보호 및 성능 상태를 보여 주는 향상된 대시보드
+* 볼륨 이동 상호 운용성, 볼륨 이동 기록, 접합 경로 변경 내역
+* 일부 실패한 디스크, MetroCluster 애그리게이트 미러링 성능 저하, 이벤트 뒤에 남겨진 MetroCluster 스페어 디스크 등과 같은 이벤트에 영향을 받는 리소스를 그래픽으로 표시하는 영향 범위의 영역입니다
+* MetroCluster 이벤트의 효과를 표시하는 가능한 효과 영역입니다
+* 일부 실패한 디스크, MetroCluster 애그리게이트 미러링 성능 저하 및 이벤트 뒤에 남겨진 MetroCluster 스페어 디스크와 같은 이벤트를 해결하기 위해 수행할 수 있는 작업을 표시하는 권장 해결 조치 영역
+* Volume Offline 이벤트, Volume Restricted 이벤트 및 Thin-provisioned Volume Space at Risk 이벤트와 같은 이벤트에 영향을 미칠 수 있는 리소스를 표시하는 영향받는 영역입니다
+* SVM을 위한 지원:
++
+** FlexVol 볼륨
+** FlexGroup 볼륨
+** 무한 확장 볼륨
+
+
+* 노드 루트 볼륨 모니터링 지원
+* 재확보 가능한 공간 계산 및 스냅샷 복사본 삭제를 비롯한 향상된 스냅샷 복사본 모니터링
+* 스토리지 객체에 대한 주석
+* 물리적 및 논리적 용량, 활용률, 공간 절감, 관련 이벤트와 같은 스토리지 오브젝트 정보의 생성 및 관리를 보고합니다
+* OnCommand Workflow Automation와 통합하여 워크플로우 실행
++
+스토리지 자동화 스토어에는 WFA(OnCommand Workflow Automation)와 함께 사용하도록 개발된 NetApp 인증 자동 스토리지 워크플로우 팩이 포함되어 있습니다. 팩을 다운로드한 다음 WFA로 가져와 실행할 수 있습니다. 자동화된 워크플로우는 다음 사이트에서 사용할 수 있습니다 link:https://automationstore.netapp.com["스토리지 자동화 스토어"]
+
+

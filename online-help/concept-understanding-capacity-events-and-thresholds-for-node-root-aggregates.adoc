@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-understanding-capacity-events-and-thresholds-for-node-root-aggregates.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 사용하여 노드 루트 애그리게이트를 모니터링할 수 있습니다. 노드를 중단하는 것을 방지하기 위해 루트 애그리게이트에 루트 볼륨을 두껍게 프로비저닝하는 것이 가장 좋습니다. 
+---
+= 노드 루트 애그리게이트에 대한 이벤트 및 임계값 이해
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 사용하여 노드 루트 애그리게이트를 모니터링할 수 있습니다. 노드를 중단하는 것을 방지하기 위해 루트 애그리게이트에 루트 볼륨을 두껍게 프로비저닝하는 것이 가장 좋습니다.
+
+기본적으로 용량 및 성능 이벤트는 루트 애그리게이트에 대해 생성되지 않습니다. 또한 Unified Manager에서 사용하는 임계값은 노드 루트 애그리게이트에 적용할 수 없습니다. 기술 지원 담당자만 생성할 이벤트에 대한 설정을 수정할 수 있습니다. 기술 지원 담당자가 설정을 수정하면 용량 임계값이 노드 루트 애그리게이트에 적용됩니다.
+
+OnCommand System Manager 또는 ONTAP CLI를 사용하여 노드를 중단하는 것을 방지하기 위한 적절한 조치를 취할 수 있습니다.

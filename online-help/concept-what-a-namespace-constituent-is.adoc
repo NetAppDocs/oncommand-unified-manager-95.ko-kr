@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-a-namespace-constituent-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 각 무한 확장 볼륨에는 무한 확장 볼륨 내에서 디렉토리 정보와 파일 이름을 파일의 물리적 데이터 위치에 매핑하는 단일 네임스페이스 구성요소가 있습니다. 
+---
+= 네임스페이스 구성 요소 정의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+각 무한 확장 볼륨에는 무한 확장 볼륨 내에서 디렉토리 정보와 파일 이름을 파일의 물리적 데이터 위치에 매핑하는 단일 네임스페이스 구성요소가 있습니다.
+
+클라이언트는 네임스페이스 구성요소를 인식하지 못하여 네임스페이스 구성요소와 직접 상호 작용하지 않습니다. 네임스페이스 구성요소는 무한 확장 볼륨의 내부 구성요소입니다.

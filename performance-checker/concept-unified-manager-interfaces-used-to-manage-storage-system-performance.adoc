@@ -1,0 +1,30 @@
+---
+permalink: performance-checker/concept-unified-manager-interfaces-used-to-manage-storage-system-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager에서 데이터 스토리지 성능 문제를 모니터링하고 문제를 해결하기 위해 웹 사용자 인터페이스와 유지보수 콘솔의 두 가지 사용자 인터페이스를 제공합니다. 
+---
+= 스토리지 시스템 성능을 관리하는 데 사용되는 Unified Manager 인터페이스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager에서 데이터 스토리지 성능 문제를 모니터링하고 문제를 해결하기 위해 웹 사용자 인터페이스와 유지보수 콘솔의 두 가지 사용자 인터페이스를 제공합니다.
+
+
+
+== Unified Manager 웹 UI
+
+관리자는 Unified Manager 웹 UI를 사용하여 성능과 관련된 스토리지 시스템 문제를 모니터링하고 해결할 수 있습니다.
+
+이 섹션에서는 관리자가 Unified Manager 웹 UI에 표시되는 스토리지 성능 문제를 해결하기 위해 수행할 수 있는 몇 가지 일반적인 워크플로우에 대해 설명합니다.
+
+
+
+== 유지보수 콘솔
+
+관리자는 유지보수 콘솔을 사용하여 Unified Manager 서버 자체와 관련된 운영 체제 문제, 버전 업그레이드 문제, 사용자 액세스 문제, 네트워크 문제를 모니터링, 진단, 해결할 수 있습니다. Unified Manager 웹 UI를 사용할 수 없는 경우에는 유지보수 콘솔만 Unified Manager에 액세스할 수 있습니다.
+
+이 섹션에서는 유지 관리 콘솔에 액세스하고 이를 사용하여 Unified Manager 서버 기능과 관련된 문제를 해결하는 방법을 설명합니다.

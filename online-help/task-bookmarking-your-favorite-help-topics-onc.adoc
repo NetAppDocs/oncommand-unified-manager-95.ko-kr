@@ -1,0 +1,22 @@
+---
+permalink: online-help/task-bookmarking-your-favorite-help-topics-onc.html 
+sidebar: sidebar 
+keywords:  
+summary: 도움말 즐겨찾기 탭에서 자주 사용하는 도움말 항목에 책갈피를 지정할 수 있습니다. 도움말 책갈피를 사용하면 자주 사용하는 항목에 빠르게 액세스할 수 있습니다. 
+---
+= 즐겨찾는 도움말 항목 북마크
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+도움말 즐겨찾기 탭에서 자주 사용하는 도움말 항목에 책갈피를 지정할 수 있습니다. 도움말 책갈피를 사용하면 자주 사용하는 항목에 빠르게 액세스할 수 있습니다.
+
+
+
+== 단계
+
+. 즐겨찾기로 추가할 도움말 항목으로 이동합니다.
+. 즐겨찾기 * 를 클릭한 다음 * 추가 * 를 클릭합니다.
+

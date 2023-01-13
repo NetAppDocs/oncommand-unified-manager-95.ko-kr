@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-page-descriptions-for-object-landing-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: Performance Explorer 페이지를 사용하여 클러스터, 애그리게이트, 볼륨 등 사용 가능한 각 스토리지 개체에 대한 자세한 성능 정보를 볼 수 있습니다. 이 페이지에서는 모든 개체의 전반적인 성능을 평가하고 개체 성능 데이터를 나란히 비교할 수 있습니다. 
+---
+= 성능 탐색기 페이지에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Performance Explorer 페이지를 사용하여 클러스터, 애그리게이트, 볼륨 등 사용 가능한 각 스토리지 개체에 대한 자세한 성능 정보를 볼 수 있습니다. 이 페이지에서는 모든 개체의 전반적인 성능을 평가하고 개체 성능 데이터를 나란히 비교할 수 있습니다.

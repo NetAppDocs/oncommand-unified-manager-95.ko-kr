@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-viewing-event-details.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager에서 트리거된 이벤트에 대한 세부 정보를 확인하여 수정 조치를 취할 수 있습니다. 예를 들어, 상태 이벤트 Volume Offline이 있는 경우 해당 이벤트를 클릭하여 세부 정보를 확인하고 수정 조치를 수행할 수 있습니다. 
+---
+= 이벤트 세부 정보 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager에서 트리거된 이벤트에 대한 세부 정보를 확인하여 수정 조치를 취할 수 있습니다. 예를 들어, 상태 이벤트 Volume Offline이 있는 경우 해당 이벤트를 클릭하여 세부 정보를 확인하고 수정 조치를 수행할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+운영자, OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+이벤트 세부 정보에는 이벤트 소스, 이벤트 원인 및 이벤트와 관련된 메모 등의 정보가 포함됩니다.
+
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 이벤트 * 를 클릭합니다.
+. Events * inventory 페이지에서 세부 정보를 보려는 이벤트 이름을 클릭합니다.
++
+이벤트 세부 정보가 이벤트 세부 정보 페이지에 표시됩니다.
+
+

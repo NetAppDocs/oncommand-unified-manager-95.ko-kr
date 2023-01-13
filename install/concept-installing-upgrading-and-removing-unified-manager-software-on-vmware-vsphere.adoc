@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html 
+sidebar: sidebar 
+keywords:  
+summary: VMware vSphere 시스템에서는 Unified Manager 소프트웨어를 설치하거나, 최신 버전의 소프트웨어로 업그레이드하거나, Unified Manager 가상 어플라이언스를 제거할 수 있습니다. 
+---
+= VMware vSphere에 Unified Manager 소프트웨어를 설치, 업그레이드 및 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware vSphere 시스템에서는 Unified Manager 소프트웨어를 설치하거나, 최신 버전의 소프트웨어로 업그레이드하거나, Unified Manager 가상 어플라이언스를 제거할 수 있습니다.

@@ -1,0 +1,89 @@
+---
+permalink: health-checker/task-adding-space-to-the-data-directory-of-the-unified-manager-red-hat-enterprise-linux-host.html 
+sidebar: sidebar 
+keywords:  
+summary: 처음에 Linux 호스트를 설정한 다음 Unified Manager를 설치할 때 /opt/netapp/data 디렉토리에 디스크 공간이 부족하여 Unified Manager를 지원할 수 없는 경우, /opt/netapp/data 디렉토리에 디스크 공간을 늘려서 설치 후 디스크 공간을 추가할 수 있습니다. 
+---
+= Linux 호스트의 데이터 디렉토리에 공간을 추가합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+에 디스크 공간을 충분히 할당했다면 `/opt/netapp/data` Unified Manager를 지원하는 디렉토리 처음에 Linux 호스트를 설정한 다음 Unified Manager를 설치하면 에서 디스크 공간을 늘려서 설치 후 디스크 공간을 추가할 수 있습니다 `/opt/netapp/data` 디렉토리.
+
+
+
+== 시작하기 전에
+
+Unified Manager가 설치된 Red Hat Enterprise Linux 또는 CentOS Linux 시스템에 대한 루트 사용자 액세스 권한이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+데이터 디렉토리 크기를 늘리기 전에 Unified Manager 데이터베이스를 백업하는 것이 좋습니다.
+
+
+
+== 단계
+
+. 디스크 공간을 추가할 Linux 시스템에 루트 사용자로 로그인합니다.
+. Unified Manager 서비스 및 관련 MySQL 소프트웨어를 표시된 순서대로 중지합니다.
+. 임시 백업 폴더 생성(예: `/backup-data`)에 현재 데이터를 포함할 충분한 디스크 공간이 있어야 합니다 `/opt/netapp/data` 디렉토리.
+. 기존 의 콘텐츠 및 권한 구성을 복사합니다 `/opt/netapp/data` 백업 데이터 디렉토리에 대한 디렉토리: `cp -rp /opt/netapp/data/* /backup-data`
+. SE Linux가 활성화된 경우:
++
+.. 기존 폴더의 SE Linux 유형을 가져옵니다 `/opt/netapp/data` 폴더:
++
+`se_type= ls -Z /opt/netapp/data | awk '{print $4}'| awk -F: '{print $3}'| head -1`
+
++
+시스템은 다음과 유사한 확인 메시지를 반환합니다.
+
++
+[listing]
+----
+echo $se_type
+mysqld_db_t
+----
+.. 를 실행합니다 `chcon` 백업 디렉토리에 대한 SE Linux 유형을 설정하는 명령: `chcon -R --type=mysqld_db_t /backup-data`
+
+
+. 의 내용을 제거합니다 `/opt/netapp/data` 디렉터리:
++
+.. `cd /opt/netapp/data`
+.. `rm -rf *`
+
+
+. 의 크기를 확장합니다 `/opt/netapp/data` LVM 명령을 사용하거나 추가 디스크를 추가하여 최소 750GB의 디렉토리로 이동합니다.
++
+[NOTE]
+====
+를 장착합니다 `/opt/netapp/data` NFS 내보내기 또는 CIFS 공유의 디렉토리는 지원되지 않습니다.
+
+====
+. 를 확인합니다 `/opt/netapp/data` 디렉터리 소유자(MySQL) 및 그룹(루트)은 변경되지 않습니다. `ls -ltr / | grep opt/netapp/data`
++
+시스템은 다음과 유사한 확인 메시지를 반환합니다.
+
++
+[listing]
+----
+drwxr-xr-x.  17 mysql root  4096 Aug 28 13:08 data
+----
+. SE Linux가 활성화된 경우 의 컨텍스트가 맞는지 확인합니다 `/opt/netapp/data` 디렉토리가 여전히 mysqld_db_t로 설정되어 있습니다. `touch /opt/netapp/data/abc``ls -Z /opt/netapp/data/abc`
++
+시스템은 다음과 유사한 확인 메시지를 반환합니다.
+
++
+[listing]
+----
+-rw-r--r--. root root unconfined_u:object_r:mysqld_db_t:s0 /opt/netapp/data/abc
+----
+. 에서 콘텐츠를 복사합니다 `backup-data`확장된 으로 돌아갑니다 `/opt/netapp/data` 디렉터리: `cp -rp /backup-data/* /opt/netapp/data/`
+. MySQL 서비스를 시작합니다. `service mysqld start`
+. MySQL 서비스가 시작된 후 다음 순서대로 socie 및 socieau 서비스를 시작합니다. `service ocie start``service ocieau start`
+. 모든 서비스가 시작된 후 백업 폴더를 삭제합니다 `/backup-data`: `rm -rf /backup-data`
+

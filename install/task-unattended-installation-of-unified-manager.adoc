@@ -1,0 +1,59 @@
+---
+permalink: install/task-unattended-installation-of-unified-manager.html 
+sidebar: sidebar 
+keywords: perform, unattended, installation, unified manager 
+summary: 명령줄 인터페이스를 사용하여 사용자 개입 없이 Unified Manager를 설치할 수 있습니다. 키 값 쌍의 매개 변수를 전달하여 무인 설치를 완료할 수 있습니다. 
+---
+= Unified Manager의 자동 설치 수행
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+명령줄 인터페이스를 사용하여 사용자 개입 없이 Unified Manager를 설치할 수 있습니다. 키 값 쌍의 매개 변수를 전달하여 무인 설치를 완료할 수 있습니다.
+
+
+
+== 단계
+
+. 기본 로컬 관리자 계정을 사용하여 Windows 명령줄 인터페이스에 로그인합니다.
+. Unified Manager를 설치할 위치로 이동하고 다음 옵션 중 하나를 선택합니다.
++
+[cols="4a,4a"]
+|===
+| 옵션을 선택합니다 | 지침 
+
+
+ a| 
+타사 패키지가 사전 설치된 경우
+ a| 
+`OnCommandUnifiedManager-x.y.exe /V"MYSQL_PASSWORD=mysql_password INSTALLDIR=\"Installation directory\" MYSQL_DATA_DIR=\"MySQL data directory\" MAINTENANCE_PASSWORD=maintenance_password MAINTENANCE_USERNAME=maintenance_username /qn /l*v CompletePathForLogFile"`
+
+* 예: *
+
+`OnCommandUnifiedManager.exe /s /v"MYSQL_PASSWORD=netapp21! INSTALLDIR=\"C:\Program Files\NetApp\" MYSQL_DATA_DIR=\"C:\ProgramData\MYSQL\MySQLServer\" MAINTENANCE_PASSWORD=******* MAINTENANCE_USERNAME=admin /qn /l*v C:\install.log"`
+
+
+
+ a| 
+타사 패키지가 설치되지 않은 경우
+ a| 
+`OnCommandUnifiedManager-x.y.exe /V"MYSQL_PASSWORD=mysql_password INSTALLDIR=\"Installation directory\" MYSQL_DATA_DIR=\"MySQL data directory\" MAINTENANCE_PASSWORD=maintenance_password MAINTENANCE_USERNAME=maintenance_username /qr /l*v CompletePathForLogFile"`
+
+* 예: *
+
+`OnCommandUnifiedManager.exe /s /v"MYSQL_PASSWORD=netapp21! INSTALLDIR=\"C:\Program Files\NetApp\" MYSQL_DATA_DIR=\"C:\ProgramData\MYSQL\MySQLServer\" MAINTENANCE_PASSWORD=******* MAINTENANCE_USERNAME=admin /qr /l*v C:\install.log"`
+
+|===
++
+를 클릭합니다 `/qr` Option(옵션)은 감소된 사용자 인터페이스로 자동 모드를 활성화합니다. 기본 사용자 인터페이스가 표시되어 설치 진행률을 보여 줍니다. 입력 메시지가 표시되지 않습니다. JRE, MySQL 및 7zip 같은 타사 패키지가 사전 설치되어 있지 않은 경우 를 사용해야 합니다 `/qr` 옵션을 선택합니다. 이(가) 설치된 경우 설치에 실패합니다 `/qn` 타사 패키지가 설치되지 않은 서버에서 옵션을 사용합니다.
+
++
+를 클릭합니다 `/qn` 옵션 사용자 인터페이스 없이 자동 모드를 활성화합니다. 설치 중에 사용자 인터페이스 또는 세부 정보가 표시되지 않습니다. 를 사용해서는 안 됩니다 `/qn` 타사 패키지가 설치되지 않은 경우 옵션입니다.
+
+. 다음 URL을 사용하여 Unified Manager 웹 사용자 인터페이스에 로그인합니다.
++
+`\https://IP address`
+
+

@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-resource-pool-inventory.html 
+sidebar: sidebar 
+keywords:  
+summary: 보호/리소스 풀 페이지를 사용하여 리소스 풀 인벤토리를 확인하고 각 리소스 풀의 남은 용량을 모니터링할 수 있습니다. 
+---
+= 리소스 풀 인벤토리 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보호/리소스 풀 페이지를 사용하여 리소스 풀 인벤토리를 확인하고 각 리소스 풀의 남은 용량을 모니터링할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 보호 * > * 리소스 풀 * 을 클릭합니다.
++
+자원 그룹 인벤토리가 표시됩니다.
+
+

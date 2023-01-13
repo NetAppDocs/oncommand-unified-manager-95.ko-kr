@@ -1,0 +1,31 @@
+---
+permalink: health-checker/task-downloading-and-installing-mysql-connector-j.html 
+sidebar: sidebar 
+keywords:  
+summary: MySQL Connector/J 드라이버를 특정 위치에 다운로드하고 설치해야 합니다. 이러한 드라이버를 사용하여 Unified Manager에 보고서를 연결하는 데이터 소스를 만들 수 있습니다. 
+---
+= MySQL Connector/J 다운로드 및 설치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MySQL Connector/J 드라이버를 특정 위치에 다운로드하고 설치해야 합니다. 이러한 드라이버를 사용하여 Unified Manager에 보고서를 연결하는 데이터 소스를 만들 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+MySQL Connector/J 버전 5.1 이상을 사용해야 합니다.
+
+
+
+== 단계
+
+. 에서 MySQL 커넥터/J 드라이버를 다운로드합니다 `dev.mysql.com`.
+. 를 설치합니다 `.jar` 나중에 참조할 수 있도록 파일을 만들고 해당 위치를 기록해 둡니다.
++
+예를 들어 를 설치합니다 `.jar` 파일 위치 `C:\Program Files\MySQL\MySQL Connector J\mysql-connector-java-5.1.32-bin.jar`.
+
+

@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-performing-a-protection-relationship-failover-and-failback.html 
+sidebar: sidebar 
+keywords:  
+summary: 하드웨어 장애 또는 재해로 인해 보호 관계의 소스 볼륨이 비활성화되어 있는 경우, Unified Manager의 보호 관계 기능을 사용하여 보호 대상을 읽기/쓰기로 액세스하고 소스가 다시 온라인 상태가 될 때까지 해당 볼륨으로 페일오버할 수 있습니다. 그런 다음 데이터를 제공하는 데 사용할 수 있는 경우 원래 소스로 페일백할 수 있습니다. 
+---
+= 보호 관계 페일오버 및 페일백 수행
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+하드웨어 장애 또는 재해로 인해 보호 관계의 소스 볼륨이 비활성화되어 있는 경우, Unified Manager의 보호 관계 기능을 사용하여 보호 대상을 읽기/쓰기로 액세스하고 소스가 다시 온라인 상태가 될 때까지 해당 볼륨으로 페일오버할 수 있습니다. 그런 다음 데이터를 제공하는 데 사용할 수 있는 경우 원래 소스로 페일백할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+* 이 작업을 수행하려면 OnCommand Workflow Automation를 설정해야 합니다.
+
+
+
+
+== 단계
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[SnapMirror 관계를 발전시킬 수 있습니다].
++
+대상을 데이터 보호 볼륨에서 읽기/쓰기 볼륨으로 변환하려면 먼저 관계를 끊어야 하며, 그 후에 관계를 반대로 전환해야 합니다.
+
+. xref:task-reversing-protection-relationships-from-the-health-volume-details-page.adoc[보호 관계를 반대로 설정합니다].
++
+원래 소스 볼륨을 다시 사용할 수 있는 경우 소스 볼륨을 복원하여 원래 보호 관계를 다시 설정할 수 있습니다. 소스를 복구하려면 먼저 소스를 이전 대상에 기록된 데이터와 동기화해야 합니다. 역방향 재동기화 작업을 사용하면 원래 관계의 역할을 바꾸고 소스 볼륨을 이전 대상과 동기화하여 새로운 보호 관계를 만들 수 있습니다. 새 관계에 대한 새 기본 스냅샷 복사본이 생성됩니다.
+
++
+역관계는 다중 구간 관계와 비슷합니다.
+
++
+image::../media/um-toplogy-reverse-resync.gif[UM TOplogy 역방향 재동기화]
+
+. xref:task-breaking-a-snapmirror-relationship-from-the-health-volume-details-page.adoc[역방향 SnapMirror 관계를 나눕니다].
++
+원본 소스 볼륨이 재동기화되어 데이터를 다시 제공할 수 있으면 중단 작업을 사용하여 역방향 관계를 끊어 보십시오.
+
+. xref:task-removing-a-protection-relationship-from-the-health-volume-details-page.adoc[관계를 제거합니다].
++
+역방향 관계가 더 이상 필요하지 않으면 원래 관계를 다시 설정하기 전에 해당 관계를 제거해야 합니다.
+
+. xref:task-resynchronizing-protection-relationships-from-the-health-volume-details-page.adoc[관계를 다시 동기화합니다].
++
+재동기화 작업을 사용하여 소스에서 대상으로 데이터를 동기화하고 원래 관계를 재설정합니다.
+
+

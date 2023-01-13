@@ -1,0 +1,32 @@
+---
+permalink: health-checker/task-restoring-data-from-snapshot-copies.html 
+sidebar: sidebar 
+keywords:  
+summary: 재해가 발생하거나 디렉토리 또는 파일이 실수로 삭제되어 데이터가 손실되면 Unified Manager를 사용하여 스냅샷 복사본에서 데이터를 찾고 복원할 수 있습니다. 
+---
+= 스냅샷 복사본에서 데이터 복원
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+재해가 발생하거나 디렉토리 또는 파일이 실수로 삭제되어 데이터가 손실되면 Unified Manager를 사용하여 스냅샷 복사본에서 데이터를 찾고 복원할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+Unified Manager 웹 UI의 두 위치에서 데이터를 복원할 수 있습니다.
+
+
+
+== 단계
+
+. 다음 작업 중 하나를 사용하여 데이터를 복원합니다.
++
+** xref:task-restoring-data-using-the-health-volume-details-page.adoc[상태/볼륨 세부 정보 페이지에서 데이터를 복원합니다].
+** xref:task-restoring-data-using-the-health-volumes-page.adoc[상태/볼륨 페이지에서 데이터를 복원합니다].
+
+
+

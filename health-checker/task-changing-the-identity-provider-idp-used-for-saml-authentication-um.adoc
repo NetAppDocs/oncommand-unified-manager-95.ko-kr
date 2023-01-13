@@ -1,0 +1,54 @@
+---
+permalink: health-checker/task-changing-the-identity-provider-idp-used-for-saml-authentication-um.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager가 원격 사용자를 인증하는 데 사용하는 ID 공급자 \(IDP\)를 변경할 수 있습니다.' 
+---
+= SAML 인증에 사용되는 ID 공급자를 변경합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager에서 원격 사용자를 인증하는 데 사용하는 IDP(ID 공급자)를 변경할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* IDP URL 및 메타데이터가 있어야 합니다.
+* IDP에 대한 액세스 권한이 있어야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+Unified Manager를 구성하기 전이나 후에 새 IDP를 구성할 수 있습니다.
+
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]를 누른 다음 왼쪽 설정 메뉴에서 * 인증 * 을 누릅니다.
+. 설정/인증 * 페이지에서 * SAML 인증 * 탭을 선택합니다.
+. Unified Manager 서버를 IDP에 연결하는 데 필요한 새 IDP URI 및 IDP 메타데이터를 입력합니다.
++
+IDP가 Unified Manager 서버에서 직접 액세스할 수 있는 경우 IDP URL을 입력한 후 * Fetch IDP Metadata * 버튼을 클릭하여 IDP 메타데이터 필드를 자동으로 채울 수 있습니다.
+
+. Unified Manager 메타데이터 URI를 복사하거나 메타데이터를 XML 텍스트 파일에 저장합니다.
+. 구성 저장 * 을 클릭합니다.
++
+구성을 변경할 것인지 확인하는 메시지 상자가 표시됩니다.
+
+. 확인 * 을 클릭합니다.
+
+
+
+
+== 작업을 마친 후
+
+새 IDP에 액세스하고 Unified Manager 서버 URI 및 메타데이터를 입력하여 구성을 완료합니다.
+
+다음에 권한이 있는 원격 사용자가 Unified Manager 그래픽 인터페이스에 액세스하려고 할 때 이전 IDP 로그인 페이지 대신 새 IDP 로그인 페이지에 자격 증명을 입력합니다.

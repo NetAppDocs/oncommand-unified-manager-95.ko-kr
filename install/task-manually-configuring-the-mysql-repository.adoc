@@ -1,0 +1,33 @@
+---
+permalink: install/task-manually-configuring-the-mysql-repository.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: Unified Manager를 설치하는 시스템에 MySQL Community Edition 저장소에 대한 액세스 권한이 없는 경우, 설치를 성공적으로 수행하려면 리포지토리를 수동으로 다운로드하여 구성해야 합니다. 
+---
+= MySQL 리포지토리를 수동으로 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 설치하는 시스템에 MySQL Community Edition 저장소에 대한 액세스 권한이 없는 경우, 설치를 성공적으로 수행하려면 리포지토리를 수동으로 다운로드하여 구성해야 합니다.
+
+
+
+== 이 작업에 대해
+
+MySQL 리포지토리는 시스템에 설치해야 하는 필수 MySQL 소프트웨어에 대한 액세스를 제공합니다.
+
+[NOTE]
+====
+시스템에 인터넷이 연결되어 있지 않으면 이 작업이 실패합니다. Unified Manager를 설치하는 시스템에 인터넷에 액세스할 수 없는 경우 MySQL 설명서를 참조하십시오.
+
+====
+
+
+== 단계
+
+. 설치를 위해 적절한 MySQL 리포지토리를 다운로드합니다. `+wget http://repo.mysql.com/yum/mysql-5.7-community/el/7/x86_64/mysql57-community-release-el7-7.noarch.rpm+`
+. MySQL 리포지토리 구성: `yum install mysql57-community-release-el7-7.noarch.rpm`
+

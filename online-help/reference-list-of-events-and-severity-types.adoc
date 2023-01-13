@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-list-of-events-and-severity-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 이벤트 목록을 사용하면 Unified Manager에서 볼 수 있는 각 이벤트의 이벤트 범주, 이벤트 이름 및 심각도 유형을 보다 잘 알 수 있습니다. 이벤트는 개체 범주에 따라 사전순으로 나열됩니다. 
+---
+= 이벤트 및 심각도 유형 목록입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이벤트 목록을 사용하면 Unified Manager에서 볼 수 있는 각 이벤트의 이벤트 범주, 이벤트 이름 및 심각도 유형을 보다 잘 알 수 있습니다. 이벤트는 개체 범주에 따라 사전순으로 나열됩니다.

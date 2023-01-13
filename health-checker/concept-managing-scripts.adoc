@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-managing-scripts.html 
+sidebar: sidebar 
+keywords:  
+summary: 스크립트를 사용하여 Unified Manager에서 여러 스토리지 오브젝트를 자동으로 수정 또는 업데이트할 수 있습니다. 스크립트가 경고와 연결되어 있습니다. 이벤트가 경고를 트리거하면 스크립트가 실행됩니다. 사용자 지정 스크립트를 업로드하고 경고가 생성될 때 해당 스크립트를 테스트할 수 있습니다. 
+---
+= 스크립트 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스크립트를 사용하여 Unified Manager에서 여러 스토리지 오브젝트를 자동으로 수정 또는 업데이트할 수 있습니다. 스크립트가 경고와 연결되어 있습니다. 이벤트가 경고를 트리거하면 스크립트가 실행됩니다. 사용자 지정 스크립트를 업로드하고 경고가 생성될 때 해당 스크립트를 테스트할 수 있습니다.

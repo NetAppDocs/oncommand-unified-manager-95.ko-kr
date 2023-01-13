@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-understanding-rules-and-data-policy.html 
+sidebar: sidebar 
+keywords:  
+summary: 규칙 및 데이터 정책에 대한 개념을 이해하면 무한 확장 볼륨을 효율적으로 관리할 수 있습니다. 
+---
+= 규칙 및 데이터 정책 이해
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+규칙 및 데이터 정책에 대한 개념을 이해하면 무한 확장 볼륨을 효율적으로 관리할 수 있습니다.

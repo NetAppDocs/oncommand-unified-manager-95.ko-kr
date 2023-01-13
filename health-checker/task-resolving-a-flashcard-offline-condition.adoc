@@ -1,0 +1,45 @@
+---
+permalink: health-checker/task-resolving-a-flashcard-offline-condition.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 워크플로는 플래시 카드의 오프라인 상태를 해결하는 방법의 예를 제공합니다. 이 시나리오에서는 대시보드를 모니터링하여 가용성 문제를 확인하는 관리자 또는 운영자입니다. 플래시 카드가 오프라인 상태이며 문제의 원인과 해결 방법을 확인하려고 합니다. 
+---
+= 플래시 카드의 오프라인 상태 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 워크플로는 플래시 카드의 오프라인 상태를 해결하는 방법의 예를 제공합니다. 이 시나리오에서는 대시보드를 모니터링하여 가용성 문제를 확인하는 관리자 또는 운영자입니다. 플래시 카드가 오프라인 상태이며 문제의 원인과 해결 방법을 확인하려고 합니다.
+
+
+
+== 시작하기 전에
+
+운영자, OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+Unified ManagerDashboards/Overview 페이지의 Availability 영역에 표시되는 이벤트 정보 및 링크를 통해 모니터링되는 클러스터의 데이터 스토리지 리소스의 전반적인 가용성을 모니터링함으로써 해당 가용성에 영향을 미칠 수 있는 특정 이벤트를 진단할 수 있습니다.
+
+이 시나리오에서는 대시보드/개요 페이지에 이벤트 플래시 카드가 가용성 인시던트 섹션에 오프라인으로 표시됩니다. 플래시 카드가 오프라인인 경우 설치된 클러스터 노드의 성능이 저하되어 저장된 데이터의 가용성이 저하됩니다. 다음 단계를 수행하여 잠재적 문제를 지역화하고 식별할 수 있습니다.
+
+
+
+== 단계
+
+. Unresolved Incidents and Risks * 섹션의 * Availability * 패널에서 오프라인으로 플래시 카드에 대해 표시되는 하이퍼텍스트 링크를 클릭합니다.
++
+가용성 인시던트에 대한 이벤트 세부 정보 페이지가 표시됩니다.
+
+. 이벤트 * 세부 정보 페이지에서 원인 필드에 표시된 정보를 검토하고 다음 작업 중 하나 이상을 수행할 수 있습니다.
++
+** 관리자에게 이벤트를 할당합니다. xref:task-assigning-events-to-specific-users.adoc[이벤트 할당]
+** 이벤트 소스를 클릭합니다. 이 경우 오프라인 플래시 카드가 있는 클러스터 노드를 클릭하면 해당 노드에 대한 자세한 정보를 확인할 수 있습니다. xref:task-performing-corrective-action-for-a-flashcard-offline.adoc[플래시 카드에 대한 수정 조치를 오프라인으로 수행합니다]
+** 이벤트를 확인합니다. xref:task-acknowledging-and-resolving-events.adoc[이벤트 확인 및 해결]
+
+
+

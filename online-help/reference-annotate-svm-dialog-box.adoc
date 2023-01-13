@@ -1,0 +1,30 @@
+---
+permalink: online-help/reference-annotate-svm-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Annotate SVM(SVM 주석 달기) 대화 상자에서 스토리지 개체에 수동으로 주석을 달 수 있습니다. 단일 SVM 또는 여러 SVM을 선택하고 기존 주석 목록에서 특정 값 쌍으로 주석을 추가할 수 있습니다.' 
+---
+= 주석 SVM 대화 상자
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Annotate SVM(SVM 주석 달기) 대화 상자에서 스토리지 개체에 수동으로 주석을 달 수 있습니다. 단일 SVM 또는 여러 SVM을 선택하고 기존 주석 목록에서 특정 값 쌍으로 주석을 추가할 수 있습니다.
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+* * 주석 = 값 쌍 *
++
+선택한 SVM에 필요한 주석을 선택할 수 있습니다.
+
+* * 적용 *
++
+선택한 주석을 SVM에 적용합니다.
+
+* * 취소 *
++
+변경사항을 저장하지 않고 Annotate SVM 대화 상자를 닫습니다.
+
+

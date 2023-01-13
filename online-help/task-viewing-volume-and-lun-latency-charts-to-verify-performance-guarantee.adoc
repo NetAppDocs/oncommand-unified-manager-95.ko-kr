@@ -1,0 +1,32 @@
+---
+permalink: online-help/task-viewing-volume-and-lun-latency-charts-to-verify-performance-guarantee.html 
+sidebar: sidebar 
+keywords:  
+summary: '"성능 보장" 프로그램에 가입한 볼륨 및 LUN을 확인하여 지연 시간이 보장된 수준을 초과하지 않았는지 확인할 수 있습니다.' 
+---
+= 볼륨 및 LUN 지연 시간 차트를 확인하여 성능 보장 검증
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+"성능 보장" 프로그램에 가입한 볼륨 및 LUN을 확인하여 지연 시간이 보장된 수준을 초과하지 않았는지 확인할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+지연 시간 성능 보장은 작동 당 밀리초를 초과해서는 안 됩니다. 기본 5분 성능 수집 기간이 아닌 시간당 평균을 기반으로 합니다.
+
+
+
+== 단계
+
+. 성능 볼륨 * 또는 * 성능 LUN * 인벤토리 페이지에서 원하는 볼륨 또는 LUN을 선택합니다.
+. 선택한 볼륨 또는 LUN에 대한 * Performance Explorer * 페이지의 * 선택기에서 * 시간별 평균 * 을 선택합니다.
++
+5분 컬렉션이 시간 평균으로 대체되면 지연 시간 차트의 가로 줄에 부드러운 선이 표시됩니다.
+
+. 성능 보장 하에 같은 aggregate에 다른 볼륨이 있는 경우, 해당 볼륨을 추가하여 지연 시간 값을 동일한 차트로 볼 수 있습니다.
+

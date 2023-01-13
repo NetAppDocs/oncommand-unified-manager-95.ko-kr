@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-cluster-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 인벤토리 보고서를 사용자 지정하여 클러스터 구성 요소의 리소스 부족을 모니터링할 수 있습니다. 예를 들어, 보고서를 사용자 지정하여 SVM 수 제한에 근접한 클러스터, 이전 버전의 ONTAP를 실행하는 노드, 최대 디스크 제한에 도달한 노드 등과 같은 정보를 모니터링할 수 있습니다. 
+---
+= 클러스터 인벤토리 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+인벤토리 보고서를 사용자 지정하여 클러스터 구성 요소의 리소스 부족을 모니터링할 수 있습니다. 예를 들어, 보고서를 사용자 지정하여 SVM 수 제한에 근접한 클러스터, 이전 버전의 ONTAP를 실행하는 노드, 최대 디스크 제한에 도달한 노드 등과 같은 정보를 모니터링할 수 있습니다.

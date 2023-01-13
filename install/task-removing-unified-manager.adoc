@@ -1,0 +1,56 @@
+---
+permalink: install/task-removing-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: Red Hat Enterprise Linux 또는 CentOS 호스트에서 Unified Manager를 제거해야 하는 경우 단일 명령으로 Unified Manager를 중지하고 제거할 수 있습니다. 
+---
+= Red Hat Enterprise Linux 또는 CentOS 호스트에서 Unified Manager 제거
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Red Hat Enterprise Linux 또는 CentOS 호스트에서 Unified Manager를 제거해야 하는 경우 단일 명령으로 Unified Manager를 중지하고 제거할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* Unified Manager를 제거할 서버에 대한 루트 사용자 액세스 권한이 있어야 합니다.
+* Red Hat 시스템에서 SELinux(Security-Enhanced Linux)를 비활성화해야 합니다. 을 사용하여 SELinux 런타임 모드를 ""허용""으로 변경합니다 `setenforce 0` 명령.
+* 소프트웨어를 제거하기 전에 모든 클러스터(데이터 소스)를 Unified Manager 서버에서 제거해야 합니다.
+* Unified Manager 서버는 Graphite와 같은 외부 데이터 공급자에 대한 활성 연결을 가지고 있지 않아야 합니다.
++
+이 경우 Unified Managermaintenance 콘솔을 사용하여 연결을 삭제해야 합니다.
+
+
+
+
+
+== 이 작업에 대해
+
+다음 단계에는 Veritas Operation Manager를 사용하여 고가용성을 위해 구성된 시스템에 대한 정보가 포함되어 있습니다. 시스템이 고가용성을 위해 구성되지 않은 경우 이 추가 단계를 무시하십시오.
+
+
+
+== 단계
+
+. Unified Manager를 제거할 클러스터 리소스를 소유하는 클러스터 노드에 루트 사용자로 로그인합니다.
+. VCS Operations Manager 또는 VCS 명령을 사용하여 모든 Unified Manager 서비스를 중지합니다.
+. 서버에서 Unified Manager를 중지하고 제거합니다. `rpm -e netapp-ocum ocie-au ocie-server netapp-platform-base netapp-application-server ocie-serverbase`
++
+이 단계에서는 관련된 모든 NetApp RPM 패키지를 제거합니다. Java, MySQL 및 p7zip 같은 필수 소프트웨어 모듈은 제거하지 않습니다.
+
+. VCS Operations Manager를 사용하여 다른 노드로 전환합니다.
+. 클러스터의 두 번째 노드에 로그인합니다.
+. 모든 서비스를 중지하고 두 번째 노드에서 Unified Manager를 제거합니다. `rpm -e netapp-ocum ocie-au ocie-server netapp-platform-base netapp-application-server ocie-serverbase`
+. 서비스 그룹이 VCS Operations Manager 또는 VCS 명령을 사용하지 않도록 하십시오.
+. 필요한 경우 Java, MySQL 및 p7zip 같은 지원 소프트웨어 모듈을 제거합니다. `rpm -e p7zip mysql-community-client mysql-community-server mysql-community-common mysql-community-libs java-x.y`
+
+
+
+
+== 결과
+
+이 작업이 완료되면 소프트웨어가 제거되지만 MySQL 데이터는 삭제되지 않습니다. 의 모든 데이터 `/opt/netapp/data` 디렉터리가 로 이동합니다 `/opt/netapp/data/BACKUP` 폴더를 제거합니다.

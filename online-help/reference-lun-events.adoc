@@ -1,0 +1,357 @@
+---
+permalink: online-help/reference-lun-events.html 
+sidebar: sidebar 
+keywords:  
+summary: LUN 이벤트는 잠재적 문제를 모니터링할 수 있도록 LUN 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= LUN 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LUN 이벤트는 잠재적 문제를 모니터링할 수 있도록 LUN 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 영향 영역: 가용성
+
+별표(*)는 Unified Manager 이벤트로 변환된 EMS 이벤트를 나타냅니다.
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+LUN 오프라인(documartLunOffline)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN이 제거되었습니다
+ a| 
+이벤트
+ a| 
+LUN을 클릭합니다
+ a| 
+정보
+
+
+
+ a| 
+LUN 액세스를 위한 단일 활성 경로(doctLunSingleActivePath)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN에 액세스할 수 있는 활성 경로 없음(문서 LunNotReachable)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN에 액세스하기 위한 최적화된 경로 없음(문서 LunOptimizedPathInactive)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+HA 파트너의 LUN에 액세스할 수 있는 경로 없음(문서,룬하파비활성)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+|===
+
+
+== 충격 영역: 용량
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+LUN 스냅샷 복사본을 위한 공간 부족(Documents LunSnapshotNotPosable)
+ a| 
+위험입니다
+ a| 
+볼륨
+ a| 
+경고
+
+|===
+
+
+== 충격 영역: 성능
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+LUN IOPS 중요 임계값 위반(문서 및 장애)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN IOPS 경고 임계값 위반(문서 경고)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN MBPS 중요 임계값 위반(문서 LunMbpsIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN MBps 경고 임계값 위반(문서 LunMbpsWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 ms/op 중요 임계값 위반(LunocatencyIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 시간 ms/op 경고 임계값 위반(LunocatencyWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 IOPS 중요 임계값 위반(문서 LatrencyIsopsIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 시간 및 IOPS 경고 임계값 위반(문서 라트encyIsopsWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 MBPS 중요 임계값 위반(문서 LunLatencyMbpsIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 시간 및 MBPS 경고 임계값 위반(문서 LunLatencyMbpsWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 애그리게이트 성능 사용된 용량 위험 임계값 위반(문서 LunLatencyAggregatePerfCapacityUsedIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 시간 및 애그리게이트 성능 사용된 용량 경고 임계값 위반(문서 LunLatencyAggregatePerfCapacityUsedWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 애그리게이트 활용률 주요 임계값 위반(LunocatencyAggregateUtilationIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 및 애그리게이트 활용률 경고 임계값 위반(LunocatencyAggregateUtilationWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 노드 성능 사용된 용량 위험 임계값 위반(문서 LunLatencyNodePerfCapacityUsedIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 시간 및 노드 성능 사용된 용량 경고 임계값 위반(문서 LunLatencyNodePerfCapacityUsedWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 노드 성능 사용된 용량 - 테이크오버가 중요 임계값 위반(LunocrencyAggregatePerfCapacityUsedTakeOverIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 시간 및 노드 성능 사용된 용량 - 테이크오버 경고 임계값 위반(LunocrencyAggregatePerfCapacityUsedTakeoverWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+LUN 지연 시간 및 노드 활용률 주요 임계값 위반(LunocrencyNodeUtilationIncident)
+ a| 
+사고
+ a| 
+LUN을 클릭합니다
+ a| 
+심각
+
+
+
+ a| 
+LUN 지연 및 노드 활용률 경고 임계값 위반(LunocrencyNodeUtilationWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+QoS LUN 최대 IOPS 경고 임계값 위반(문서 QosLunMaxIopsWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+
+
+ a| 
+QoS LUN 최대 MBPS 경고 임계값 위반(문서 QosLunMaxMbpsWarning)
+ a| 
+위험입니다
+ a| 
+LUN을 클릭합니다
+ a| 
+경고
+
+|===

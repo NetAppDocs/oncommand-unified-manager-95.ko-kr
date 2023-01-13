@@ -1,0 +1,38 @@
+---
+permalink: online-help/task-deleting-authentication-servers.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 서버가 인증 서버와 통신하지 못하도록 하려면 인증 서버를 삭제할 수 있습니다. 예를 들어 관리 서버가 통신하는 인증 서버를 변경하려는 경우 인증 서버를 삭제하고 새 인증 서버를 추가할 수 있습니다. 
+---
+= 인증 서버를 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 서버가 인증 서버와 통신하지 못하도록 하려면 인증 서버를 삭제할 수 있습니다. 예를 들어 관리 서버가 통신하는 인증 서버를 변경하려는 경우 인증 서버를 삭제하고 새 인증 서버를 추가할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+인증 서버를 삭제하면 인증 서버의 원격 사용자 또는 그룹이 Unified Manager에 더 이상 액세스할 수 없습니다.
+
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]를 누른 다음 왼쪽 설정 메뉴에서 * 인증 * 을 누릅니다.
+. 설정/인증 * 페이지에서 삭제할 인증 서버를 하나 이상 선택한 다음 * 삭제 * 를 클릭합니다.
+. 예 * 를 클릭하여 삭제 요청을 확인합니다.
++
+보안 연결 사용 * 옵션을 활성화하면 인증 서버와 연관된 인증서가 인증 서버와 함께 삭제됩니다.
+
+

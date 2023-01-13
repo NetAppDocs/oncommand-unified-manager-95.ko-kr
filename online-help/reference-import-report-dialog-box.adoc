@@ -1,0 +1,60 @@
+---
+permalink: online-help/reference-import-report-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 보고서 가져오기 대화 상자를 사용하여 .rptdesign 파일에서 보고서를 가져올 수 있습니다. 
+---
+= 보고서 가져오기 대화 상자
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보고서 가져오기 대화 상자를 사용하여 에서 보고서를 가져올 수 있습니다 `.rptdesign` 파일.
+
+
+
+== 속성
+
+보고서 파일 이름, 보고서 이름 및 보고서 설명을 지정하여 보고서를 가져올 수 있습니다.
+
+* * 보고서 파일 선택 *
++
+를 선택할 수 있습니다 `.rptdesign` 가져올 파일입니다.
+
++
+[NOTE]
+====
+Google Chrome에서 `fakepath` 의 `.rptdesign` 파일이 표시됩니다. Mozilla Firefox의 경우 만 해당 `.rptdesign` 파일 이름이 표시됩니다. Internet Explorer에서 의 전체 경로입니다 `.rptdesign` 파일이 표시됩니다.
+
+====
+* * 이름 *
++
+보고서 이름을 표시합니다. 이 필드는 기본적으로 비어 있습니다. 가져온 보고서의 이름을 입력할 수 있습니다.
+
+* * 설명 *
++
+가져온 보고서에 대한 설명을 지정합니다. 설명은 150자를 초과할 수 없습니다.
+
+* * 보고서 스키마 역할이 있는 데이터베이스 사용자를 선택합니다
++
+Storage Automation Store에서 보고서를 가져오는 경우 데이터베이스 사용자를 선택하거나 생성합니다.
+
+
+
+
+
+== 명령 버튼
+
+명령 단추를 사용하여 다음 작업을 수행할 수 있습니다.
+
+* * 가져오기 *
++
+선택한 를 확인합니다 `.rptdesign` 보고서를 가져옵니다.
+
+* * 취소 *
++
+가져오기 작업을 취소하고 보고서 가져오기 대화 상자를 닫습니다.
+
+

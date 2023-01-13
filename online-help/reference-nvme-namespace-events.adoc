@@ -1,0 +1,185 @@
+---
+permalink: online-help/reference-nvme-namespace-events.html 
+sidebar: sidebar 
+keywords:  
+summary: NVMe 네임스페이스 이벤트는 잠재적 문제를 모니터링할 수 있도록 네임스페이스의 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= NVMe 네임스페이스 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NVMe 네임스페이스 이벤트는 잠재적 문제를 모니터링할 수 있도록 네임스페이스의 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+별표(*)는 Unified Manager 이벤트로 변환된 EMS 이벤트를 나타냅니다.
+
+
+
+== 영향 영역: 가용성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+NVMeNS 오프라인 * (nvmeNamespaceStatusOffline)
+ a| 
+이벤트
+ a| 
+네임스페이스
+ a| 
+정보
+
+
+
+ a| 
+NVMeNS 온라인 * (nvmeNamespaceStatusOnline)
+ a| 
+이벤트
+ a| 
+네임스페이스
+ a| 
+정보
+
+
+
+ a| 
+스페이스 * 의 NVMeNS(nvmeNamespaceOutOfSpace)
+ a| 
+위험입니다
+ a| 
+네임스페이스
+ a| 
+경고
+
+
+
+ a| 
+NVMeNS Destroy * (nvmeNamespaceDestroy)
+ a| 
+이벤트
+ a| 
+네임스페이스
+ a| 
+정보
+
+|===
+
+
+== 충격 영역: 성능
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+NVMe 네임스페이스 IOPS 주요 임계값 위반(문서 NvmeNamespaceIopsIncident)
+ a| 
+사고
+ a| 
+네임스페이스
+ a| 
+심각
+
+
+
+ a| 
+NVMe 네임스페이스 IOPS 경고 임계값 위반(문서 NvmeNamespaceIopsWarning)
+ a| 
+위험입니다
+ a| 
+네임스페이스
+ a| 
+경고
+
+
+
+ a| 
+NVMe 네임스페이스 MBps 심각한 임계값 위반(문서 NvmeNamespaceMbpsIncident)
+ a| 
+사고
+ a| 
+네임스페이스
+ a| 
+심각
+
+
+
+ a| 
+NVMe 네임스페이스 MBps 경고 임계값 위반(문서 NvmeNamespaceMbpsWarning)
+ a| 
+위험입니다
+ a| 
+네임스페이스
+ a| 
+경고
+
+
+
+ a| 
+NVMe 네임스페이스 지연 시간 ms/op 중요 임계값 위반(ocumNmeNamespaceLatencyIncident)
+ a| 
+사고
+ a| 
+네임스페이스
+ a| 
+심각
+
+
+
+ a| 
+NVMe 네임스페이스 지연 시간 ms/op 경고 임계값 위반(문서 NvmeNamespaceLatencyWarning)
+ a| 
+위험입니다
+ a| 
+네임스페이스
+ a| 
+경고
+
+
+
+ a| 
+NVMe 네임스페이스 지연 시간 및 IOPS 중요 임계값 위반(문서 NvmeNamespaceLatencyIsopsIncident)
+ a| 
+사고
+ a| 
+네임스페이스
+ a| 
+심각
+
+
+
+ a| 
+NVMe 네임스페이스 지연 및 IOPS 경고 임계값 위반(문서 NvmeNamespaceLatencyIsopsWarning)
+ a| 
+위험입니다
+ a| 
+네임스페이스
+ a| 
+경고
+
+
+
+ a| 
+NVMe 네임스페이스 지연 시간 및 MBPS 중요 위반 임계값(문서 NvmeNamespaceLatencyMbpsIncident)
+ a| 
+사고
+ a| 
+네임스페이스
+ a| 
+심각
+
+
+
+ a| 
+NVMe 네임스페이스 지연 및 MBPS 경고 임계값 위반(문서 NvmeNamespaceLatencyMbpsWarning)
+ a| 
+위험입니다
+ a| 
+네임스페이스
+ a| 
+경고
+
+|===

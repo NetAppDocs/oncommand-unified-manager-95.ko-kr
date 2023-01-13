@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-how-object-status-is-computed.html 
+sidebar: sidebar 
+keywords:  
+summary: 개체 상태는 현재 New 또는 Acknowledged 상태를 보유한 가장 심각한 이벤트에 의해 결정됩니다. 예를 들어, 개체 상태가 오류인 경우 개체의 이벤트 중 하나에 오류 심각도 유형이 있습니다. 수정 조치를 취하면 이벤트 상태가 해결됨 으로 이동합니다. 
+---
+= 개체 상태 계산 방법
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+개체 상태는 현재 New 또는 Acknowledged 상태를 보유한 가장 심각한 이벤트에 의해 결정됩니다. 예를 들어, 개체 상태가 Error 인 경우 개체의 이벤트 중 하나에 오류 심각도 유형이 있습니다. 수정 조치를 취하면 이벤트 상태가 해결됨 으로 이동합니다.

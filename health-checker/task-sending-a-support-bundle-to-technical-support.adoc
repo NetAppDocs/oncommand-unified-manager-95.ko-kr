@@ -1,0 +1,22 @@
+---
+permalink: health-checker/task-sending-a-support-bundle-to-technical-support.html 
+sidebar: sidebar 
+keywords:  
+summary: 이 워크플로우에서 Unified Manager 유지보수 콘솔을 사용하여 지원 번들을 생성, 검색, 기술 지원으로 전송하는 방법을 보여줍니다. AutoSupport 메시지가 제공하는 것보다 더 자세한 진단 및 문제 해결이 필요한 문제의 경우 지원 번들을 보내야 합니다. 
+---
+= 기술 지원 팀에 Unified Manager 지원 번들 보내기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이 워크플로우에서 Unified Manager 유지보수 콘솔을 사용하여 지원 번들을 생성, 검색, 기술 지원으로 전송하는 방법을 보여줍니다. AutoSupport 메시지가 제공하는 것보다 더 자세한 진단 및 문제 해결이 필요한 문제의 경우 지원 번들을 보내야 합니다.
+
+
+
+== 이 작업에 대해
+
+유지보수 콘솔 및 지원 번들에 대한 자세한 내용은 를 참조하십시오 xref:task-using-the-maintenance-console.adoc[유지보수 콘솔 사용].
+
+Unified Manager에서는 생성된 2개의 지원 번들을 한 번에 저장합니다.

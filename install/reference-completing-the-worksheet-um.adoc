@@ -1,0 +1,222 @@
+---
+permalink: install/reference-completing-the-worksheet-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 설치 및 구성하기 전에 환경에 대한 정보를 즉시 확인할 수 있어야 합니다. 워크시트에 정보를 기록할 수 있습니다. 
+---
+= 워크시트를 작성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 설치 및 구성하기 전에 환경에 대한 정보를 즉시 확인할 수 있어야 합니다. 워크시트에 정보를 기록할 수 있습니다.
+
+
+
+== Unified Manager 설치 정보
+
+Unified Manager를 설치하는 데 필요한 세부 정보
+
+|===
+| 소프트웨어가 배포되는 시스템입니다 | 귀사의 가치 
+
+
+ a| 
+ESXi 서버 IP 주소(VMware만 해당)
+ a| 
+
+
+
+ a| 
+호스트 정규화된 도메인 이름입니다
+ a| 
+
+
+
+ a| 
+호스트 IP 주소입니다
+ a| 
+
+
+
+ a| 
+네트워크 마스크
+ a| 
+
+
+
+ a| 
+게이트웨이 IP 주소입니다
+ a| 
+
+
+
+ a| 
+기본 DNS 주소입니다
+ a| 
+
+
+
+ a| 
+보조 DNS 주소입니다
+ a| 
+
+
+
+ a| 
+도메인 검색
+ a| 
+
+
+
+ a| 
+유지보수 사용자 이름입니다
+ a| 
+
+
+
+ a| 
+유지보수 사용자 암호입니다
+ a| 
+
+|===
+
+
+== Unified Manager 구성 정보
+
+설치 후 Unified Manager를 구성하기 위한 세부 정보 일부 값은 구성에 따라 선택 사항입니다.
+
+|===
+| 설정 | 귀사의 가치 
+
+
+ a| 
+유지보수 사용자 이메일 주소
+ a| 
+
+
+
+ a| 
+NTP 서버(VMware만 해당)
+ a| 
+
+
+
+ a| 
+SMTP 서버 호스트 이름 또는 IP 주소입니다
+ a| 
+
+
+
+ a| 
+SMTP 사용자 이름입니다
+ a| 
+
+
+
+ a| 
+SMTP 암호
+ a| 
+
+
+
+ a| 
+SMTP 포트
+ a| 
+25(기본값)
+
+
+
+ a| 
+알림 알림이 전송되는 이메일입니다
+ a| 
+
+
+
+ a| 
+인증 서버 호스트 이름 또는 IP 주소입니다
+ a| 
+
+
+
+ a| 
+Active Directory 관리자 이름 또는 LDAP 바인드 고유 이름입니다
+ a| 
+
+
+
+ a| 
+Active Directory 암호 또는 LDAP 바인딩 암호입니다
+ a| 
+
+
+
+ a| 
+인증 서버 기본 고유 이름입니다
+ a| 
+
+
+
+ a| 
+ID 공급자(IDP) URL입니다
+ a| 
+
+
+
+ a| 
+IdP(Identity Provider) 메타데이터
+ a| 
+
+
+
+ a| 
+SNMP 트랩 대상 호스트 IP 주소입니다
+ a| 
+
+
+
+ a| 
+SNMP 포트
+ a| 
+
+|===
+
+
+== 클러스터 정보
+
+Unified Manager를 사용하여 관리할 스토리지 시스템에 대한 세부 정보입니다.
+
+|===
+| 클러스터 1/N | 귀사의 가치 
+
+
+ a| 
+호스트 이름 또는 클러스터 관리 IP 주소입니다
+ a| 
+
+
+
+ a| 
+ONTAP 관리자 사용자 이름입니다
+
+[NOTE]
+====
+관리자가 "admin" 역할을 할당받아야 합니다.
+
+==== a| 
+
+
+
+ a| 
+ONTAP 관리자 암호입니다
+ a| 
+
+
+
+ a| 
+프로토콜(HTTP 또는 HTTPS)
+ a| 
+
+|===

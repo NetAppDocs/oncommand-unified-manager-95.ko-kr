@@ -1,0 +1,46 @@
+---
+permalink: health-checker/task-performing-diagnotstic-actions-for-volume-offline-conditions.html 
+sidebar: sidebar 
+keywords:  
+summary: 오프라인 상태로 보고된 볼륨의 상태/볼륨 세부 정보 페이지로 이동한 후 볼륨 오프라인 상태를 진단하는 데 도움이 되는 추가 정보를 검색할 수 있습니다. 
+---
+= 볼륨 오프라인 상태에 대한 진단 작업을 수행합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+오프라인 상태로 보고된 볼륨의 상태/볼륨 세부 정보 페이지로 이동한 후 볼륨 오프라인 상태를 진단하는 데 도움이 되는 추가 정보를 검색할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+운영자, OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+오프라인으로 보고된 볼륨이 의도적으로 오프라인 상태로 전환되지 않은 경우 몇 가지 이유로 해당 볼륨이 오프라인 상태일 수 있습니다.
+
+오프라인 볼륨의 상태/볼륨 세부 정보 페이지에서 시작하여 다른 페이지 및 창으로 이동하여 가능한 원인을 확인하거나 제거할 수 있습니다.
+
+
+
+== 선택
+
+* 상태/볼륨 * 세부 정보 페이지 링크를 클릭하여 해당 호스트 노드가 다운되어 있고 해당 HA 쌍 파트너에 대한 스토리지 페일오버도 실패했으므로 볼륨이 오프라인 상태인지 확인합니다.
++
+을 참조하십시오 xref:task-determining-if-a-volume-offline-condition-is-caused-by-a-down-cluster-node.adoc[볼륨 오프라인 상태가 다운 노드로 인해 발생했는지 확인].
+
+* Health/Volume * 세부 정보 페이지 링크를 클릭하여 볼륨이 오프라인 상태인지, 해당 SVM의 루트 볼륨을 호스팅하는 노드가 중단되어 해당 호스트 스토리지 가상 시스템(SVM)이 중지되었는지 확인합니다.
++
+을 참조하십시오 xref:task-determining-if-a-volume-is-offline-and-its-svm-is-stopped-because-a-cluster-node-is-down.adoc[노드가 중단되어 볼륨이 오프라인 상태인지, SVM이 중지되는지 확인].
+
+* Health/Volume * details 페이지 링크를 클릭하여 호스트 Aggregate에서 디스크가 파손되어 볼륨이 오프라인 상태인지 확인합니다.
++
+을 참조하십시오 xref:task-determining-if-a-volume-is-offline-because-of-broken-disks-in-an-aggregate.adoc[Aggregate의 손상된 디스크로 인해 볼륨이 오프라인 상태인지 확인합니다].
+
+

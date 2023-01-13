@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-event-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 이벤트는 환경의 모든 문제를 알려 줍니다. 이벤트 인벤토리 페이지와 이벤트 세부 정보 페이지를 사용하여 모든 이벤트를 모니터링할 수 있습니다. 알림 설정 옵션 대화 상자를 사용하여 알림을 구성할 수 있습니다. 구성/이벤트 관리 페이지를 사용하여 이벤트를 비활성화하거나 활성화할 수 있습니다. 
+---
+= 이벤트 창 및 대화 상자에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이벤트는 환경의 모든 문제를 알려 줍니다. 이벤트 인벤토리 페이지와 이벤트 세부 정보 페이지를 사용하여 모든 이벤트를 모니터링할 수 있습니다. 알림 설정 옵션 대화 상자를 사용하여 알림을 구성할 수 있습니다. 구성/이벤트 관리 페이지를 사용하여 이벤트를 비활성화하거나 활성화할 수 있습니다.

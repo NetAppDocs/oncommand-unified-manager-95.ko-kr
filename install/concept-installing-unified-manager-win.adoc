@@ -1,0 +1,14 @@
+---
+permalink: install/concept-installing-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: Windows에서 Unified Manager를 다운로드하고 설치하는 일련의 단계를 이해하는 것이 중요합니다. Windows에 Unified Manager를 설치하기 전에 고가용성을 위해 Unified Manager를 구성할지 여부를 결정할 수 있습니다. 
+---
+= Windows에 Unified Manager 설치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows에서 Unified Manager를 다운로드하고 설치하는 일련의 단계를 이해하는 것이 중요합니다. Windows에 Unified Manager를 설치하기 전에 고가용성을 위해 Unified Manager를 구성할지 여부를 결정할 수 있습니다.

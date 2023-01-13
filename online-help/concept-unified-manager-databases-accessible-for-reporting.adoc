@@ -1,0 +1,74 @@
+---
+permalink: online-help/concept-unified-manager-databases-accessible-for-reporting.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager는 MySQL 데이터베이스를 사용하여 모니터링 중인 클러스터의 데이터를 저장합니다. 데이터는 MySQL 데이터베이스의 다양한 스키마로 유지됩니다. 
+---
+= 맞춤형 보고를 위해 액세스할 수 있는 Unified Manager 데이터베이스
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager는 MySQL 데이터베이스를 사용하여 모니터링 중인 클러스터의 데이터를 저장합니다. 데이터는 MySQL 데이터베이스의 다양한 스키마로 유지됩니다.
+
+Unified Manager 7.3부터는 추가 테이블 데이터에 대한 액세스를 제공하는 추가 스키마가 노출됩니다.
+
+다음 데이터베이스의 모든 테이블 데이터를 사용할 수 있습니다.
+
+|===
+| 데이터베이스 | 설명 
+
+
+ a| 
+NetApp_모델_뷰
+ a| 
+ONTAP 컨트롤러의 개체에 대한 데이터입니다.
+
+
+
+ a| 
+netapp_performance
+ a| 
+클러스터별 성능 카운터
+
+
+
+ a| 
+ocum
+ a| 
+Unified Manager 애플리케이션 데이터와 UI 필터링, 정렬, 일부 파생 필드 계산 지원 정보
+
+
+
+ a| 
+ocum_report 를 참조하십시오
+ a| 
+인벤토리 구성 및 용량 관련 정보에 대한 데이터입니다.
+
+
+
+ a| 
+ocum_report_bRT
+ a| 
+위와 동일하지만 이 데이터베이스는 기본 제공 BIRT 보고서에서 사용됩니다.
+
+
+
+ a| 
+OPM
+ a| 
+성능 구성 설정 및 임계값 정보
+
+
+
+ a| 
+스케일로토르
+ a| 
+Unified Manager 애플리케이션 상태 및 성능 문제에 대한 데이터
+
+|===
+보고서 스키마 역할을 가진 데이터베이스 사용자인 보고 사용자는 이러한 테이블의 데이터에 액세스할 수 있습니다. 이 사용자는 Unified Manager 데이터베이스에서 직접 보고 및 기타 데이터베이스 뷰에 대한 읽기 전용 액세스를 가집니다. 이 사용자는 사용자 데이터 또는 클러스터 자격 증명 정보가 포함된 테이블에 액세스할 수 있는 권한이 없습니다.
+
+를 참조하십시오 http://www.netapp.com/us/media/tr-4565.pdf["Unified Manager 보고를 위한 기술 보고서"] (TR-4565)를 참조하십시오.

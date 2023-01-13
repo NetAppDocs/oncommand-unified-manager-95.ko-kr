@@ -1,0 +1,39 @@
+---
+permalink: performance-checker/concept-setting-up-graphite-to-receive-performance-data-from-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 흑연은 컴퓨터 시스템에서 성능 데이터를 수집하고 그래프로 작성하기 위한 개방형 소프트웨어 도구입니다. Unified Manager로부터 통계 데이터를 수신하려면 Graphite 서버 및 소프트웨어를 올바르게 구성해야 합니다. 
+---
+= Unified Manager로부터 성능 데이터를 수신하도록 Graphite 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+흑연은 컴퓨터 시스템에서 성능 데이터를 수집하고 그래프로 작성하기 위한 개방형 소프트웨어 도구입니다. Unified Manager로부터 통계 데이터를 수신하려면 Graphite 서버 및 소프트웨어를 올바르게 구성해야 합니다.
+
+설치 지침에 따라 Graphite를 설치한 후에는 Unified Manager에서 통계 데이터 전송을 지원하도록 다음과 같이 변경해야 합니다.
+
+* 에 있습니다 `/opt/graphite/conf/carbon.conf` 파일, 분당 흑연 서버에서 생성할 수 있는 최대 파일 수는 _200_로 설정해야 합니다 (`MAX_CREATES_PER_MINUTE = 200`)를 클릭합니다.
++
+구성에 있는 클러스터 수와 보내기로 선택한 통계 개체에 따라 처음에 만들어야 하는 수천 개의 새 파일이 있을 수 있습니다. 분당 200개의 파일로 모든 메트릭 파일이 처음 생성되기까지 15분 이상이 걸릴 수 있습니다. 모든 고유한 메트릭 파일이 생성된 후에는 이 매개 변수가 더 이상 관련이 없습니다.
+
+* IPv6 주소를 사용하여 배포된 서버에서 Graphite를 실행하는 경우 의 line_receiver_interface에 대한 값입니다 `/opt/graphite/conf/carbon.conf` 파일을 "'0.0.0.0'에서 ":"로 변경해야 합니다. (`LINE_RECEIVER_INTERFACE = ::`)
+* 에 있습니다 `/opt/graphite/conf/storage-schemas.conf` 파일, `retentions` 매개 변수를 사용하여 빈도를 5분으로 설정하고 보존 기간을 해당 환경과 관련된 일 수로 설정해야 합니다.
++
+보존 기간은 사용자 환경에서 허용하는 기간일 수 있지만 빈도 값은 최소 하나의 보존 설정에 대해 5분으로 설정되어야 합니다. 다음 예에서는 를 사용하는 Unified Manager에 대한 섹션이 정의되어 있습니다 `pattern` 매개 변수 및 값은 초기 빈도를 5분으로 설정하고 보존 기간을 100일로 설정합니다.
+
++
+[NOTE]
+====
+기본 공급업체 태그가 ""NetApp 성능""에서 다른 것으로 변경되면 해당 변경 사항이 에 반영되어야 합니다 `pattern` 매개 변수도 있습니다.
+
+====
+
+
+[NOTE]
+====
+Unified Manager 서버가 성능 데이터를 전송하려고 할 때 Graphite 서버를 사용할 수 없는 경우 데이터가 전송되지 않으며 수집된 데이터에 차이가 있습니다.
+
+====

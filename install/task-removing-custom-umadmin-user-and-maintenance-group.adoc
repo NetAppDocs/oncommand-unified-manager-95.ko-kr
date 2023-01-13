@@ -1,0 +1,29 @@
+---
+permalink: install/task-removing-custom-umadmin-user-and-maintenance-group.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 설치하기 전에 사용자 지정 홈 디렉터리를 만들어 자신의 umadmin 사용자 및 유지보수 계정을 정의한 경우 Unified Manager를 제거한 후 이러한 항목을 제거해야 합니다. 
+---
+= 사용자 지정 umadmin 사용자 및 유지보수 그룹을 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 설치하기 전에 사용자 지정 홈 디렉터리를 만들어 자신의 umadmin 사용자 및 유지보수 계정을 정의한 경우 Unified Manager를 제거한 후 이러한 항목을 제거해야 합니다.
+
+
+
+== 이 작업에 대해
+
+표준 Unified Manager 설치 제거를 사용해도 사용자 정의 umadmin 사용자 및 유지보수 계정은 제거되지 않습니다. 이러한 항목은 수동으로 삭제해야 합니다.
+
+
+
+== 단계
+
+. Red Hat Enterprise Linux 서버에 루트 사용자로 로그인합니다.
+. umadmin 사용자를 삭제합니다.``userdel umadmin``
+. 유지보수 그룹을 삭제합니다.``groupdel maintenance``
+

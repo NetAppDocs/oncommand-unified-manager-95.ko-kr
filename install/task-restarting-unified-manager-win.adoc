@@ -1,0 +1,79 @@
+---
+permalink: install/task-restarting-unified-manager-win.html 
+sidebar: sidebar 
+keywords:  
+summary: 구성을 변경한 후 Unified Manager를 다시 시작해야 할 수 있습니다. 
+---
+= Windows에서 Unified Manager를 다시 시작합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성을 변경한 후 Unified Manager를 다시 시작해야 할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+Windows 관리자 권한이 있어야 합니다.
+
+
+
+== 단계
+
+. 기본 로컬 관리자 계정을 사용하여 Windows에 로그인합니다.
+. Unified Manager 서비스 중지:
++
+|===
+| 시작... | 다음 순서대로 서비스를 중지합니다. 
+
+
+ a| 
+명령줄
+ a| 
+.. `sc stop ocie-au`
+.. `sc stop Oncommandsvc`
+
+
+
+
+ a| 
+Microsoft 서비스 관리자
+ a| 
+.. NetApp OCIE 획득 장치(Ocie-au)
+.. NetApp OnCommand 애플리케이션 서버(Oncommanddsvc)
+
+
+|===
++
+고가용성 설정이 설치된 경우 Microsoft Service Manager 또는 명령줄을 사용하여 Unified Manager 서비스를 중지합니다.
+
+. Unified Manager 서비스 시작:
++
+|===
+| 시작... | 다음 순서로 서비스를 시작합니다. 
+
+
+ a| 
+명령줄
+ a| 
+.. `sc start Oncommandsvc`
+.. `sc start ocie-au`
+
+
+
+
+ a| 
+Microsoft 서비스 관리자
+ a| 
+.. NetApp OnCommand 애플리케이션 서버(Oncommanddsvc)
+.. NetApp OCIE 획득 장치(Ocie-au)
+
+
+|===
++
+고가용성 설정에 설치된 경우 Microsoft Service Manager 또는 명령줄을 사용하여 Unified Manager 서비스를 시작합니다.
+
+

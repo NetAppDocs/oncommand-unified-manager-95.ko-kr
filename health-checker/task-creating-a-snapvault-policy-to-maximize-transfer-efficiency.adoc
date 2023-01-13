@@ -1,0 +1,41 @@
+---
+permalink: health-checker/task-creating-a-snapvault-policy-to-maximize-transfer-efficiency.html 
+sidebar: sidebar 
+keywords:  
+summary: 새 SnapVault 정책을 생성하여 SnapVault 전송의 우선 순위를 설정할 수 있습니다. 보호 관계에서 정책을 사용하여 운영 스토리지에서 2차 스토리지로 전송 효율성을 극대화할 수 있습니다. 
+---
+= 전송 효율성을 극대화하기 위한 SnapVault 정책 생성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+새 SnapVault 정책을 생성하여 SnapVault 전송의 우선 순위를 설정할 수 있습니다. 보호 관계에서 정책을 사용하여 운영 스토리지에서 2차 스토리지로 전송 효율성을 극대화할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+* Workflow Automation을 설정해야 합니다.
+* 보호 구성 대화 상자에서 대상 정보 영역을 이미 완료해야 합니다.
+
+
+
+
+== 단계
+
+. 보호 구성 * 대화 상자의 * SnapVault * 탭에서 * 관계 설정 * 영역의 * 정책 * 만들기 * 링크를 클릭합니다.
++
+SnapVault(측정) 탭이 표시됩니다.
+
+. Policy Name * 필드에 정책을 지정할 이름을 입력합니다.
+. 전송 우선순위 * 필드에서 정책에 할당할 전송 우선순위를 선택합니다.
+. Comment * (주석 *) 필드에 정책에 대한 설명을 입력합니다.
+. Replication Label * 영역에서 필요에 따라 복제 레이블을 추가하거나 편집합니다.
+. Create * 를 클릭합니다.
++
+새 정책이 정책 생성 드롭다운 목록에 표시됩니다.
+
+

@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-quota-limits-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 할당량 제한은 Unified Manager 서버가 사용자의 공간 사용량이 제한에 도달했는지 또는 사용자의 할당량에 의해 설정된 제한에 도달했는지 여부를 평가하는 데 사용하는 값입니다. 소프트 제한값을 초과하거나 하드 제한값에 도달하면 Unified Manager 서버가 사용자 할당량 이벤트를 생성합니다. 
+---
+= 할당량 제한이란 무엇입니까
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 할당량 제한이란 Unified Manager 서버가 사용자의 공간 사용량이 제한에 도달했는지 또는 사용자의 할당량에 의해 설정된 한도에 도달했는지 여부를 평가하는 데 사용하는 값입니다. 소프트 제한값을 초과하거나 하드 제한값에 도달하면 Unified Manager 서버가 사용자 할당량 이벤트를 생성합니다.
+
+기본적으로 Unified Manager 서버는 할당량 소프트 제한값을 초과했거나 할당량 하드 제한값에 도달했으며 사용자 할당량 이벤트가 구성된 사용자에게 알림 이메일을 보냅니다. OnCommand 관리자는 지정된 수신자에게 사용자 또는 사용자 그룹 할당량 이벤트를 알리는 경고를 구성할 수 있습니다.
+
+OnCommand 시스템 관리자 또는 ONTAP CLI를 사용하여 할당량 제한을 지정할 수 있습니다.

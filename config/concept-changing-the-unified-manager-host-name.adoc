@@ -1,0 +1,16 @@
+---
+permalink: config/concept-changing-the-unified-manager-host-name.html 
+sidebar: sidebar 
+keywords:  
+summary: 경우에 따라 Unified Manager를 설치한 시스템의 호스트 이름을 변경할 수도 있습니다. 예를 들어, 호스트 이름을 유형, 작업 그룹 또는 모니터링되는 클러스터 그룹별로 Unified Manager 서버를 더 쉽게 식별하도록 변경할 수 있습니다. 
+---
+= Unified Manager 호스트 이름을 변경하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+경우에 따라 Unified Manager를 설치한 시스템의 호스트 이름을 변경할 수도 있습니다. 예를 들어, 호스트 이름을 유형, 작업 그룹 또는 모니터링되는 클러스터 그룹별로 Unified Manager 서버를 더 쉽게 식별하도록 변경할 수 있습니다.
+
+호스트 이름을 변경하는 데 필요한 단계는 Unified Manager가 VMware ESXi 서버, Red Hat 또는 CentOS Linux 서버 또는 Microsoft Windows 서버에서 실행 중인지 여부에 따라 다릅니다.

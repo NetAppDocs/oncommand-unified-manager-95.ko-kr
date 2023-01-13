@@ -1,0 +1,52 @@
+---
+permalink: config/task-configuring-unified-manager-to-send-alert-notifications.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager에서 사용자 환경의 이벤트에 대한 알림을 보내도록 구성할 수 있습니다. 알림을 보내려면 먼저 몇 가지 다른 Unified Manager 옵션을 구성해야 합니다. 
+---
+= 경고 알림을 보내도록 Unified Manager 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager에서 사용자 환경의 이벤트에 대한 알림을 보내도록 구성할 수 있습니다. 알림을 보내려면 먼저 몇 가지 다른 Unified Manager 옵션을 구성해야 합니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+Unified Manager를 구축하고 초기 구성을 완료한 후에는 이벤트 수신 시 알림을 트리거하고 알림 e-메일 또는 SNMP 트랩을 생성하도록 환경을 구성하는 것이 좋습니다.
+
+
+
+== 단계
+
+. xref:task-configuring-event-notification-settings.adoc[이벤트 알림 설정을 구성합니다]
++
+사용자 환경에서 특정 이벤트가 발생할 때 알림 알림을 보내려면 SMTP 서버를 구성하고 알림 알림을 보낼 이메일 주소를 제공해야 합니다. SNMP 트랩을 사용하려면 해당 옵션을 선택하고 필요한 정보를 제공할 수 있습니다.
+
+. xref:task-enabling-remote-authentication.adoc[원격 인증을 사용합니다]
++
+원격 LDAP 또는 Active Directory 사용자가 Unified Manager 인스턴스에 액세스하여 경고 알림을 받으려면 원격 인증을 설정해야 합니다.
+
+. xref:task-adding-authentication-servers.adoc[인증 서버를 추가합니다]
++
+인증 서버 내의 원격 사용자가 Unified Manager에 액세스할 수 있도록 인증 서버를 추가할 수 있습니다.
+
+. xref:task-adding-users.adoc[사용자 추가]
++
+여러 가지 유형의 로컬 또는 원격 사용자를 추가하고 특정 역할을 할당할 수 있습니다. 알림을 생성할 때 사용자에게 경고 알림을 보내도록 할당합니다.
+
+. xref:task-adding-alerts.adoc[알림을 추가합니다]
++
+알림을 보낼 e-메일 주소를 추가하고 알림을 받을 사용자를 추가했으며 네트워크 설정을 구성했으며 사용자 환경에 필요한 SMTP 및 SNMP 옵션을 구성한 후 알림을 할당할 수 있습니다.
+
+

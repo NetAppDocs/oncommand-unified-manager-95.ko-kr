@@ -1,0 +1,23 @@
+---
+permalink: online-help/concept-adding-disk-space-to-the-unified-manager-database-directory.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 데이터베이스 디렉토리에는 ONTAP 시스템에서 수집된 모든 상태 및 성능 데이터가 포함되어 있습니다. 경우에 따라 데이터베이스 디렉토리의 크기를 늘려야 할 수 있습니다. 
+---
+= Unified Manager 데이터베이스 디렉토리에 디스크 공간 추가
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 데이터베이스 디렉토리에는 ONTAP 시스템에서 수집된 모든 상태 및 성능 데이터가 포함되어 있습니다. 경우에 따라 데이터베이스 디렉토리의 크기를 늘려야 할 수 있습니다.
+
+예를 들어, Unified Manager가 각 클러스터에 노드가 많은 수의 클러스터에서 데이터를 수집하는 경우 데이터베이스 디렉토리가 가득 찰 수 있습니다. 데이터베이스 디렉토리가 90% 찼을 때 경고 이벤트가 수신되고 디렉토리가 95% 찼을 때 중요한 이벤트가 발생합니다.
+
+[NOTE]
+====
+디렉토리가 95% 꽉 찬 후 클러스터에서 추가 데이터가 수집되지 않습니다.
+
+====
+데이터 디렉토리에 용량을 추가하는 데 필요한 단계는 Unified Manager가 VMware ESXi 서버, Red Hat 또는 CentOS Linux 서버 또는 Microsoft Windows 서버에서 실행 중인지 여부에 따라 다릅니다.

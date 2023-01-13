@@ -1,0 +1,36 @@
+---
+permalink: online-help/reference-https-dialog-box-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: HTTPS 인증서 페이지에서는 현재 보안 인증서를 보거나, 인증서 서명 요청을 다운로드하거나, 새 HTTPS 인증서를 생성하거나, 새 HTTPS 인증서를 설치할 수 있습니다. 
+---
+= HTTPS 인증서 페이지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HTTPS 인증서 페이지에서는 현재 보안 인증서를 보거나, 인증서 서명 요청을 다운로드하거나, 새 HTTPS 인증서를 생성하거나, 새 HTTPS 인증서를 설치할 수 있습니다.
+
+새 HTTPS 인증서를 생성하지 않은 경우 이 페이지에 나타나는 인증서는 설치 중에 생성된 인증서입니다.
+
+
+
+== 명령 버튼
+
+명령 단추를 사용하여 다음 작업을 수행할 수 있습니다.
+
+* * HTTPS 인증서 서명 요청 다운로드 *
++
+현재 설치된 HTTPS 인증서에 대한 인증 요청을 다운로드합니다. 브라우저에 을 저장하라는 메시지가 표시됩니다 `<hostname>.csr` 서명할 인증 기관에 파일을 제공할 수 있는 파일입니다.
+
+* * HTTPS 인증서 설치 *
++
+인증 기관이 서명하여 반환한 후에 보안 인증서를 업로드 및 설치할 수 있습니다. 관리 서버를 다시 시작한 후 새 인증서가 적용됩니다.
+
+* * HTTPS 인증서 재생성 *
++
+현재 보안 인증서를 대체하는 HTTPS 인증서를 생성할 수 있습니다. 새 인증서는 Unified Manager를 다시 시작한 후에 적용됩니다.
+
+

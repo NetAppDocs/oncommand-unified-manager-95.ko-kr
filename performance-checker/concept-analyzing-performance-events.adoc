@@ -1,0 +1,14 @@
+---
+permalink: performance-checker/concept-analyzing-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능 이벤트를 분석하여 감지된 시기, 활성 상태, 활성 상태, 즉 새 이벤트, 확인된 이벤트, 사용되지 않는 이벤트, 관련 워크로드 및 클러스터 구성 요소, 이벤트 해결 옵션을 식별할 수 있습니다. 
+---
+= 성능 이벤트 분석
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능 이벤트를 분석하여 감지된 시기, 활성 상태(신규 또는 확인됨) 또는 폐기 여부, 관련 워크로드 및 클러스터 구성 요소, 이벤트를 자체적으로 해결하는 옵션을 파악할 수 있습니다.

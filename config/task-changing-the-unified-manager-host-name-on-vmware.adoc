@@ -1,0 +1,48 @@
+---
+permalink: config/task-changing-the-unified-manager-host-name-on-vmware.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 가상 어플라이언스를 처음 구축할 때 네트워크 호스트에 이름이 할당됩니다. 배포 후 호스트 이름을 변경할 수 있습니다. 호스트 이름을 변경하는 경우 HTTPS 인증서도 다시 생성해야 합니다. 
+---
+= Unified Manager 가상 어플라이언스 호스트 이름을 변경하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 가상 어플라이언스를 처음 구축할 때 네트워크 호스트에 이름이 할당됩니다. 배포 후 호스트 이름을 변경할 수 있습니다. 호스트 이름을 변경하는 경우 HTTPS 인증서도 다시 생성해야 합니다.
+
+
+
+== 시작하기 전에
+
+유지보수 사용자로 Unified Manager에 로그인하거나, OnCommand 관리자 역할이 할당되어 있어야 이러한 작업을 수행할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+호스트 이름(또는 호스트 IP 주소)을 사용하여 Unified Manager 웹 UI에 액세스할 수 있습니다. 배포 중에 네트워크에 대한 정적 IP 주소를 구성한 경우 네트워크 호스트의 이름을 지정했을 것입니다. DHCP를 사용하여 네트워크를 구성한 경우 DNS에서 호스트 이름을 가져와야 합니다. DHCP 또는 DNS가 제대로 구성되지 않은 경우 호스트 이름 ""OnCommand""이 자동으로 할당되어 보안 인증서와 연결됩니다.
+
+호스트 이름이 할당된 방식에 관계없이 호스트 이름을 변경하고 새 호스트 이름을 사용하여 Unified Manager 웹 UI에 액세스하려는 경우 새 보안 인증서를 생성해야 합니다.
+
+호스트 이름 대신 서버의 IP 주소를 사용하여 웹 UI에 액세스하는 경우 호스트 이름을 변경할 경우 새 인증서를 생성할 필요가 없습니다. 그러나 인증서의 호스트 이름이 실제 호스트 이름과 일치하도록 인증서를 업데이트하는 것이 가장 좋습니다.
+
+Unified Manager에서 호스트 이름을 변경하는 경우 WFA(OnCommand Workflow Automation)에서 호스트 이름을 수동으로 업데이트해야 합니다. 호스트 이름은 WFA에서 자동으로 업데이트되지 않습니다.
+
+새 인증서는 Unified Manager 가상 머신을 다시 시작할 때까지 적용되지 않습니다.
+
+
+
+== 단계
+
+. xref:task-generating-an-https-security-certificate-ocf.adoc[HTTPS 보안 인증서를 생성합니다]
++
+새 호스트 이름을 사용하여 Unified Manager 웹 UI에 액세스하려면 HTTPS 인증서를 다시 생성하여 새 호스트 이름과 연결해야 합니다.
+
+. xref:task-restarting-the-unified-manager-virtual-machine.adoc[Unified Manager 가상 머신을 다시 시작합니다]
++
+HTTPS 인증서를 다시 생성한 후 Unified Manager 가상 머신을 다시 시작해야 합니다.
+
+

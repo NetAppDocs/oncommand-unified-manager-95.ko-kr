@@ -1,0 +1,97 @@
+---
+permalink: install/task-installing-unified-manager-on-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: Windows에 Unified Manager를 설치하여 데이터 스토리지 용량, 가용성, 성능 및 보호 문제를 모니터링하고 문제를 해결할 수 있습니다. 
+---
+= Windows 시스템에 Unified Manager 설치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows에 Unified Manager를 설치하여 데이터 스토리지 용량, 가용성, 성능 및 보호 문제를 모니터링하고 문제를 해결할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* Unified Manager를 설치하려는 시스템은 시스템 및 소프트웨어 요구사항을 충족해야 합니다.
++
+xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[하드웨어 시스템 요구 사항]
+
++
+xref:reference-windows-software-and-installation-requirements.adoc[Windows 소프트웨어 및 설치 요구 사항]
+
++
+[NOTE]
+====
+Unified Manager 9.5부터 OpenJDK는 Unified Manager 설치 패키지에 제공되어 자동으로 설치됩니다. Oracle Java는 Unified Manager 9.5부터 지원되지 않습니다.
+
+====
+* Windows 관리자 권한이 있어야 합니다.
+* 지원되는 웹 브라우저가 있어야 합니다.
+* Unified Manager 유지보수 사용자 암호는 8자에서 20자 사이여야 하며 대문자, 소문자, 숫자 및 특수 문자를 포함해야 합니다.
+* 유지보수 사용자 또는 MySQL 루트 사용자의 암호 문자열에는 다음 특수 문자가 허용되지 않습니다: "''%,=&<>|^\/()[];
++
+다음 특수 문자를 사용할 수 있습니다.~! @#$ * -? . :+{}
+
+
+
+
+
+== 단계
+
+. 기본 로컬 관리자 계정을 사용하여 Windows에 로그인합니다.
+. NetApp Support 사이트에 로그인하고 Windows 플랫폼에 Unified Manager를 설치하기 위한 다운로드 페이지를 찾습니다.
++
+http://mysupport.netapp.com/NOW/cgi-bin/software["NetApp 다운로드: 소프트웨어"]
+
+. NetApp Support 사이트에서 Windows 시스템의 타겟 디렉토리로 Unified Manager Windows 설치 파일을 다운로드합니다.
+. 설치 파일이 있는 디렉터리로 이동합니다.
+. 오른쪽 클릭하고 Unified Manager 설치 관리자 실행 파일을 실행합니다 (`.exe`)를 클릭합니다.
++
+Unified Manager에서 누락되거나 미리 설치된 타사 패키지를 감지하여 나열합니다. 필요한 타사 패키지가 시스템에 설치되어 있지 않은 경우, Unified Manager에서 설치 시 타사 패키지를 설치합니다.
+
+. 다음 * 을 클릭합니다.
+. 사용자 이름과 암호를 입력하여 유지보수 사용자를 생성합니다.
+. 데이터베이스 연결 * 마법사에서 MySQL 루트 암호를 입력합니다.
+. Unified Manager 설치 디렉토리 및 MySQL 데이터 디렉토리의 새 위치를 지정하려면 * 변경 * 을 클릭합니다.
++
+설치 디렉토리를 변경하지 않으면 Unified Manager가 기본 설치 디렉토리에 설치됩니다.
+
+. 다음 * 을 클릭합니다.
+. Shield* 설치 준비 완료 마법사에서 * 설치 * 를 클릭합니다.
+. 설치가 완료되면 * Finish * 를 클릭합니다.
+
+
+
+
+== 결과
+
+설치 시 여러 디렉토리가 생성됩니다.
+
+* 설치 디렉토리
++
+이 디렉토리는 설치 중에 지정한 Unified Manager의 루트 디렉토리입니다. 예: `C:\Program Files\NetApp\`
+
+* MySQL 데이터 디렉토리
++
+MySQL 데이터베이스가 저장되는 디렉토리이며 설치 중에 지정한 디렉토리입니다. 예: `C:\ProgramData\MySQL\MySQLServerData\`
+
+* Java 디렉토리입니다
++
+OpenJDK가 설치되는 디렉토리입니다. 예: `C:\Program Files\NetApp\JDK\`
+
+* Unified Manager 애플리케이션 데이터 디렉토리(appDataDir)
++
+이 디렉터리는 응용 프로그램에서 생성한 모든 데이터가 저장되는 디렉터리입니다. 여기에는 로그, 지원 번들, 백업 및 기타 모든 추가 데이터가 포함됩니다. 예: `C:\ProgramData\NetApp\OnCommandAppData\`
+
+
+
+
+
+== 작업을 마친 후
+
+에 설명된 대로 웹 UI에 액세스하여 Unified Manager의 초기 설정을 수행할 수 있습니다 link:../config/concept-configuring-unified-manager.html["Unified Manager 구성"].

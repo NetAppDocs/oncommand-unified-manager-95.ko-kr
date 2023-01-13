@@ -1,0 +1,386 @@
+---
+permalink: online-help/reference-node-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 노드 이벤트는 잠재적 문제를 모니터링할 수 있도록 노드 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= 노드 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+노드 이벤트는 잠재적 문제를 모니터링할 수 있도록 노드 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+별표(*)는 Unified Manager 이벤트로 변환된 EMS 이벤트를 나타냅니다.
+
+
+
+== 영향 영역: 가용성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+노드 루트 볼륨 공간이 거의 가득 참(Documents ClusterNodeRootVolumeSpaceNearlyFull)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+Cloud AWS MetaDataConnFail * (ocumCloudawsMetadataConnFail)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Cloud AWS IAMCredsExpired * (CloudocumsIamCredsExpired)(클라우드 AWS IAMCredsExpired)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Cloud AWS IAMCredsInvalid * (CloudocumsIamCredsInvalid)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Cloud AWS IAMCredsNotFound * (ocumCloudAwsIamCredsNotFound)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Cloud AWS IAMCredsNotInitialized * (ocumCloudsIamCredsNotInitialized)
+ a| 
+이벤트
+ a| 
+노드
+ a| 
+정보
+
+
+
+ a| 
+Cloud AWS IAMRoleInvalid * (CloudocumeIamRoleInvalid)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Cloud AWS IAMRoleNotFound * (ocumCloudAwsIamRoleNotFound)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Objstore 호스트 확인할 수 없음 * (문서 ObjstoreHostUnresolable)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+Objstore InterClusterLifDown * (ocumobjstoreInterClusterLif다운)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+요청 불일치 객체 - 점포 서명 *
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+NFSv4 풀 중 하나가 소진되었습니다 *
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+|===
+
+
+== 충격 영역: 용량
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+QoS 모니터 메모리 최대 * (ocQosMonitorMemoryMaxed)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+오류
+
+
+
+ a| 
+QoS 모니터 메모리 abated * (문서 QosMonitorMemoryAbated)
+ a| 
+이벤트
+ a| 
+노드
+ a| 
+정보
+
+|===
+
+
+== 충격 영역: 구성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+노드 이름 변경됨(해당 없음)
+ a| 
+이벤트
+ a| 
+노드
+ a| 
+정보
+
+|===
+
+
+== 충격 영역: 성능
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+노드 IOPS 중요 임계값 위반(문서 노드인시던트)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+
+
+ a| 
+노드 IOPS 경고 임계값 위반(문서 노드 경고)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 MBPS 중요 임계값 위반(문서 노드 MbpsIncident)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+
+
+ a| 
+노드 MBPS 경고 임계값 위반(문서 노드 MbpsWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 지연 시간 ms/op 중요 임계값 위반(문서 노드 LatencyIncident)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+
+
+ a| 
+노드 지연 ms/op 경고 임계값 위반(문서 LatencyWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 성능 사용된 용량 위험 임계값 위반(문서 성능 용량 UsedIncident)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+
+
+ a| 
+노드 성능 사용된 용량 경고 임계값 위반(문서 PerfCapacityUsedWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 성능 사용된 용량 - 테이크오버가 중요 임계값 위반(문서 성능 용량 UsedTakeOverIncident)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+
+
+ a| 
+노드 성능 사용된 용량 - 테이크오버 경고 임계값 위반(문서 성능 용량 사용 중 테이크오버경고)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 활용률 주요 임계값 위반(ocumNodeUtilationIncident)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+
+
+ a| 
+노드 활용률 경고 임계값 위반(ocumNodeUtilizationWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 HA Pair 과도하게 사용된 임계값 침해(문서 노드 HaairOverUtilizedInformation)
+ a| 
+이벤트
+ a| 
+노드
+ a| 
+정보
+
+
+
+ a| 
+노드 디스크 조각 모음 임계값 위반(documentDiskFragmentationWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 과도하게 사용된 임계값 침해(ocumNodeOverUtilizedWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+
+
+ a| 
+노드 동적 임계값 위반(문서 노드 DynamicEventWarning)
+ a| 
+위험입니다
+ a| 
+노드
+ a| 
+경고
+
+|===

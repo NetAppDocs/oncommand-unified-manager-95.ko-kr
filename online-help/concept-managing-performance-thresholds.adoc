@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-managing-performance-thresholds.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능 임계값 정책을 사용하면 Unified Manager에서 이벤트를 생성하는 시점을 확인하여 시스템 관리자에게 워크로드 성능에 영향을 줄 수 있는 문제를 알릴 수 있습니다. 이러한 임계값 정책을 사용자 정의 성능 임계값이라고 합니다. 
+---
+= 사용자 정의 성능 임계값 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능 임계값 정책을 사용하면 Unified Manager에서 이벤트를 생성하는 시점을 확인하여 시스템 관리자에게 워크로드 성능에 영향을 줄 수 있는 문제를 알릴 수 있습니다. 이러한 임계값 정책을 _user-defined_performance 임계값이라고 합니다.
+
+이 릴리즈에서는 사용자 정의, 시스템 정의 및 동적 성능 임계값을 지원합니다. Unified Manager는 동적 및 시스템 정의 성능 임계값을 사용하여 워크로드 활동을 분석하여 적절한 임계값을 결정합니다. 사용자 정의 임계값을 사용하면 여러 성능 카운터 및 여러 스토리지 개체에 대한 최대 성능 한도를 정의할 수 있습니다.
+
+[NOTE]
+====
+시스템 정의 성능 임계값 및 동적 성능 임계값은 Unified Manager에서 설정하며 구성할 수 없습니다. 시스템 정의 성능 임계값 정책에서 불필요한 이벤트를 수신하는 경우 구성/이벤트 관리 페이지에서 개별 정책을 비활성화할 수 있습니다.
+
+====

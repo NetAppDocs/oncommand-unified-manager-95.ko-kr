@@ -1,0 +1,16 @@
+---
+permalink: health-checker/concept-what-the-diagnostic-user-does.html 
+sidebar: sidebar 
+keywords:  
+summary: 진단 액세스의 목적은 기술 지원 부서에서 문제 해결을 지원하도록 하는 것입니다. 기술 지원 부서의 지시가 있을 때만 사용해야 합니다. 
+---
+= 진단 사용자 기능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+진단 액세스의 목적은 기술 지원 부서에서 문제 해결을 지원하도록 하는 것입니다. 기술 지원 부서의 지시가 있을 때만 사용해야 합니다.
+
+진단 사용자는 문제 해결을 위해 기술 지원 부서의 지시가 있을 때 OS 레벨 명령을 실행할 수 있습니다.

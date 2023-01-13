@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-certificate-management-ocf.html 
+sidebar: sidebar 
+keywords:  
+summary: HTTPS 인증서 페이지를 사용하여 현재 보안 인증서를 보고 새 HTTPS 인증서를 생성할 수 있습니다. 
+---
+= 인증서 관리에 대한 페이지 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+HTTPS 인증서 페이지를 사용하여 현재 보안 인증서를 보고 새 HTTPS 인증서를 생성할 수 있습니다.

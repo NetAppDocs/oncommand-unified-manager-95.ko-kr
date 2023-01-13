@@ -1,0 +1,28 @@
+---
+permalink: online-help/concept-managing-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager를 사용하면 보호 관계를 생성하고, 관리 대상 클러스터에서 SnapMirror 및 SnapVault 관계를 모니터링 및 해결하고, 데이터를 덮어쓰거나 손실할 때 데이터를 복원할 수 있습니다. 
+---
+= 보호 관계 관리 및 모니터링
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager를 사용하면 보호 관계를 생성하고, 관리 대상 클러스터에서 SnapMirror 및 SnapVault 관계를 모니터링 및 해결하고, 데이터를 덮어쓰거나 손실할 때 데이터를 복원할 수 있습니다.
+
+SnapMirror 작업의 경우 두 가지 복제 유형이 있습니다.
+
+* 비동기식
++
+운영 볼륨에서 보조 볼륨으로의 복제는 스케줄에 따라 결정됩니다.
+
+* 동기식이다
++
+복제는 운영 볼륨과 2차 볼륨에서 동시에 수행됩니다.
+
+
+
+성능에 영향을 주지 않고 최대 10개의 보호 작업을 동시에 수행할 수 있습니다. 11 ~ 30개의 작업을 동시에 실행할 경우 성능에 약간의 영향을 줄 수 있습니다. 30개 이상의 작업을 동시에 실행하는 것은 권장되지 않습니다.

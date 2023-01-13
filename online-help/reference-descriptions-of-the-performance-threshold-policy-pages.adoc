@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-descriptions-of-the-performance-threshold-policy-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 구성/성능 임계값 페이지를 사용하여 성능 임계값 정책을 생성, 편집, 클론 복제, 삭제 및 볼 수 있습니다. 
+---
+= 성능 임계값 정책 페이지에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성/성능 임계값 페이지를 사용하여 성능 임계값 정책을 생성, 편집, 클론 복제, 삭제 및 볼 수 있습니다.
+
+해당 페이지에서 * 도움말 * 을 클릭하면 아래 항목이 표시됩니다.

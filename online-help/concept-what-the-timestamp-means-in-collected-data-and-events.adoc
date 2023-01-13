@@ -1,0 +1,22 @@
+---
+permalink: online-help/concept-what-the-timestamp-means-in-collected-data-and-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 수집된 상태 및 성능 데이터에 표시되거나 이벤트 감지 시간으로 표시되는 타임스탬프는 ONTAP 클러스터 시간을 기반으로 하며 웹 브라우저에 설정된 표준 시간대로 조정됩니다. 
+---
+= 수집된 데이터 및 이벤트에서 타임스탬프가 의미하는 것입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+수집된 상태 및 성능 데이터에 표시되거나 이벤트 감지 시간으로 표시되는 타임스탬프는 ONTAP 클러스터 시간을 기반으로 하며 웹 브라우저에 설정된 표준 시간대로 조정됩니다.
+
+NTP(네트워크 시간 프로토콜) 서버를 사용하여 Unified Manager 서버, ONTAP 클러스터 및 웹 브라우저의 시간을 동기화하는 것이 좋습니다.
+
+[NOTE]
+====
+특정 클러스터에 대해 타임스탬프가 잘못된 것으로 표시되는 경우 클러스터 시간이 올바르게 설정되었는지 확인할 수 있습니다.
+
+====

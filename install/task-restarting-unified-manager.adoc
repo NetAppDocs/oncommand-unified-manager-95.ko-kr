@@ -1,0 +1,35 @@
+---
+permalink: install/task-restarting-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 구성을 변경한 후 Unified Manager를 다시 시작해야 할 수 있습니다. 
+---
+= Red Hat Enterprise Linux 또는 CentOS에서 Unified Manager를 다시 시작합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구성을 변경한 후 Unified Manager를 다시 시작해야 할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+Unified Manager가 설치된 Red Hat Enterprise Linux 또는 CentOS 서버에 대한 루트 사용자 액세스 권한이 있어야 합니다.
+
+
+
+== 단계
+
+. Unified Manager 서비스를 다시 시작할 서버에 루트 사용자로 로그인합니다.
+. Unified Manager 서비스 및 관련 MySQL 소프트웨어를 표시된 순서대로 중지합니다.
++
+고가용성 설정에 설치된 경우 VCS Operations Manager 또는 VCS 명령을 사용하여 Unified Manager 서비스를 중지하십시오.
+
+. 다음 순서대로 Unified Manager를 시작합니다.
++
+고가용성 설정에 설치된 경우 VCS Operations Manager 또는 VCS 명령을 사용하여 Unified Manager 서비스를 시작합니다.
+
+

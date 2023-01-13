@@ -1,0 +1,82 @@
+---
+permalink: online-help/reference-metrocluster-switch-events.html 
+sidebar: sidebar 
+keywords:  
+summary: MetroCluster 스위치 이벤트는 잠재적 문제를 모니터링할 수 있도록 MetroCluster 스위치 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= MetroCluster 스위치 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 스위치 이벤트는 잠재적 문제를 모니터링할 수 있도록 MetroCluster 스위치 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 영향 영역: 가용성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+스위치 온도 비정상(ocumEvtSwitchTemperatureAbnormal)
+ a| 
+사고
+ a| 
+MetroCluster 스위치
+ a| 
+심각
+
+
+
+ a| 
+스위치에 연결할 수 없음(문서 SwitchUnreachable)
+ a| 
+사고
+ a| 
+MetroCluster 스위치
+ a| 
+심각
+
+
+
+ a| 
+팬 전환 실패(문서 교환 OneOrMoreFailed)
+ a| 
+사고
+ a| 
+MetroCluster 스위치
+ a| 
+심각
+
+
+
+ a| 
+전원 공급 장치 전환 실패(문서 SwitchPowerSuppliesOneOrMoreFailed)
+ a| 
+사고
+ a| 
+MetroCluster 스위치
+ a| 
+심각
+
+
+
+ a| 
+스위치 온도 센서 실패(문서 SwitchTemperatureSensorFailed)
+
+[NOTE]
+====
+이 이벤트는 Cisco 스위치에만 적용됩니다.
+
+==== a| 
+사고
+ a| 
+MetroCluster 스위치
+ a| 
+심각
+
+|===

@@ -1,0 +1,78 @@
+---
+permalink: health-checker/task-retrieving-the-support-bundle-using-a-unix-or-linux-client.html 
+sidebar: sidebar 
+keywords:  
+summary: 'UNIX 또는 Linux 사용자인 경우 Linux 클라이언트 서버에서 CLI\(Command-Line Interface)를 사용하여 vApp에서 지원 번들을 검색할 수 있습니다. SCP 또는 SFTP를 사용하여 지원 번들을 검색할 수 있습니다.' 
+---
+= UNIX 또는 Linux 클라이언트를 사용하여 지원 번들 검색
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNIX 또는 Linux 사용자인 경우 Linux 클라이언트 서버에서 CLI(Command-Line Interface)를 사용하여 vApp에서 지원 번들을 검색할 수 있습니다. SCP 또는 SFTP를 사용하여 지원 번들을 검색할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+이 작업을 수행하려면 유지 관리 사용자여야 합니다.
+
+유지보수 콘솔을 사용하여 지원 번들을 생성하고 지원 번들 이름을 사용할 수 있어야 합니다.
+
+
+
+== 단계
+
+. Linux 클라이언트 서버를 사용하여 텔넷 또는 콘솔을 통해 CLI에 액세스합니다.
+. 에 액세스합니다 `/support` 디렉토리.
+. 다음 명령을 사용하여 지원 번들을 검색하고 로컬 디렉토리에 복사합니다.
++
+|===
+| 사용 중인 경우... | 그런 다음 다음 다음 명령을 사용합니다. 
+
+
+ a| 
+SCP를 선택합니다
+ a| 
+`scp <maintenance-user>@<vApp-name-or-ip>:/support/support_bundle_file_name.7z <destination-directory>`
+
+
+
+ a| 
+SFTP
+ a| 
+`sftp <maintenance-user>@<vApp-name-or-ip>:/support/support_bundle_file_name.7z <destination-directory>`
+
+|===
++
+지원 번들은 유지보수 콘솔을 사용하여 생성할 때 제공됩니다.
+
+. 유지보수 사용자 암호를 입력합니다.
+
+
+
+
+== 예
+
+다음 예에서는 SCP를 사용하여 지원 번들을 검색합니다.
+
+[listing]
+----
+
+        $ scp admin@10.10.12.69:/support/support_bundle_20160216_145359.7z .
+Password: <maintenance_user_password>
+support_bundle_20160216_145359.7z   100%  119MB  11.9MB/s   00:10
+----
+다음 예에서는 SFTP를 사용하여 지원 번들을 검색합니다.
+
+[listing]
+----
+
+        $ sftp admin@10.10.12.69:/support/support_bundle_20160216_145359.7z .
+Password: <maintenance_user_password>
+Connected to 10.228.212.69.
+Fetching /support/support_bundle_20130216_145359.7z to ./support_bundle_20130216_145359.7z
+/support/support_bundle_20160216_145359.7z
+----

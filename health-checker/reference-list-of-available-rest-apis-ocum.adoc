@@ -1,0 +1,38 @@
+---
+permalink: health-checker/reference-list-of-available-rest-apis-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: API 사용 방법을 계획할 수 있도록 Unified Manager에서 사용 가능한 REST API에 대해 알아야 합니다. API 호출은 다양한 리소스 유형 또는 범주로 구성됩니다. 
+---
+= 사용 가능한 REST API 목록입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+API 사용 방법을 계획할 수 있도록 Unified Manager에서 사용 가능한 REST API에 대해 알아야 합니다. API 호출은 다양한 리소스 유형 또는 범주로 구성됩니다.
+
+사용 가능한 API 호출의 전체 목록과 각 호출에 대한 세부 정보는 Swagger 웹 페이지를 참조하십시오.
+
+관리 API 호출은 다음 범주에 따라 구성됩니다.
+
+* 애그리게이트
+* 클러스터
+* 이벤트
+* LIF
+* LUN을 클릭합니다
+* 네임스페이스
+* 노드
+* 포트
+* SVM
+* 볼륨
+
+
+범주 중 하나를 선택하면 API 하위 범주가 버전 하위 범주와 함께 표시되는 목록이 나타납니다. 예를 들면 다음과 같습니다.
+
+* /애그리게이트
+* /v1/애그리게이트
+
+
+REST API의 최신 버전은 URL에 버전 번호 없이 나열됩니다. 최신 버전의 API를 사용하여 Unified Manager와 통합해야 합니다.

@@ -1,0 +1,65 @@
+---
+permalink: online-help/task-adding-space-to-the-data-disk-of-the-microsoft-windows-server.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 데이터베이스의 디스크 공간을 늘려야 하는 경우 Unified Manager가 설치된 논리 드라이브에 용량을 추가할 수 있습니다. 
+---
+= Microsoft Windows 서버의 논리 드라이브에 공간 추가
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 데이터베이스의 디스크 공간을 늘려야 하는 경우 Unified Manager가 설치된 논리 드라이브에 용량을 추가할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+Windows 관리자 권한이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+디스크 공간을 추가하기 전에 Unified Manager 데이터베이스를 백업하는 것이 좋습니다.
+
+
+
+== 단계
+
+. 디스크 공간을 추가할 Windows 서버에 관리자로 로그인합니다.
+. 공간을 더 추가하는 데 사용할 방법에 해당하는 단계를 따릅니다.
++
+|===
+| 옵션을 선택합니다 | 설명 
+
+
+ a| 
+물리적 서버에서 Unified Manager 서버가 설치된 논리 드라이브에 용량을 추가합니다.
+ a| 
+Microsoft 항목의 단계를 따릅니다.
+
+https://technet.microsoft.com/en-us/library/cc771473(v=ws.11).aspx["기본 볼륨을 확장합니다"]
+
+
+
+ a| 
+물리적 서버에서 하드 디스크 드라이브를 추가합니다.
+ a| 
+Microsoft 항목의 단계를 따릅니다.
+
+https://msdn.microsoft.com/en-us/library/dd163551.aspx["하드 디스크 드라이브 추가"]
+
+
+
+ a| 
+가상 머신에서 디스크 파티션의 크기를 늘립니다.
+ a| 
+VMware 항목의 단계를 따릅니다.
+
+https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1004071["디스크 파티션 크기 늘리기"]
+
+|===
+

@@ -1,0 +1,54 @@
+---
+permalink: health-checker/reference-definitions-of-user-roles.html 
+sidebar: sidebar 
+keywords:  
+summary: 유지보수 사용자 또는 OnCommand 관리자는 모든 사용자에게 역할을 할당합니다. 각 역할에는 특정 권한이 포함됩니다. Unified Manager에서 수행할 수 있는 작업의 범위는 할당된 역할 및 역할에 포함된 권한에 따라 다릅니다. 
+---
+= 사용자 역할의 정의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+유지보수 사용자 또는 OnCommand 관리자는 모든 사용자에게 역할을 할당합니다. 각 역할에는 특정 권한이 포함됩니다. Unified Manager에서 수행할 수 있는 작업의 범위는 할당된 역할 및 역할에 포함된 권한에 따라 다릅니다.
+
+Unified Manager에는 다음과 같은 사전 정의된 사용자 역할이 포함되어 있습니다.
+
+* * 연산자 *
++
+기록 및 용량 추세를 비롯하여 Unified Manager에서 수집한 스토리지 시스템 정보 및 기타 데이터를 확인합니다. 스토리지 운영자는 이 역할을 사용하여 이벤트에 대한 메모를 확인, 할당, 확인, 해결 및 추가할 수 있습니다.
+
+* * 스토리지 관리자 *
++
+Unified Manager 내에서 스토리지 관리 작업을 구성합니다. 스토리지 관리자는 이 역할을 통해 임계값을 구성하고 알림 및 기타 스토리지 관리 관련 옵션 및 정책을 생성할 수 있습니다.
+
+* * OnCommand 관리자 *
++
+스토리지 관리와 관련 없는 설정을 구성합니다. 이 역할을 통해 사용자, 보안 인증서, 데이터베이스 액세스 및 인증을 포함한 관리 옵션을 관리할 수 있습니다. SMTP, 네트워킹 및 AutoSupport.
+
++
+[NOTE]
+====
+Linux 시스템에 Unified Manager를 설치하면 OnCommand 관리자 역할을 가진 초기 사용자 이름이 자동으로 ""umadmin""으로 지정됩니다.
+
+====
+* * 통합 스키마 *
++
+WFA(Unified Manager)와 OnCommand Workflow Automation(Unified Manager)를 통합할 수 있도록 Unified Manager 데이터베이스 보기에 대한 읽기 전용 액세스를 지원합니다.
+
+* * 보고서 스키마 *
++
+이 역할은 Unified Manager 데이터베이스에서 직접 보고 및 기타 데이터베이스 뷰에 대한 읽기 전용 액세스를 지원합니다. 볼 수 있는 데이터베이스는 다음과 같습니다.
+
++
+** NetApp_모델_뷰
+** netapp_performance
+** ocum
+** ocum_report 를 참조하십시오
+** ocum_report_bRT
+** OPM
+** 스케일로토르
+
+
+

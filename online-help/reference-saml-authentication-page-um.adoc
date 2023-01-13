@@ -1,0 +1,58 @@
+---
+permalink: online-help/reference-saml-authentication-page-um.html 
+sidebar: sidebar 
+keywords:  
+summary: SAML 인증 페이지를 사용하면 Unified Manager 웹 UI에 로그인하기 전에 SAML을 사용하여 원격 사용자를 인증하도록 Unified Manager를 구성할 수 있습니다. 
+---
+= SAML 인증 페이지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAML 인증 페이지를 사용하면 Unified Manager 웹 UI에 로그인하기 전에 SAML을 사용하여 원격 사용자를 인증하도록 Unified Manager를 구성할 수 있습니다.
+
+* SAML 구성을 생성하거나 수정하려면 OnCommand 관리자 역할이 있어야 합니다.
+* 원격 인증을 구성해야 합니다.
+* 하나 이상의 원격 사용자 또는 원격 그룹을 구성해야 합니다.
+
+
+원격 인증 및 원격 사용자를 구성한 후 SAML 인증 활성화 확인란을 선택하여 보안 ID 공급자를 사용하여 인증을 활성화할 수 있습니다.
+
+* * IDP URI *
++
+Unified Manager 서버에서 IDP에 액세스하기 위한 URI입니다. URI의 예는 다음과 같습니다.
+
++
+ADFS 예제 URI:
+
++
+`+https://win2016-dc.ntap2016.local/federationmetadata/2007-06/federationmetadata.xml+`
+
++
+Shibboleth 예제 URI:
+
++
+`+https://centos7.ntap2016.local/idp/shibboleth+`
+
+* * IDP 메타데이터 *
++
+XML 형식의 IDP 메타데이터
+
++
+Unified Manager 서버에서 IDP URL에 액세스할 수 있는 경우 * Fetch IDP Metadata * 버튼을 클릭하여 이 필드를 채울 수 있습니다.
+
+* * 호스트 시스템(FQDN) *
++
+설치 중에 정의된 Unified Manager 호스트 시스템의 FQDN입니다. 필요한 경우 이 값을 변경할 수 있습니다.
+
+* * 호스트 URI *
++
+IDP에서 Unified Manager 호스트 시스템에 액세스하기 위한 URI입니다.
+
+* * 호스트 메타데이터 *
++
+XML 형식의 호스트 시스템 메타데이터
+
+

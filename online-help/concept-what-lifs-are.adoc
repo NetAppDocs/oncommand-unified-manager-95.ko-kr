@@ -1,0 +1,34 @@
+---
+permalink: online-help/concept-what-lifs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 'LIF(논리 인터페이스\)는 역할, 홈 포트, 홈 노드, 페일오버할 포트 목록 및 방화벽 정책과 같은 관련 특성을 갖는 IP 주소 또는 WWPN입니다. 클러스터가 네트워크를 통해 통신을 주고받는 포트에 LIF를 구성할 수 있습니다.' 
+---
+= LIF의 정의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+LIF(논리 인터페이스)는 역할, 홈 포트, 홈 노드, 페일오버할 포트 목록 및 방화벽 정책과 같은 관련 특성을 갖는 IP 주소 또는 WWPN입니다. 클러스터가 네트워크를 통해 통신을 주고받는 포트에 LIF를 구성할 수 있습니다.
+
+LIF는 다음 포트에서 호스팅할 수 있습니다.
+
+* 인터페이스 그룹에 속하지 않는 물리적 포트입니다
+* 인터페이스 그룹
+* VLAN
+* VLAN을 호스팅하는 물리적 포트 또는 인터페이스 그룹
+* 가상 IP(VIP) 포트
++
+ONTAP 9.5부터 VIP LIF가 지원되며 VIP 포트에서 호스팅됩니다.
+
+
+
+LIF에서 FC와 같은 SAN 프로토콜을 구성하는 동안에는 WWPN과 연결됩니다.
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["ONTAP 9 SAN 관리 가이드 를 참조하십시오"]
+
+다음 그림에서는 ONTAP 시스템의 포트 계층을 보여 줍니다.
+
+image::../media/port-hierarchy-in-a-cluster-mode-system.gif[Clustered Data ONTAP 시스템의 포트 계층을 보여 주는 이미지입니다]

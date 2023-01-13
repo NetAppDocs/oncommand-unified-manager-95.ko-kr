@@ -1,0 +1,66 @@
+---
+permalink: online-help/reference-user-and-group-quota-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 및 그룹 할당량 이벤트는 잠재적 문제를 모니터링할 수 있도록 사용자 및 사용자 그룹 할당량의 용량 및 파일 및 디스크 제한에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= 사용자 및 그룹 할당량 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 및 그룹 할당량 이벤트는 잠재적 문제를 모니터링할 수 있도록 사용자 및 사용자 그룹 할당량의 용량 및 파일 및 디스크 제한에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 충격 영역: 용량
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+사용자 또는 그룹 할당량 디스크 공간 소프트 제한값 위반(문서 EvtUserOrGroupQuotaDiskSpaceSoftLimitBreached)
+ a| 
+위험입니다
+ a| 
+사용자 또는 그룹 할당량
+ a| 
+경고
+
+
+
+ a| 
+사용자 또는 그룹 할당량 디스크 공간 하드 제한값에 도달함(문서 EvtUserOrGroupQuotaDiskSpaceHardLimitReached)
+ a| 
+사고
+ a| 
+사용자 또는 그룹 할당량
+ a| 
+심각
+
+
+
+ a| 
+사용자 또는 그룹 할당량 파일 개수 소프트 제한값 위반(documtUserOrGroupQuotaFileCountSoftLimitBreached)
+ a| 
+위험입니다
+ a| 
+사용자 또는 그룹 할당량
+ a| 
+경고
+
+
+
+ a| 
+사용자 또는 그룹 할당량 파일 개수의 하드 제한값에 도달했습니다(문서 EvtUserOrGroupQuotaFileCountHardLimitReached).
+ a| 
+사고
+ a| 
+사용자 또는 그룹 할당량
+ a| 
+심각
+
+|===

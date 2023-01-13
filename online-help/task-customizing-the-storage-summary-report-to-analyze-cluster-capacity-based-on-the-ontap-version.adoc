@@ -1,0 +1,48 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-cluster-capacity-based-on-the-ontap-version.html 
+sidebar: sidebar 
+keywords:  
+summary: ONTAP 버전별로 클러스터를 그룹화하고 총 물리적 용량과 관련된 애그리게이트를 볼 수 있도록 스토리지 요약 보고서를 사용자 지정할 수 있습니다. 
+---
+= ONTAP 버전을 기반으로 클러스터 용량을 분석하기 위해 스토리지 요약 보고서를 사용자 지정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 버전별로 클러스터를 그룹화하고 총 물리적 용량과 관련된 애그리게이트를 볼 수 있도록 스토리지 요약 보고서를 사용자 지정할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+보고서 페이지로 이동하여 해당 보고서에 대해 * 보고서 실행 * 을 클릭하여 이 작업을 수행할 수도 있습니다.
+
+
+
+== 단계
+
+. 클러스터별로 그룹화를 제거하려면 다음 단계를 수행하십시오.
++
+.. 그룹 해제할 열을 클릭합니다.
+.. 을 클릭합니다 image:../media/click-to-see-menu.gif[""] (메뉴 아이콘).
+.. 그룹 * > * 내부 그룹 삭제 옵션 * 을 선택합니다.
+
+
+. ONTAP 버전별로 보고서를 그룹화하려면 다음 단계를 수행하십시오.
++
+.. OS 버전 * 열을 클릭하고 을 선택합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+.. 그룹 * > * 그룹 추가 * 를 선택합니다.
+
+
+. 애그리게이트를 총 물리적 용량에 추가하려면 다음 단계를 수행하십시오.
++
+.. Total Raw Capacity * 열을 클릭하고 을 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+.. Aggregation * 을 선택합니다.
+.. Aggregation * 대화 상자에서 * table level * 확인란의 선택을 취소하고 * group level * 확인란을 선택합니다.
+.. 필요한 경우 * Enter Label * (라벨 입력) 필드에 라벨 이름을 입력합니다.
+
+
+. 확인 * 을 클릭합니다.
+

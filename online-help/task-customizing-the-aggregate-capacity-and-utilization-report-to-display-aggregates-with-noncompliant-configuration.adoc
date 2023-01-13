@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-aggregate-capacity-and-utilization-report-to-display-aggregates-with-noncompliant-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: Aggregate Capacity and Utilization 보고서를 사용자 정의하여 전체 임계값으로 필터링된 애그리게이트를 표시할 수 있습니다. 이렇게 하면 회사 정책에 부합하지 않을 수 있는 애그리게이트를 볼 수 있습니다. 
+---
+= Aggregate Capacity and Utilization 보고서를 사용자 지정하여 규정을 준수하지 않는 구성을 포함하는 애그리게이트를 표시합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggregate Capacity and Utilization 보고서를 사용자 정의하여 전체 임계값으로 필터링된 애그리게이트를 표시할 수 있습니다. 이렇게 하면 회사 정책에 부합하지 않을 수 있는 애그리게이트를 볼 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+보고서 페이지로 이동하여 해당 보고서에 대해 * 보고서 실행 * 을 클릭하여 이 작업을 수행할 수도 있습니다.
+
+
+
+== 단계
+
+. 클러스터 또는 HA 쌍을 기준으로 그룹화를 제거하려면 다음 단계를 수행하십시오.
++
+.. 그룹 해제할 열을 클릭합니다.
+.. 를 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+.. 그룹 * > * 내부 그룹 삭제 * 를 선택합니다.
+
+
+. 85%를 초과하지 않는 집계 임계값을 필터링하려면 * Space Full Threshold * (전체 임계값 *) 열을 클릭하고 를 클릭하여 * Filter * (필터 *) 대화 상자를 엽니다 image:../media/click-to-filter.gif[""] 아이콘을 클릭합니다.
+. Condition * 목록에서 * greater than * 을 선택합니다.
+. 값 선택 * 을 클릭하고 * 85 * 를 선택합니다.
+. 확인 * 을 클릭합니다.
+

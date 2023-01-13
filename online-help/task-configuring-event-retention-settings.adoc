@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-configuring-event-retention-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 이벤트가 자동으로 삭제되기 전에 Unified Manager 서버에 유지되는 일 수를 지정할 수 있습니다. Resolved, Obsolete 또는 Type Information인 이벤트만 삭제됩니다. 또한 이러한 이벤트가 삭제되는 빈도를 지정하거나 이벤트를 수동으로 삭제할 수도 있습니다. 
+---
+= 이벤트 보존 설정을 구성하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이벤트가 자동으로 삭제되기 전에 Unified Manager 서버에 유지되는 일 수를 지정할 수 있습니다. Resolved, Obsolete 또는 Type Information인 이벤트만 삭제됩니다. 또한 이러한 이벤트가 삭제되는 빈도를 지정하거나 이벤트를 수동으로 삭제할 수도 있습니다.
+
+
+
+== 시작하기 전에
+
+이벤트 설정을 변경하려면 OnCommand 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+180일 이상 이벤트를 보존하면 서버 성능에 영향을 미치므로 사용하지 않는 것이 좋습니다. 이벤트 보존 기간의 하한은 7일입니다. 상한은 없습니다.
+
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 구성 * > * 이벤트 관리 * 를 클릭합니다.
+. 구성/이벤트 관리 * 페이지에서 * 이벤트 보존 설정 * 버튼을 클릭합니다.
+. 이벤트 보존 설정 * 대화 상자에서 적절한 설정을 구성합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+

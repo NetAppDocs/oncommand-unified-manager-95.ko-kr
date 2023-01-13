@@ -1,0 +1,16 @@
+---
+permalink: config/concept-configuring-unified-manager.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager를 설치한 후 웹 UI에 액세스하려면 \(첫 번째 환경 마법사라고도 함)초기 설정을 완료해야 합니다. 그런 다음 클러스터 추가, 원격 인증 구성, 사용자 추가 및 알림 추가와 같은 추가 구성 작업을 수행할 수 있습니다.' 
+---
+= Unified Manager 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 설치한 후 웹 UI에 액세스하려면 초기 설정(첫 번째 환경 마법사라고도 함)을 완료해야 합니다. 그런 다음 클러스터 추가, 원격 인증 구성, 사용자 추가 및 알림 추가와 같은 추가 구성 작업을 수행할 수 있습니다.
+
+이 설명서에 설명된 일부 절차는 Unified Manager 인스턴스의 초기 설정을 완료하는 데 필요합니다. 다른 절차는 새 인스턴스에 설정하는 데 유용하거나 ONTAP 시스템의 정기적인 모니터링을 시작하기 전에 알아야 할 구성 설정을 권장합니다.

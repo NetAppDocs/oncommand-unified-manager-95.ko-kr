@@ -1,0 +1,128 @@
+---
+permalink: online-help/reference-port-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 포트 이벤트는 클러스터 포트에 대한 상태를 제공하므로 포트가 중단되었는지 여부와 같이 포트의 변경 또는 문제를 모니터링할 수 있습니다. 
+---
+= 포트 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+포트 이벤트는 클러스터 포트에 대한 상태를 제공하므로 포트가 중단되었는지 여부와 같이 포트의 변경 또는 문제를 모니터링할 수 있습니다.
+
+
+
+== 영향 영역: 가용성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+포트 상태 다운(ocumEvtPortStatusDown)
+ a| 
+사고
+ a| 
+노드
+ a| 
+심각
+
+|===
+
+
+== 충격 영역: 성능
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+네트워크 포트 MBps 심각한 임계값 위반(문서 네트워크 포트MbpsIncident)
+ a| 
+사고
+ a| 
+포트
+ a| 
+심각
+
+
+
+ a| 
+네트워크 포트 MBps 경고 임계값 위반(문서 네트워크 포트MbpsWarning)
+ a| 
+위험입니다
+ a| 
+포트
+ a| 
+경고
+
+
+
+ a| 
+FCP 포트 MBPS 중요 임계값 위반(문서 FcpPortMbpsIncident)
+ a| 
+사고
+ a| 
+포트
+ a| 
+심각
+
+
+
+ a| 
+FCP 포트 MBps 경고 임계값 위반(문서 FcpPortMbpsWarning)
+ a| 
+위험입니다
+ a| 
+포트
+ a| 
+경고
+
+
+
+ a| 
+네트워크 포트 활용률 주요 임계값 위반(문서 네트워크활용도 유틸리티 인시던트)
+ a| 
+사고
+ a| 
+포트
+ a| 
+심각
+
+
+
+ a| 
+네트워크 포트 사용률 경고 임계값 위반(문서 네트워크활용도 경고)
+ a| 
+위험입니다
+ a| 
+포트
+ a| 
+경고
+
+
+
+ a| 
+FCP 포트 활용률 주요 임계값 위반(문서 FcpPortUtilizationIncident)
+ a| 
+사고
+ a| 
+포트
+ a| 
+심각
+
+
+
+ a| 
+FCP 포트 활용률 경고 임계값 위반(문서 FcpPortUtilizationWarning)
+ a| 
+위험입니다
+ a| 
+포트
+ a| 
+경고
+
+|===

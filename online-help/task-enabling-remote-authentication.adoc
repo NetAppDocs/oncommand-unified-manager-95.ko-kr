@@ -1,0 +1,85 @@
+---
+permalink: online-help/task-enabling-remote-authentication.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 서버가 인증 서버와 통신할 수 있도록 원격 인증을 설정할 수 있습니다. 인증 서버 사용자는 Unified Manager 그래픽 인터페이스에 액세스하여 스토리지 객체와 데이터를 관리할 수 있습니다. 
+---
+= 원격 인증 활성화 중
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 서버가 인증 서버와 통신할 수 있도록 원격 인증을 설정할 수 있습니다. 인증 서버 사용자는 Unified Manager 그래픽 인터페이스에 액세스하여 스토리지 객체와 데이터를 관리할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 역할이 있어야 합니다.
+
+[NOTE]
+====
+Unified Manager 서버는 인증 서버에 직접 연결되어 있어야 합니다. SSSD(System Security Services Daemon) 또는 NSLCD(Name Service LDAP Caching Daemon)와 같은 로컬 LDAP 클라이언트를 비활성화해야 합니다.
+
+====
+
+
+== 이 작업에 대해
+
+Open LDAP 또는 Active Directory를 사용하여 원격 인증을 설정할 수 있습니다. 원격 인증이 비활성화되어 있으면 원격 사용자가 Unified Manager에 액세스할 수 없습니다.
+
+원격 인증은 LDAP 및 LDAPS(Secure LDAP)를 통해 지원됩니다. Unified Manager에서는 비보안 통신의 기본 포트로 389를 사용하고 보안 통신의 기본 포트는 636을 사용합니다.
+
+[NOTE]
+====
+사용자를 인증하는 데 사용되는 인증서는 X.509 형식을 따라야 합니다.
+
+====
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]를 누른 다음 왼쪽 설정 메뉴에서 * 인증 * 을 누릅니다.
+. 설정/인증 * 페이지에서 * 원격 인증 활성화 * 를 선택합니다.
+. Authentication Service* 필드에서 서비스 유형을 선택하고 인증 서비스를 구성합니다.
++
+|===
+| 인증 유형... | 다음 정보를 입력합니다... 
+
+
+ a| 
+Active Directory를 클릭합니다
+ a| 
+** 인증 서버 관리자 이름은 다음 형식 중 하나입니다.
++
+*** `domainname`* \*`username`
+*** `username`@`domainname`
+*** `Bind Distinguished Name` (적절한 LDAP 표기법 사용)
+
+
+** 관리자 암호입니다
+** 기본 고유 이름(적절한 LDAP 표기법 사용)
+
+
+
+
+ a| 
+LDAP를 엽니다
+ a| 
+** 적절한 LDAP 표시법으로 고유 이름 바인딩
+** 암호를 바인딩합니다
+** 기본 고유 이름입니다
+
+
+|===
++
+Active Directory 사용자의 인증에 오랜 시간이 걸리거나 시간이 걸리는 경우 인증 서버가 응답하는 데 시간이 오래 걸릴 수 있습니다. Unified Manager에서 중첩된 그룹에 대한 지원을 사용하지 않도록 설정하면 인증 시간이 줄어들 수 있습니다.
+
++
+인증 서버에 대해 보안 연결 사용 옵션을 선택하면 Unified Manager는 SSL(Secure Sockets Layer) 프로토콜을 사용하여 인증 서버와 통신합니다.
+
+. 인증 서버를 추가하고 인증을 테스트합니다.
+. 저장 후 닫기 * 를 클릭합니다.
+

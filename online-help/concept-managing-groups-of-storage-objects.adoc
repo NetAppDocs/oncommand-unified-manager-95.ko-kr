@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-groups-of-storage-objects.html 
+sidebar: sidebar 
+keywords:  
+summary: 스토리지 객체 그룹을 생성하여 환경의 스토리지 객체를 관리할 수 있습니다. 이러한 스토리지 객체는 그룹과 연결된 그룹 규칙을 충족해야 합니다. 
+---
+= 스토리지 객체 그룹 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 객체 그룹을 생성하여 환경의 스토리지 객체를 관리할 수 있습니다. 이러한 스토리지 객체는 그룹과 연결된 그룹 규칙을 충족해야 합니다.

@@ -1,0 +1,26 @@
+---
+permalink: online-help/reference-add-script-dialog-box.html 
+sidebar: sidebar 
+keywords:  
+summary: 스크립트 추가 대화 상자에서 Unified Manager에 스크립트를 추가할 수 있습니다. 스토리지 객체에 대해 생성된 이벤트를 자동으로 확인하도록 스크립트로 알림을 구성할 수 있습니다. 
+---
+= 스크립트 추가 대화 상자
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스크립트 추가 대화 상자에서 Unified Manager에 스크립트를 추가할 수 있습니다. 스토리지 객체에 대해 생성된 이벤트를 자동으로 확인하도록 스크립트로 알림을 구성할 수 있습니다.
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+* * 스크립트 파일 * 을 선택합니다
++
+경고에 대한 스크립트를 선택할 수 있습니다.
+
+* * 설명 *
++
+스크립트에 대한 설명을 지정할 수 있습니다.
+
+

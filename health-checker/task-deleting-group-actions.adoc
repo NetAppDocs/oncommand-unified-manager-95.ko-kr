@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-deleting-group-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 그룹 작업이 더 이상 필요하지 않은 경우 Unified Manager에서 그룹 작업을 삭제할 수 있습니다. 
+---
+= 그룹 작업을 삭제하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+그룹 작업이 더 이상 필요하지 않은 경우 Unified Manager에서 그룹 작업을 삭제할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+볼륨 상태 임계값에 대한 그룹 작업을 삭제하면 글로벌 임계값이 해당 그룹의 스토리지 개체에 적용됩니다. 스토리지 개체에 설정된 개체 수준 상태 임계값은 영향을 받지 않습니다.
+
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]를 클릭한 다음 * 관리 * > * 그룹 * 을 클릭합니다.
+. 그룹 작업 * 탭에서 삭제할 그룹 작업을 선택한 다음 * 삭제 * 를 클릭합니다.
+. 경고 * 대화 상자에서 * 예 * 를 클릭하여 삭제를 확인합니다.
+

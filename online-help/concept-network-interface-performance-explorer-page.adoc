@@ -1,0 +1,32 @@
+---
+permalink: online-help/concept-network-interface-performance-explorer-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능/LIF 탐색기 페이지에서는 클러스터 내의 모든 LIF에 대한 자세한 성능 개요를 제공합니다. 
+---
+= 성능/LIF 탐색기 페이지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능/LIF 탐색기 페이지에서는 클러스터 내의 모든 LIF에 대한 자세한 성능 개요를 제공합니다.
+
+성능/LIF 탐색기 페이지에서 특정 기간 동안 LIF 성능을 추적하고 비교할 수 있으므로 LIF 성능을 문제 해결하고 미세 조정할 수 있습니다.
+
+보기 및 비교 기능을 사용하여 이 LIF의 성능을 다음과 비교할 수 있습니다.
+
+* 다른 LIF는 동일한 포트에 있습니다
+* 다른 LIF는 동일한 SVM에 있습니다
+* LIF가 상주하는 포트입니다
+* LIF가 상주하는 SVM
+
+
+성능/LIF 탐색기 페이지에서 다음을 수행할 수 있습니다.
+
+* 임계값 관련 문제 및 세부 정보를 봅니다
+* LIF 성능 데이터를 추적하고 비교합니다
+* 임계값 관련 문제를 조사하고 해결합니다
+* 성능 문제를 조사하고 해결합니다
+

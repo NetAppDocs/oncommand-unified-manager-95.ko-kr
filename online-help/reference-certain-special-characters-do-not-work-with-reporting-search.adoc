@@ -1,0 +1,24 @@
+---
+permalink: online-help/reference-certain-special-characters-do-not-work-with-reporting-search.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 특정 특수 문자는 검색 보고에 사용할 수 없습니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 문제 *
++
+보고서 내에서 검색하는 동안 특수 문자 % 및 _ 을(를) 사용하면 작업이 실패합니다.
+
+* * 시정 조치 *
++
+% 또는 _ 가 포함된 문자열을 검색하는 경우 지정된 문자 앞에 이중 백슬래시를 사용해야 합니다.
+
++
+예를 들어, S_10이 포함된 문자열을 찾으려면 S\\_10을 입력해야 합니다.
+
+

@@ -1,0 +1,25 @@
+---
+permalink: online-help/concept-managing-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager를 사용하면 보고서를 생성 및 관리할 수 있습니다. 따라서 스토리지 오브젝트와 스토리지 오브젝트 및 이벤트와 관련된 스토리지 오브젝트의 용량, 활용률 및 성능에 대한 맞춤형 정보를 볼 수 있습니다. 
+---
+= 보고서 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager를 사용하면 보고서를 생성 및 관리할 수 있습니다. 따라서 스토리지 오브젝트와 스토리지 오브젝트 및 이벤트와 관련된 스토리지 오브젝트의 용량, 활용률 및 성능에 대한 맞춤형 정보를 볼 수 있습니다.
+
+[NOTE]
+====
+왼쪽 탐색 창의 보고서 옵션에서 보고서 예약 및 생성 구현은 이후 릴리스에서 더 이상 사용되지 않습니다. 다음 추가 방법을 사용하여 Unified Manager에서 상태 및 성능 데이터를 추출할 수 있습니다.
+
+* GUI의 그리드 페이지에서 직접 데이터 추출
+* 데이터베이스 열기를 사용하여 사용 가능한 모든 개체에 액세스합니다
+* Unified Manager REST API를 실행하여 검토할 정보를 반환합니다
+
+
+====

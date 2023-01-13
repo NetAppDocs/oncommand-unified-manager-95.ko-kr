@@ -1,0 +1,30 @@
+---
+permalink: online-help/concept-authentication-with-active-directory-or-openldap.html 
+sidebar: sidebar 
+keywords:  
+summary: 관리 서버에서 원격 인증을 사용하도록 설정하고 인증 서버 내의 사용자가 액세스할 수 있도록 관리 서버가 인증 서버와 통신하도록 구성할 수 있습니다. 관리 서버에서 원격 인증을 사용하도록 설정하고 관리 서버가 인증 서버와 통신하도록 구성할 수 있습니다 인증 서버 내의 사용자가 Unified Manager에 액세스할 수 있습니다. 
+---
+= Active Directory 또는 OpenLDAP를 사용한 인증
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+관리 서버에서 원격 인증을 사용하도록 설정하고 인증 서버 내의 사용자가 액세스할 수 있도록 관리 서버가 인증 서버와 통신하도록 구성할 수 있습니다. 관리 서버에서 원격 인증을 사용하도록 설정하고 관리 서버가 인증 서버와 통신하도록 구성할 수 있습니다 인증 서버 내의 사용자가 Unified Manager에 액세스할 수 있습니다.
+
+다음 미리 정의된 인증 서비스 중 하나를 사용하거나 고유한 인증 서비스를 지정할 수 있습니다.
+
+* Microsoft Active Directory를 클릭합니다
++
+[NOTE]
+====
+Microsoft Lightweight Directory Services는 사용할 수 없습니다.
+
+====
+* OpenLDAP를 클릭합니다
+
+
+필요한 인증 서비스를 선택하고 적절한 인증 서버를 추가하여 인증 서버의 원격 사용자가 Unified Manager에 액세스할 수 있도록 할 수 있습니다. 원격 사용자 또는 그룹에 대한 자격 증명은 인증 서버에서 관리합니다. 관리 서버는 LDAP(Lightweight Directory Access Protocol)를 사용하여 구성된 인증 서버 내에서 원격 사용자를 인증합니다.
+
+Unified Manager에서 만든 로컬 사용자의 경우 관리 서버에서 사용자 이름과 암호 데이터베이스를 자체적으로 유지 관리합니다. 관리 서버는 인증을 수행하고 Active Directory 또는 OpenLDAP를 인증에 사용하지 않습니다.

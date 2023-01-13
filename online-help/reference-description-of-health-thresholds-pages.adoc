@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-health-thresholds-pages.html 
+sidebar: sidebar 
+keywords:  
+summary: 적절한 구성/상태 임계값 페이지를 사용하여 애그리게이트 및 볼륨에 대한 글로벌 상태 임계값을 구성하고, 관리되지 않는 보호 관계에 대한 글로벌 지연 경고 및 오류 임계값을 구성할 수 있습니다. 
+---
+= 상태 임계값 페이지에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+적절한 구성/상태 임계값 페이지를 사용하여 애그리게이트 및 볼륨에 대한 글로벌 상태 임계값을 구성하고, 관리되지 않는 보호 관계에 대한 글로벌 지연 경고 및 오류 임계값을 구성할 수 있습니다.

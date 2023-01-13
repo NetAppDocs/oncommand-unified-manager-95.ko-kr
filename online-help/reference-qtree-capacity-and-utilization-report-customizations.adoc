@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-qtree-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 지정 보고서를 작성하여 시스템 qtree의 용량 및 사용률을 분석할 수 있습니다. 예를 들어, Qtree를 정렬하는 보고서를 작성하여 디스크 또는 파일 소프트 제한값을 위반했는지 확인할 수 있습니다. 
+---
+= Qtree 용량 및 활용률 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 지정된 보고서를 작성하여 시스템 qtree의 용량과 활용률을 분석할 수 있습니다. 예를 들어, Qtree를 정렬하는 보고서를 작성하여 디스크 또는 파일 소프트 제한값을 위반했는지 확인할 수 있습니다.

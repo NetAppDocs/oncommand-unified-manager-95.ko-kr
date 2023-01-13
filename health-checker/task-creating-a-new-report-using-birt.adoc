@@ -1,0 +1,35 @@
+---
+permalink: health-checker/task-creating-a-new-report-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Eclipse Plug-in for Business Intelligence and Reporting Tools\(BIRT\)를 사용하여 새 보고서를 만들 수 있습니다. Unified Manager의 기존 보고서가 사용자 환경의 요구사항을 충족하지 않는 경우 새 보고서를 생성할 수 있습니다.' 
+---
+= BIRT를 사용하여 새 보고서 만들기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Eclipse BIRT(Business Intelligence and Reporting Tools)용 플러그인을 사용하여 새 보고서를 만들 수 있습니다. Unified Manager의 기존 보고서가 사용자 환경의 요구사항을 충족하지 않는 경우 새 보고서를 생성할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+BIRT를 다운로드하고 압축을 풀어야 합니다.
+
+BIRT를 사용하여 프로젝트를 만들어야 합니다.
+
+
+
+== 단계
+
+. BIRT 인터페이스에서 * 파일 * > * 새 * > * 보고서 * 를 선택합니다.
+. 새 보고서 * 대화 상자에서 프로젝트 폴더를 선택합니다. 이 폴더는 이전에 만든 프로젝트 폴더와 동일해야 합니다.
++
+다른 프로젝트 폴더를 선택하면 Unified Manager에서 보고 작업을 사용할 수 없습니다.
+
+. 보고서 파일 이름을 입력하고 * 다음 * 을 클릭합니다.
+. 보고서 유형을 선택하고 * Finish * 를 클릭합니다.
+

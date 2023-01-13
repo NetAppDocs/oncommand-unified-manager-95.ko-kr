@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-setting-up-a-connection-between-unified-manager-and-an-external-data-provider.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager Server와 외부 데이터 공급자 간의 연결을 통해 클러스터 성능 데이터를 외부 서버로 전송하여 스토리지 관리자가 타사 소프트웨어를 사용하여 성능 메트릭을 차트에 작성할 수 있도록 합니다. 
+---
+= Unified Manager Server와 외부 데이터 공급자 간의 연결 설정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager Server와 외부 데이터 공급자 간의 연결을 통해 클러스터 성능 데이터를 외부 서버로 전송하여 스토리지 관리자가 타사 소프트웨어를 사용하여 성능 메트릭을 차트에 작성할 수 있도록 합니다.
+
+Unified Manager 서버와 외부 데이터 공급자 간의 연결은 유지보수 콘솔의 ""외부 데이터 공급자"" 메뉴 옵션을 통해 설정됩니다.

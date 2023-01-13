@@ -1,0 +1,34 @@
+---
+permalink: online-help/task-customizing-the-volume-transfer-rate-report-to-view-volume-transfers-grouped-by-day.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Volume Transfer Rate\(Historical\) 보고서를 사용자 지정하여 일별 정렬된 볼륨 전송 세부 정보를 볼 수 있습니다.' 
+---
+= 볼륨 전송 속도(내역) 보고서를 사용자 정의하여 일별 그룹별 볼륨 전송을 봅니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Volume Transfer Rate (Historical) 보고서를 사용자 지정하여 일별 정렬된 볼륨 전송 세부 정보를 볼 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+보고서 페이지로 이동하여 해당 보고서에 대해 * 보고서 실행 * 을 클릭하여 이 작업을 수행할 수도 있습니다.
+
+
+
+== 단계
+
+. 클러스터별 그룹화 제거:
++
+.. 그룹을 해제할 열을 선택합니다.
+.. 를 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+.. 그룹 * > * 내부 그룹 삭제 * 를 선택합니다.
+
+
+. 특정 날짜의 볼륨 전송을 보려면 * Day * (일 *) 열을 클릭합니다.
+

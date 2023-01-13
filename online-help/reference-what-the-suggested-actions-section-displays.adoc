@@ -1,0 +1,22 @@
+---
+permalink: online-help/reference-what-the-suggested-actions-section-displays.html 
+sidebar: sidebar 
+keywords:  
+summary: 이벤트 세부 정보 페이지의 권장 조치 섹션에서는 이벤트에 대해 가능한 원인을 제공하고 사용자가 직접 이벤트를 해결할 수 있도록 몇 가지 조치를 제안합니다. 제안된 작업은 위반된 이벤트 유형 또는 임계값 유형에 따라 사용자 정의됩니다. 
+---
+= 권장 조치 섹션이 표시되는 내용
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이벤트 세부 정보 페이지의 권장 조치 섹션에서는 이벤트에 대해 가능한 원인을 제공하고 사용자가 직접 이벤트를 해결할 수 있도록 몇 가지 조치를 제안합니다. 제안된 작업은 위반된 이벤트 유형 또는 임계값 유형에 따라 사용자 정의됩니다.
+
+이 영역은 일부 이벤트 유형에 대해서만 표시됩니다.
+
+경우에 따라 특정 작업 수행 지침을 포함하여 제안된 여러 작업에 대한 추가 정보를 참조하는 * 도움말 * 링크가 페이지에 제공됩니다. 그 중에는 Unified Manager, OnCommand System Manager, OnCommand Workflow Automation, ONTAP CLI 명령 또는 이러한 툴의 조합을 사용하는 것도 포함될 수 있습니다.
+
+이 도움말 항목에 제공된 일부 링크도 있습니다.
+
+이 이벤트를 해결하기 위한 지침으로만 여기에서 제안하는 조치를 고려해야 합니다. 이 이벤트를 해결하기 위해 취하는 조치는 사용자 환경의 컨텍스트를 기반으로 해야 합니다.

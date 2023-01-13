@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-clusters-and-cluster-object-health.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager는 주기적인 API 쿼리 및 데이터 수집 엔진을 사용하여 클러스터에서 데이터를 수집합니다. Unified Manager 데이터베이스에 클러스터를 추가하면 가용성 및 용량 위험에 대한 클러스터를 모니터링하고 관리할 수 있습니다. 
+---
+= 클러스터 및 클러스터 객체 상태 관리 및 모니터링
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager는 주기적인 API 쿼리 및 데이터 수집 엔진을 사용하여 클러스터에서 데이터를 수집합니다. Unified Manager 데이터베이스에 클러스터를 추가하면 가용성 및 용량 위험에 대한 클러스터를 모니터링하고 관리할 수 있습니다.

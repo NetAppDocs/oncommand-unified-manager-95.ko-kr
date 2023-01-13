@@ -1,0 +1,27 @@
+---
+permalink: health-checker/task-downloading-the-eclipse-plugin-for-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager로 보고서를 만들고 가져오려면 먼저 Eclipse Business Intelligence and Reporting Tools\(BIRT\)를 다운로드해야 합니다.' 
+---
+= Eclipse BIRT(Business Intelligence and Reporting Tools) 다운로드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager로 보고서를 만들고 가져오려면 먼저 Eclipse BIRT(Business Intelligence and Reporting Tools)를 다운로드해야 합니다.
+
+
+
+== 단계
+
+. 에서 BIRT 소프트웨어를 다운로드합니다 `+http://download.eclipse.org/birt/downloads/+`.
+
+
+
+
+== 작업을 마친 후
+
+BIRT 소프트웨어를 다운로드한 후 결과로 생성된 .zip 파일을 추출해야 합니다.

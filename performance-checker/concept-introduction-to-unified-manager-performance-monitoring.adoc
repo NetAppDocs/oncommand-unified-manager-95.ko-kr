@@ -1,0 +1,28 @@
+---
+permalink: performance-checker/concept-introduction-to-unified-manager-performance-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Unified Manager는 NetApp ONTAP 소프트웨어를 실행하는 시스템에 대한 성능 모니터링 기능 및 이벤트 근본 원인 분석을 제공합니다. 
+---
+= OnCommand Unified Manager 성능 모니터링 소개
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Unified Manager는 NetApp ONTAP 소프트웨어를 실행하는 시스템에 대한 성능 모니터링 기능 및 이벤트 근본 원인 분석을 제공합니다.
+
+Unified Manager를 사용하면 클러스터 구성 요소를 과도하게 사용하는 워크로드를 식별하고 클러스터에서 다른 워크로드의 성능을 줄일 수 있습니다. 성능 임계값 정책을 정의하여 특정 성능 카운터의 최대값을 지정하여 임계값이 위반될 때 이벤트가 생성되도록 할 수도 있습니다. Unified Manager를 사용하면 이러한 성능 이벤트를 경고하여 수정 조치를 취하고 성능을 정상 작동 수준으로 높일 수 있습니다. Unified Manager UI에서 이벤트를 보고 분석할 수 있습니다.
+
+Unified Manager에서 두 가지 유형의 워크로드 성능을 모니터링합니다.
+
+* 사용자 정의 워크로드
++
+이러한 워크로드는 클러스터에서 생성한 FlexVol 볼륨과 FlexGroup 볼륨으로 구성됩니다.
+
+* 시스템 정의 워크로드
++
+이러한 워크로드는 내부 시스템 작업으로 구성됩니다.
+
+

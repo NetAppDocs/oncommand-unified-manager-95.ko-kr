@@ -1,0 +1,37 @@
+---
+permalink: online-help/reference-issue-with-adding-ldap-using-other-authentication-services.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 다른 인증 서비스를 사용하여 LDAP를 추가하는 데 문제가 있습니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 문제 *
++
+인증 서비스로 기타 를 선택하면 사용자 및 groupObjectClass 는 이전에 선택한 템플릿의 값을 유지합니다. LDAP 서버가 동일한 값을 사용하지 않으면 작업이 실패할 수 있습니다.
+
+* * 원인 *
++
+사용자가 OpenLDAP에서 올바르게 구성되지 않았습니다.
+
+* * 시정 조치 *
++
+다음 해결 방법 중 하나를 사용하여 이 문제를 수동으로 해결할 수 있습니다.
+
++
+LDAP 사용자 객체 클래스와 그룹 객체 클래스가 각각 사용자 및 그룹인 경우 다음 단계를 수행하십시오.
+
++
+.. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]* 를 클릭한 다음 * 설정 * > * 인증 * 을 클릭합니다.
+.. 인증 서비스 * 드롭다운 메뉴에서 * Active Directory * 를 선택한 다음 * 기타 * 를 선택합니다.
+.. 텍스트 필드를 작성합니다. LDAP 사용자 객체 클래스와 그룹 객체 클래스가 각각 posixAccount 및 posixGroup인 경우 다음 단계를 수행하십시오.
+.. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]* 를 클릭한 다음 * 설정 * > * 인증 * 을 클릭합니다.
+.. Authentication Service * (인증 서비스 *) 드롭다운 메뉴에서 * OpenLDAP * 를 선택한 다음 * Others * 를 선택합니다.
+.. 텍스트 필드를 작성합니다. 처음 두 가지 해결 방법이 적용되지 않으면 를 호출합니다 `option-set` API를 사용하여 를 설정합니다 `auth.ldap.userObjectClass` 및 `auth.ldap.groupObjectClass` 올바른 값에 대한 옵션.
+
+
+

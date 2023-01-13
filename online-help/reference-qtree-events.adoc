@@ -1,0 +1,99 @@
+---
+permalink: online-help/reference-qtree-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Qtree 이벤트에서는 qtree 용량 및 파일/디스크 제한에 대한 정보를 제공하므로 잠재적 문제를 모니터링할 수 있습니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= Qtree 이벤트
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Qtree 이벤트에서는 qtree 용량 및 파일/디스크 제한에 대한 정보를 제공하므로 잠재적 문제를 모니터링할 수 있습니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 충격 영역: 용량
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+qtree 공간이 거의 가득 참(문서:QtreeSpaceNearlyFull)
+ a| 
+위험입니다
+ a| 
+qtree입니다
+ a| 
+경고
+
+
+
+ a| 
+Qtree 공간 가득 참(문서 QtreeSpaceFull)
+ a| 
+위험입니다
+ a| 
+qtree입니다
+ a| 
+오류
+
+
+
+ a| 
+qtree 공간 정상(ocumEvtQtreeSpaceThresholdOk)
+ a| 
+이벤트
+ a| 
+qtree입니다
+ a| 
+정보
+
+
+
+ a| 
+Qtree 파일 하드 제한값에 도달함(문서:문서:파일 하드 제한다시 참조)
+ a| 
+사고
+ a| 
+qtree입니다
+ a| 
+심각
+
+
+
+ a| 
+Qtree 파일 소프트 제한값 위반(doctQtreeFilesSoftLimitBached)
+ a| 
+위험입니다
+ a| 
+qtree입니다
+ a| 
+경고
+
+
+
+ a| 
+Qtree 공간 하드 제한값에 도달함(문서:문서:공간 하드 제한재분리)
+ a| 
+사고
+ a| 
+qtree입니다
+ a| 
+심각
+
+
+
+ a| 
+Qtree 공간 소프트 제한값 위반(문서:문서 공간 스페이스바 제한도달됨)
+ a| 
+위험입니다
+ a| 
+qtree입니다
+ a| 
+경고
+
+|===

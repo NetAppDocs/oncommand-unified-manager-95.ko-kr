@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-descriptions-of-the-counter-charts.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능 탐색기 카운터 차트를 사용하여 선택한 스토리지 개체의 성능 데이터를 보고 비교할 수 있습니다. 이러한 차트를 통해 성능 추세를 파악하고 성능 문제를 격리 및 해결할 수 있습니다. 
+---
+= 카운터 차트에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능 탐색기 카운터 차트를 사용하여 선택한 스토리지 개체의 성능 데이터를 보고 비교할 수 있습니다. 이러한 차트를 통해 성능 추세를 파악하고 성능 문제를 격리 및 해결할 수 있습니다.

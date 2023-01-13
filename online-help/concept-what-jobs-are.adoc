@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-jobs-are.html 
+sidebar: sidebar 
+keywords:  
+summary: 작업은 Unified Manager를 사용하여 모니터링할 수 있는 일련의 작업입니다. 작업 및 관련 작업을 보면 에서 작업이 성공적으로 완료되었는지 확인할 수 있습니다. 
+---
+= 어떤 작업인지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+작업은 Unified Manager를 사용하여 모니터링할 수 있는 일련의 작업입니다. 작업 및 관련 작업을 보면 에서 작업이 성공적으로 완료되었는지 확인할 수 있습니다.
+
+SnapMirror 및 SnapVault 관계를 만들 때 관계 작업(중단, 편집, 중지, 제거, 재시작, 데이터 복원 작업을 수행할 때, 클러스터에 로그인할 때 다시 동기화 및 다시 동기화)를 수행합니다.
+
+작업을 시작할 때 보호/작업 페이지 및 보호/작업 세부 정보 페이지를 사용하여 관련 작업 및 진행 상황을 모니터링할 수 있습니다.

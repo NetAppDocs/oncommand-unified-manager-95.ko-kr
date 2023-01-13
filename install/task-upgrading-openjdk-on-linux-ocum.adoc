@@ -1,0 +1,31 @@
+---
+permalink: install/task-upgrading-openjdk-on-linux-ocum.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager가 설치된 Linux 서버에서 최신 버전의 Java Runtime Environment\(JRE\)로 업그레이드하여 보안 취약점에 대한 수정 사항을 확인할 수 있습니다.' 
+---
+= Linux에서 JRE 업그레이드
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보안 취약점에 대한 수정 사항을 얻기 위해 Unified Manager가 설치된 Linux 서버에서 최신 버전의 Java Runtime Environment(JRE)로 업그레이드할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+Unified Manager가 설치된 Linux 시스템에 대한 루트 권한이 있어야 합니다.
+
+
+
+== 단계
+
+. Unified Manager 호스트 시스템에서 루트 사용자로 로그인합니다.
+. 대상 시스템에 적절한 버전의 Java(64비트)를 다운로드합니다.
+. Unified Manager 서비스 중지: `service ocieau stop``service ocie stop`
+. 시스템에 최신 JRE를 설치합니다.
+. Unified Manager 서비스 시작: `service ocie start``service ocieau start`
+

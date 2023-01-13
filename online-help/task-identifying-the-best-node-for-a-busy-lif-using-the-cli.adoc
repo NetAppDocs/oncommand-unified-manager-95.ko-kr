@@ -1,0 +1,43 @@
+---
+permalink: online-help/task-identifying-the-best-node-for-a-busy-lif-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: '클러스터의 모든 포트에 대한 정보를 표시할 수 있습니다. 해당하는 경우 네트워크 포트 역할 \(클러스터, 데이터 또는 노드 관리\), 링크 상태, 최대 전송 단위\(MTU\), 속도 설정 및 작동 상태, 포트의 인터페이스 그룹 등의 정보를 볼 수 있습니다.' 
+---
+= CLI를 사용하여 사용 중인 LIF에 가장 적합한 노드를 식별합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터의 모든 포트에 대한 정보를 표시할 수 있습니다. 해당하는 경우 네트워크 포트 역할(클러스터, 데이터 또는 노드 관리), 링크 상태, MTU(최대 전송 단위), 속도 설정 및 작동 상태, 포트의 인터페이스 그룹 등의 정보를 볼 수 있습니다.
+
+
+
+== 단계
+
+. 포트 정보를 표시하려면 다음 명령을 입력합니다. `network port show`
++
+다음 예는 데이터 역할이 있고 클러스터에서 작동 중인 네트워크 포트에 대한 정보를 표시합니다.
+
++
+[listing]
+----
+cluster1::> network port show  -role data -link up
+                                   Auto-Negot Duplex      Speed (Mbps)
+Node Port Role         Link  MTU   Admin/Oper Admin/Oper  Admin/Oper
+---- ---- -----        ----  ----  ---------- ----------  ----------
+node1
+     e0M  data         up    1500  true/true  full/full   auto/100
+     e0b  data         up    1500  true/true  full/full   auto/1000
+
+node2
+     e0b  data         up    1500  true/true  full/full   auto/1000
+----
+. 소스 홈 포트 및 홈 노드와 동일한 네트워크에 있는 대상 포트를 확인합니다.
++
+예를 들어 대상 홈 포트와 홈 노드는 해당하는 경우 동일한 VLAN에 있어야 합니다.
+
+. 사용 중인 포트 수가 가장 적은 포트를 식별하려면 연결 수가 가장 적은 데이터 포트를 선택합니다.
+

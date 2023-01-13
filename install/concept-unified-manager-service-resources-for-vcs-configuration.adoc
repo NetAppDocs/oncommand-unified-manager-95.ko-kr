@@ -1,0 +1,55 @@
+---
+permalink: install/concept-unified-manager-service-resources-for-vcs-configuration.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager의 클러스터 서비스 리소스를 VCS(Veritas Cluster Server)에 추가해야 합니다. 이러한 클러스터 서비스 리소스는 스토리지 시스템 모니터링, 작업 예약, 이벤트 처리 및 기타 모든 Unified Manager 서비스 모니터링과 같은 다양한 용도로 사용됩니다.' 
+---
+= VCS 구성을 위한 Unified Manager 서비스 리소스입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager의 클러스터 서비스 리소스를 VCS(Veritas Cluster Server)에 추가해야 합니다. 이러한 클러스터 서비스 리소스는 스토리지 시스템 모니터링, 작업 예약, 이벤트 처리 및 기타 모든 Unified Manager 서비스 모니터링과 같은 다양한 용도로 사용됩니다.
+
+다음 표에는 모든 Unified Manager 서비스의 범주가 나와 있습니다.
+
+|===
+| 범주 | 서비스 
+
+
+ a| 
+스토리지 리소스
+ a| 
+* `vol`
+* `mount`
+
+
+
+
+ a| 
+데이터베이스 리소스
+ a| 
+* `mysqld`
+
+
+
+
+ a| 
+네트워크 리소스
+ a| 
+* `nic`
+* `vip`
+
+
+
+
+ a| 
+Unified Manager 리소스
+ a| 
+* `ocie`
+* `ocieau`
+
+
+|===

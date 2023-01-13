@@ -1,0 +1,22 @@
+---
+permalink: health-checker/reference-support-and-diagnostics-menu.html 
+sidebar: sidebar 
+keywords:  
+summary: 지원 및 진단 메뉴를 사용하여 지원 번들을 생성할 수 있습니다. 
+---
+= 지원 및 진단 메뉴
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+지원 및 진단 메뉴를 사용하여 지원 번들을 생성할 수 있습니다.
+
+다음 메뉴 옵션을 사용할 수 있습니다.
+
+* * 지원 번들 생성 *
++
+진단 사용자의 홈 디렉토리에 전체 진단 정보가 포함된 7-Zip 파일을 생성할 수 있습니다. 이 파일에는 AutoSupport 메시지에서 생성된 정보, Unified Manager 데이터베이스의 콘텐츠, Unified Manager 서버 내부 구성 요소에 대한 자세한 데이터, AutoSupport 메시지에 일반적으로 포함되지 않는 자세한 레벨의 로그가 포함됩니다.
+
+

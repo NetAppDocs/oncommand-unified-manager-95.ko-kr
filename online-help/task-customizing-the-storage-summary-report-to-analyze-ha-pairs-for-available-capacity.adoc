@@ -1,0 +1,37 @@
+---
+permalink: online-help/task-customizing-the-storage-summary-report-to-analyze-ha-pairs-for-available-capacity.html 
+sidebar: sidebar 
+keywords:  
+summary: 스토리지 요약 보고서를 사용자 지정하여 용량이 있는 사용 가능한 HA 쌍을 표시하면, 새 볼륨 및 LUN을 프로비저닝할 수 있습니다. 이 보고서에는 집계된 미사용 용량을 줄이기 위해 정렬된 HA 쌍이 표시됩니다. 
+---
+= 스토리지 요약 보고서를 사용자 정의하여 사용 가능한 용량의 HA 쌍을 분석하여 새 볼륨 및 LUN을 프로비저닝할 수 있습니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 요약 보고서를 사용자 지정하여 용량이 있는 사용 가능한 HA 쌍을 표시하면, 새 볼륨 및 LUN을 프로비저닝할 수 있습니다. 이 보고서에는 집계된 미사용 용량을 줄이기 위해 정렬된 HA 쌍이 표시됩니다.
+
+
+
+== 이 작업에 대해
+
+보고서 페이지로 이동하여 해당 보고서에 대해 * 보고서 실행 * 을 클릭하여 이 작업을 수행할 수도 있습니다.
+
+
+
+== 단계
+
+. 클러스터별로 그룹화를 제거하려면 다음 단계를 수행하십시오.
++
+.. 그룹 해제할 열을 클릭합니다.
+.. 를 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+.. 그룹 * > * 내부 그룹 삭제 * 를 선택합니다.
+
+
+. 사용 가능한 용량이 있는 HA 쌍을 정렬하려면 * Aggregate Unused Capacity (TB) * 열을 클릭하고 을 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+. Filter * > * Top/Bottom N * 을 선택합니다.
+. Top/Bottom N * 대화 상자의 * Filter * 필드에서 * Top N * 을 선택하고 텍스트 필드에 값을 입력합니다.
+. 확인 * 을 클릭합니다.
+

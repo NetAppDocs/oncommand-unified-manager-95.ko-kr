@@ -1,0 +1,38 @@
+---
+permalink: online-help/reference-definitions-of-user-types.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 유형은 사용자가 보유하는 계정의 종류를 지정하며 원격 사용자, 원격 그룹, 로컬 사용자, 데이터베이스 사용자 및 유지 보수 사용자를 포함합니다. 이러한 각 유형에는 고유한 역할이 있으며, 이 역할은 OnCommand 관리자 역할을 가진 사용자가 할당합니다. 
+---
+= 사용자 유형 정의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 유형은 사용자가 보유하는 계정의 종류를 지정하며 원격 사용자, 원격 그룹, 로컬 사용자, 데이터베이스 사용자 및 유지 보수 사용자를 포함합니다. 이러한 각 유형에는 고유한 역할이 있으며, 이 역할은 OnCommand 관리자 역할을 가진 사용자가 할당합니다.
+
+Unified Manager 사용자 유형은 다음과 같습니다.
+
+* * 유지보수 사용자 *
++
+Unified Manager의 초기 구성 중에 생성됩니다. 그러면 유지 보수 사용자가 추가 사용자를 생성하고 역할을 할당합니다. 유지보수 사용자는 유지보수 콘솔에 액세스할 수 있는 유일한 사용자입니다. Unified Manager를 Red Hat Enterprise Linux 또는 CentOS 시스템에 설치하면 유지 관리 사용자에게 사용자 이름 ""umadmin""이 지정됩니다.
+
+* * 로컬 사용자 *
++
+Unified Manager UI에 액세스하고 유지보수 사용자 또는 OnCommand 관리자 역할을 가진 사용자가 제공하는 역할에 따라 기능을 수행합니다.
+
+* * 원격 그룹 *
++
+인증 서버에 저장된 자격 증명을 사용하여 Unified Manager UI에 액세스하는 사용자 그룹입니다. 이 계정의 이름은 인증 서버에 저장된 그룹의 이름과 일치해야 합니다. 원격 그룹 내의 모든 사용자는 개별 사용자 자격 증명을 사용하여 Unified Manager UI에 액세스할 수 있습니다. 원격 그룹은 할당된 역할에 따라 기능을 수행할 수 있습니다.
+
+* * 원격 사용자 *
++
+인증 서버에 저장된 자격 증명을 사용하여 Unified Manager UI에 액세스합니다. 원격 사용자는 유지 보수 사용자 또는 OnCommand 관리자 역할을 가진 사용자가 제공한 역할에 따라 기능을 수행합니다.
+
+* * 데이터베이스 사용자 *
++
+Unified Manager 데이터베이스의 데이터에 읽기 전용으로 액세스하고 Unified Manager 웹 인터페이스 또는 유지보수 콘솔에 액세스할 수 없으며 API 호출을 실행할 수 없습니다.
+
+

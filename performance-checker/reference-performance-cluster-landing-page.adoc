@@ -1,0 +1,29 @@
+---
+permalink: performance-checker/reference-performance-cluster-landing-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능 클러스터 랜딩 페이지에는 선택한 클러스터의 고성능 상태가 표시됩니다. 이 페이지에서는 선택한 클러스터의 스토리지 오브젝트에 대한 각 성능 카운터의 전체 세부 정보를 액세스할 수 있습니다. 
+---
+= 성능 클러스터 랜딩 페이지 를 참조하십시오
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능 클러스터 랜딩 페이지에는 선택한 클러스터의 고성능 상태가 표시됩니다. 이 페이지에서는 선택한 클러스터의 스토리지 오브젝트에 대한 각 성능 카운터의 전체 세부 정보를 액세스할 수 있습니다.
+
+즐겨찾기 * 버튼(image:../media/favorites-inactive.png[""])를 클릭하여 이 객체를 즐겨찾는 스토리지 객체 목록에 추가합니다. 파란색 단추(image:../media/favorites-active.png[""])는 이 개체가 이미 즐겨찾기임을 나타냅니다.
+
+성능 클러스터 랜딩 페이지에는 클러스터 세부 정보를 4개의 정보 영역으로 구분하는 4개의 탭이 있습니다.
+
+* 요약 페이지
++
+** 클러스터 이벤트 창
+** 관리 개체 창
+
+
+* 우수 성과 페이지
+* 탐색 페이지
+* 정보 페이지
+

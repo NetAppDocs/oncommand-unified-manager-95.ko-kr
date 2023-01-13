@@ -1,0 +1,30 @@
+---
+permalink: online-help/task-viewing-svm-associations.html 
+sidebar: sidebar 
+keywords:  
+summary: 보호/스토리지 가상 시스템 연결 페이지를 사용하여 기존 SVM 연결 및 해당 속성을 확인하고 추가 SVM 연결이 필요한지 여부를 결정할 수 있습니다. 
+---
+= SVM 협회 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보호/스토리지 가상 시스템 연결 페이지를 사용하여 기존 SVM 연결 및 해당 속성을 확인하고 추가 SVM 연결이 필요한지 여부를 결정할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 보호 * > * SVM 협회 * 를 클릭합니다.
++
+SVM 연결 및 해당 속성 목록이 표시됩니다.
+
+

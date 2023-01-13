@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-what-rbac-is.html 
+sidebar: sidebar 
+keywords:  
+summary: 'RBAC\(역할 기반 액세스 제어\)에서는 OnCommand Unified Manager 서버의 다양한 기능과 리소스에 액세스할 수 있는 사용자를 제어하는 기능을 제공합니다.' 
+---
+= RBAC란 무엇입니까
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+RBAC(역할 기반 액세스 제어)에서는 OnCommand Unified Manager 서버의 다양한 기능과 리소스에 액세스할 수 있는 사용자를 제어하는 기능을 제공합니다.

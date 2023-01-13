@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-aggregate-capacity-and-utilization-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 보고서를 사용자 지정하여 집계에 대한 다양한 정보를 표시할 수 있습니다. 
+---
+= 집계 용량 및 활용도 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+보고서를 사용자 지정하여 집계에 대한 다양한 정보를 표시할 수 있습니다.

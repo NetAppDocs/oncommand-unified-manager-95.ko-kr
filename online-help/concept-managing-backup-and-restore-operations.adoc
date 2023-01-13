@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-backup-and-restore-operations.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager의 백업을 생성하고 복원 기능을 사용하여 시스템 장애 또는 데이터 손실 발생 시 동일한 \(로컬\) 시스템 또는 새 \(원격\) 시스템에 백업을 복원할 수 있습니다.' 
+---
+= 백업 및 복원 작업 구성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager의 백업을 생성하고 복원 기능을 사용하여 시스템 장애 또는 데이터 손실 발생 시 동일한(로컬) 시스템 또는 새(원격) 시스템에 백업을 복원할 수 있습니다.

@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-groups.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager에서 그룹을 생성하여 스토리지 객체를 관리할 수 있습니다. 
+---
+= 그룹 관리 및 모니터링
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager에서 그룹을 생성하여 스토리지 객체를 관리할 수 있습니다.

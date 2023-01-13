@@ -1,0 +1,33 @@
+---
+permalink: online-help/concept-storage-virtual-machine-and-resource-pool-requirements-to-support-storage-services.html 
+sidebar: sidebar 
+keywords:  
+summary: 스토리지 서비스와 관련된 일부 SVM 연관 및 리소스 풀 요구사항을 관찰하면 파트너 애플리케이션이 더욱 잘 부합되도록 보장할 수 있습니다. 예를 들어, SVM을 연결하고 Unified Manager에서 리소스 풀을 생성하여 파트너 애플리케이션이 제공하는 스토리지 서비스의 보호 토폴로지를 지원할 수 있습니다. 
+---
+= 스토리지 서비스를 지원하기 위한 SVM 및 리소스 풀 요구사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 서비스와 관련된 일부 SVM 연관 및 리소스 풀 요구사항을 관찰하면 파트너 애플리케이션이 더욱 잘 부합되도록 보장할 수 있습니다. 예를 들어, SVM을 연결하고 Unified Manager에서 리소스 풀을 생성하여 파트너 애플리케이션이 제공하는 스토리지 서비스의 보호 토폴로지를 지원할 수 있습니다.
+
+일부 애플리케이션은 Unified Manager 서버와 파트너 관계를 맺고, 소스 볼륨과 2차 또는 3차 위치의 보호 볼륨 간에 SnapMirror 또는 SnapVault 백업 보호를 자동으로 구성 및 실행하는 서비스를 제공합니다. 이러한 보호 스토리지 서비스를 지원하려면 Unified Manager를 사용하여 필요한 SVM 연결 및 리소스 풀을 구성해야 합니다.
+
+SnapMirror 소스 또는 SnapVault 운영 볼륨에서 대상 SnapMirror로 복제 또는 2차 또는 3차 위치에 있는 SnapVault 백업 볼륨으로 복제를 포함하여 스토리지 서비스 단일 홉 또는 다중 구간 보호를 지원하려면 다음 요구사항을 준수해야 합니다.
+
+* SVM 연결은 SnapMirror 소스 또는 SnapVault 운영 볼륨을 포함하는 SVM과 2차 볼륨 또는 3차 볼륨이 상주하는 SVM 간에 구성되어야 합니다.
++
+** 예를 들어, 소스 볼륨 Vol_A가 SVM_1에 있고 SnapMirror 보조 타겟 볼륨 Vol_B가 SVM_2에 상주하는 보호 토폴로지를 지원하려면 3차 SnapVault 백업 볼륨 Vol_C는 SVM_3에 상주하며, Unified Manager 웹 UI를 사용하여 SVM_1과 SVM_2 사이에 SnapMirror 연결과 SVM_1과 SVM_3 사이의 SnapVault 백업 연결을 구성해야 합니다.
++
+이 예에서는 SVM_2와 SVM_3 간에 SnapMirror 연결 또는 SnapVault 백업 연결이 필요하지 않으며 사용되지 않습니다.
+
+** 소스 볼륨 Vol_A와 SnapMirror 대상 볼륨 Vol_B가 모두 SVM_1에 있는 보호 토폴로지를 지원하려면 SVM_1과 SVM_1 간에 SnapMirror 연결을 구성해야 합니다.
+
+
+* 리소스 풀에는 관련 SVM에 사용 가능한 클러스터 애그리게이트 리소스가 포함되어야 합니다.
++
+Unified Manager 웹 UI를 통해 리소스 풀을 구성한 다음 파트너 애플리케이션을 통해 스토리지 서비스 2차 타겟 노드 및 3차 타겟 노드를 할당합니다.
+
+

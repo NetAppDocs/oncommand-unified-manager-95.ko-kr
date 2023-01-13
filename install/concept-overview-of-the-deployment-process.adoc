@@ -1,0 +1,16 @@
+---
+permalink: install/concept-overview-of-the-deployment-process.html 
+sidebar: sidebar 
+keywords:  
+summary: 구축 워크플로우에서는 Unified Manager를 사용하기 전에 수행해야 하는 작업에 대해 설명합니다. 
+---
+= VMware의 구축 프로세스 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+구축 워크플로우에서는 Unified Manager를 사용하기 전에 수행해야 하는 작업에 대해 설명합니다.
+
+image::../media/deployment-sequence-oc-6-0.gif[배포 시퀀스 OC 6 0]

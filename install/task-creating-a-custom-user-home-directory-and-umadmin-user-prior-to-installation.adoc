@@ -1,0 +1,59 @@
+---
+permalink: install/task-creating-a-custom-user-home-directory-and-umadmin-user-prior-to-installation.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 설치하기 전에 사용자 지정 홈 디렉터리를 만들고 사용자 고유의 umadmin 사용자 암호를 정의할 수 있습니다. 이 작업은 선택 사항이지만 일부 사이트에서는 Unified Manager 설치 기본 설정을 재정의할 수 있는 유연성을 필요로 할 수 있습니다. 
+---
+= 설치 전에 사용자 정의 사용자 홈 디렉토리 및 umadmin 암호를 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 설치하기 전에 사용자 지정 홈 디렉터리를 만들고 사용자 고유의 umadmin 사용자 암호를 정의할 수 있습니다. 이 작업은 선택 사항이지만 일부 사이트에서는 Unified Manager 설치 기본 설정을 재정의할 수 있는 유연성을 필요로 할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* 시스템은 에 설명된 요구 사항을 충족해야 합니다 xref:concept-virtual-infrastructure-or-hardware-system-requirements.adoc[하드웨어 시스템 요구 사항].
+* Red Hat Enterprise Linux 또는 CentOS 시스템에 루트 사용자로 로그인할 수 있어야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+기본 Unified Manager 설치는 다음 작업을 수행합니다.
+
+* 에서 umadmin 사용자를 생성합니다 `/home/umadmin` 홈 디렉토리로 이동합니다.
+* 기본 암호 ""admin""을 umadmin 사용자에게 할당합니다.
+
+
+일부 설치 환경에서는 에 대한 액세스가 제한되기 때문입니다 `/home`, 설치에 실패합니다. 다른 위치에 홈 디렉토리를 생성해야 합니다. 또한 일부 사이트에는 암호 복잡성에 대한 규칙이 있거나 설치 프로그램에서 설정하는 대신 로컬 관리자가 암호를 설정해야 할 수 있습니다.
+
+설치 환경에서 이러한 설치 기본 설정을 재정의해야 하는 경우 다음 단계에 따라 사용자 지정 홈 디렉터리를 만들고 umadmin 사용자의 암호를 정의합니다.
+
+설치 전에 이 정보를 정의하면 설치 스크립트가 이러한 설정을 검색하고 설치 기본 설정을 사용하는 대신 정의된 값을 사용합니다.
+
+또한 기본 Unified Manager 설치에는 sudoers 파일의 umadmin 사용자가 포함됩니다 (`ocum_sudoers` 및 `ocie_sudoers`)를 선택합니다 `/etc/sudoers.d/` 디렉토리. 보안 정책 또는 일부 보안 모니터링 도구로 인해 환경에서 이 콘텐츠를 제거하는 경우 다시 추가해야 합니다. 일부 Unified Manager 작업에서는 sudo 권한이 필요하므로 sudoers 구성을 유지해야 합니다.
+
+
+
+== 단계
+
+. 서버에 루트 사용자로 로그인합니다.
+. "유지보수"라는 umadmin 그룹 계정을 만듭니다.``groupadd maintenance``
+. 선택한 홈 디렉토리 아래의 유지보수 그룹에서 사용자 계정 ""umadmin""을 생성합니다.``adduser --home <home_directory\> -g maintenance umadmin``
+. umadmin 암호 정의:``passwd umadmin``
++
+umadmin 사용자의 새 암호 문자열을 입력하라는 메시지가 표시됩니다.
+
+
+
+
+
+== 작업을 마친 후
+
+Unified Manager를 설치한 후에는 umadmin 사용자 로그인 셸을 지정해야 합니다.

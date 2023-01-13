@@ -1,0 +1,42 @@
+---
+permalink: online-help/reference-data-mirroring-status-definitions.html 
+sidebar: sidebar 
+keywords:  
+summary: MetroCluster 구성을 사용하면 데이터 미러링을 수행하고 전체 사이트를 사용할 수 없게 될 경우 페일오버를 시작할 수 있는 추가 기능을 제공합니다. MetroCluster 구성에서 클러스터 간 데이터 미러링 상태는 정상 또는 미러링을 사용할 수 없음이 될 수 있습니다. 상태를 이해하면 MetroCluster 구성을 효과적으로 관리할 수 있습니다. 
+---
+= 데이터 미러링 상태 정의
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MetroCluster 구성을 사용하면 데이터 미러링을 수행하고 전체 사이트를 사용할 수 없게 될 경우 페일오버를 시작할 수 있는 추가 기능을 제공합니다. MetroCluster 구성에서 클러스터 간 데이터 미러링 상태는 정상 또는 미러링을 사용할 수 없음이 될 수 있습니다. 상태를 이해하면 MetroCluster 구성을 효과적으로 관리할 수 있습니다.
+
+|===
+| 데이터 미러링 상태 | 설명 | 아이콘이 표시됩니다 
+
+
+ a| 
+정상
+ a| 
+MetroCluster 구성에서 클러스터 간 데이터 미러링은 정상입니다.
+ a| 
+image:../media/metrocluster-connectivity-optimal.gif[""]
+
+
+
+ a| 
+미러링을 사용할 수 없습니다
+ a| 
+스위치오버로 인해 MetroCluster 구성에서 클러스터 간 데이터 미러링을 사용할 수 없습니다. 예를 들어, 재해 또는 테스트 목적으로 계획된 전환이 있는 경우 파트너 클러스터가 중단된 경우
+ a| 
+오류 발생 시 전환:
+
+image::../media/metrocluster-connectivity-down.gif[MetroCluster 연결이 다운되었습니다]
+
+전환 성공:
+
+image::../media/metrocluster-connectivity-failover.gif[MetroCluster 연결 페일오버]
+
+|===

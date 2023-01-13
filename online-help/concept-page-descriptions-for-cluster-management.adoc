@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-page-descriptions-for-cluster-management.html 
+sidebar: sidebar 
+keywords:  
+summary: 클러스터 추가, 편집, 재검색, 제거 등의 클러스터를 보고 관리할 수 있습니다. 한 페이지. 
+---
+= 데이터 소스 관리에 대한 페이지 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클러스터 추가, 편집, 재검색, 제거 등의 클러스터를 보고 관리할 수 있습니다. 한 페이지.

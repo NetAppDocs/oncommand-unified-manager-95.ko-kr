@@ -1,0 +1,129 @@
+---
+permalink: install/task-deploying-the-unified-manager-virtual-appliance-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: 'NetApp Support 사이트에서 .ova 파일을 다운로드한 후 Unified Manager 가상 어플라이언스를 배포할 수 있습니다. vSphere Web Client\(vSphere 버전 6.5\) 또는 vSphere Client\(vSphere 버전 5.5 또는 6.0\)를 사용하여 ESXi 서버에 가상 어플라이언스를 구축해야 합니다. 가상 어플라이언스를 구축하면 가상 머신이 생성됩니다.' 
+---
+= Unified Manager 가상 어플라이언스 구축
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+를 다운로드한 후 Unified Manager 가상 어플라이언스를 구축할 수 있습니다 `.ova` NetApp Support 사이트에서 파일을 선택합니다. vSphere Web Client(vSphere 버전 6.5의 경우) 또는 vSphere Client(vSphere 버전 5.5 또는 6.0의 경우)를 사용하여 ESXi 서버에 가상 어플라이언스를 구축해야 합니다. 가상 어플라이언스를 구축하면 가상 머신이 생성됩니다.
+
+
+
+== 시작하기 전에
+
+시스템 요구 사항을 검토해야 합니다. 시스템 요구 사항을 충족하기 위해 변경이 필요한 경우 Unified Manager 가상 어플라이언스를 구축하기 전에 변경 사항을 구현해야 합니다.
+
+xref:concept-requirements-for-installing-unified-manager.adoc[가상 인프라 요구 사항]
+
+xref:reference-vmware-software-and-installation-requirements.adoc[VMware 소프트웨어 및 설치 요구 사항]
+
+DHCP를 사용하는 경우 DHCP 서버를 사용할 수 있고 DHCP 및 가상 머신(VM) 네트워크 어댑터 구성이 올바른지 확인해야 합니다. DHCP는 기본적으로 구성됩니다.
+
+정적 네트워킹 구성을 사용하는 경우 IP 주소가 동일한 서브넷에서 중복되지 않고 적절한 DNS 서버 항목이 구성되었는지 확인해야 합니다.
+
+가상 어플라이언스를 구축하기 전에 다음 정보가 있어야 합니다.
+
+* VMware vCenter Server 및 vSphere Web Client(vSphere 버전 6.5용) 또는 vSphere Client(vSphere 버전 5.5 또는 6.0용)에 액세스하기 위한 자격 증명
+* Unified Manager 가상 어플라이언스를 구축하고 있는 ESXi 서버의 IP 주소입니다
+* 스토리지 공간의 가용성과 같은 데이터 센터에 대한 세부 정보
+* DHCP를 사용하지 않는 경우 연결하려는 네트워킹 장치의 IPv4 또는 IPv6 주소가 있어야 합니다.
++
+** 호스트의 FQDN(정규화된 도메인 이름)입니다
+** 호스트의 IP 주소입니다
+** 네트워크 마스크
+** 기본 게이트웨이의 IP 주소입니다
+** 기본 및 보조 DNS 주소
+** 도메인 검색
+
+
+* VMware Tools용 CD-ROM 또는 ISO 이미지
+
+
+
+
+== 이 작업에 대해
+
+VMware 툴은 에 포함되어 있지 않습니다 `.ova` 파일. VMware Tools는 별도로 설치해야 합니다.
+
+가상 어플라이언스가 배포되면 HTTPS 액세스를 위한 고유한 자체 서명 인증서가 생성됩니다. Unified Manager 웹 UI에 액세스할 때 신뢰할 수 없는 인증서에 대한 브라우저 경고가 표시될 수 있습니다.
+
+Unified Manager 가상 어플라이언스에 대한 VMware High Availability가 지원됩니다.
+
+
+
+== 단계
+
+. vSphere Client에서 * File * > * Deploy OVF Template * 을 클릭합니다.
+. Deploy OVF Template * 마법사를 완료하여 Unified Manager 가상 어플라이언스를 구축합니다.
++
+네트워킹 구성 페이지에서 다음을 수행합니다.
+
++
+** DHCP 및 IPv4 주소 지정을 사용하는 경우 모든 필드를 비워 둡니다.
+** DHCP 및 IPv6 주소 지정을 사용할 때 ""자동 IPv6 주소 지정 활성화"" 확인란을 선택하고 다른 모든 필드는 비워 둡니다.
+** 정적 네트워크 구성을 사용하려면 이 페이지의 필드를 완성하면 배포 중에 이러한 설정이 적용됩니다. IP 주소가 배포된 호스트에 고유하고, 이미 사용 중이 아니며, 유효한 DNS 항목이 있는지 확인해야 합니다.
+
+
+. Unified Manager 가상 어플라이언스를 ESXi 서버에 구축한 후 VM을 마우스 오른쪽 버튼으로 클릭하고 * Power On * 을 선택하여 VM의 전원을 켭니다.
++
+리소스 부족으로 전원 켜기 작업이 실패하면 리소스를 추가한 다음 설치를 다시 시도해야 합니다.
+
+. Console * 탭을 클릭합니다.
++
+초기 부팅 프로세스를 완료하는 데 몇 분 정도 걸립니다.
+
+. 프롬프트에 따라 VM에 VMware Tools를 설치합니다.
++
+vSphere 6.5와 함께 vSphere Web Client를 사용하는 경우 VMware Tools ISO 이미지를 수동으로 마운트해야 합니다. VM에서 * 설정 편집 * > * 가상 하드웨어 * > * CD/DVD 드라이브 x * > * 데이터 저장소 ISO 파일 * 을 선택한 다음 * 찾아보기 * 를 클릭하여 파일을 선택해야 합니다 `linux.iso` 를 마운트 이미지로 사용합니다.
+
+. 시간대를 구성하려면 VM * Console * 창에 표시된 대로 지리적 지역 및 도시 또는 지역을 입력합니다.
++
+표시되는 모든 날짜 정보는 관리되는 장치의 표준 시간대 설정에 관계없이 Unified Manager에 대해 구성된 표준 시간대를 사용합니다. 타임 스탬프를 비교할 때 이 점에 주의해야 합니다. 스토리지 시스템과 관리 서버가 동일한 NTP 서버로 구성되어 있는 경우 다르게 나타나더라도 동일한 인스턴트 서버를 나타냅니다. 예를 들어, 관리 서버와 다른 시간대를 사용하여 구성된 디바이스를 사용하여 스냅샷 복사본을 생성하는 경우 타임스탬프에 반영된 시간은 관리 서버 시간입니다.
+
+. DHCP 서비스를 사용할 수 없거나 정적 네트워크 구성에 대한 세부 정보에 오류가 있는 경우 다음 옵션 중 하나를 선택합니다.
++
+|===
+| 사용하는 경우... | 다음을 수행하십시오. 
+
+
+ a| 
+DHCP를 선택합니다
+ a| 
+DHCP 재시도 * 를 선택합니다. DHCP를 사용할 계획이라면 DHCP가 올바르게 구성되어 있는지 확인해야 합니다.
+
+DHCP 지원 네트워크를 사용하는 경우 FQDN 및 DNS 서버 항목이 가상 어플라이언스에 자동으로 제공됩니다. DHCP가 DNS로 제대로 구성되어 있지 않으면 호스트 이름 ""OnCommand""이 자동으로 할당되어 보안 인증서와 연결됩니다. DHCP 지원 네트워크를 설정하지 않은 경우 네트워킹 구성 정보를 수동으로 입력해야 합니다.
+
+
+
+ a| 
+정적 네트워크 구성
+ a| 
+.. 정적 네트워크 구성에 대한 세부 정보를 입력하십시오 * 를 선택합니다.
++
+구성 프로세스를 완료하는 데 몇 분 정도 소요됩니다.
+
+.. 입력한 값을 확인하고 * Y * 를 선택합니다.
+
+
+|===
+. 프롬프트에서 유지보수 사용자 이름을 입력하고 * Enter * 를 클릭합니다.
++
+유지보수 사용자 이름은 a-z의 문자로 시작하고 그 뒤에 -, a-z 또는 0-9의 조합을 입력해야 합니다.
+
+. 프롬프트에서 암호를 입력하고 * Enter * 를 클릭합니다.
++
+VM 콘솔에는 Unified Manager 웹 UI의 URL이 표시됩니다.
+
+
+
+
+
+== 작업을 마친 후
+
+웹 UI에 액세스하여 _OnCommand Unified Manager 시스템 구성 가이드_에 설명된 대로 Unified Manager의 초기 설정을 수행할 수 있습니다.

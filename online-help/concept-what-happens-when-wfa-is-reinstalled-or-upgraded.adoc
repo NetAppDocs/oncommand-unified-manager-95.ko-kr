@@ -1,0 +1,18 @@
+---
+permalink: online-help/concept-what-happens-when-wfa-is-reinstalled-or-upgraded.html 
+sidebar: sidebar 
+keywords:  
+summary: OnCommand Workflow Automation를 재설치하거나 업그레이드하기 전에 OnCommand Workflow Automation와 Unified Manager 간의 연결을 먼저 제거하고 현재 실행 중이거나 예약된 모든 OnCommand Workflow Automation 작업이 중지되었는지 확인해야 합니다. 
+---
+= OnCommand Workflow Automation를 재설치하거나 업그레이드하면 어떻게 됩니까
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+OnCommand Workflow Automation를 재설치하거나 업그레이드하기 전에 OnCommand Workflow Automation와 Unified Manager 간의 연결을 먼저 제거하고 현재 실행 중이거나 예약된 모든 OnCommand Workflow Automation 작업이 중지되었는지 확인해야 합니다.
+
+또한 OnCommand Workflow Automation에서 Unified Manager를 수동으로 삭제해야 합니다.
+
+OnCommand Workflow Automation를 재설치하거나 업그레이드한 후에는 Unified Manager와의 연결을 다시 설정해야 합니다.

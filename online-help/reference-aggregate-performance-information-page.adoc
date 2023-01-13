@@ -1,0 +1,79 @@
+---
+permalink: online-help/reference-aggregate-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능/애그리게이트 정보 페이지를 사용하여 애그리게이트의 물리적 및 논리적 특성 목록을 봅니다. 이 정보는 성능 관련 질문에 답변하는 데 도움이 될 수 있습니다. 
+---
+= 성능/집계 정보 페이지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능/애그리게이트 정보 페이지를 사용하여 애그리게이트의 물리적 및 논리적 특성 목록을 봅니다. 이 정보는 성능 관련 질문에 답변하는 데 도움이 될 수 있습니다.
+
+
+
+== 집계 속성
+
+* * 집계 유형 *
++
+집계 유형:
+
++
+** HDD
+** 하이브리드
++
+HDD와 SSD를 결합하지만 Flash Pool은 활성화되지 않았습니다.
+
+** 하이브리드(Flash Pool)
++
+HDD와 SSD의 결합과 Flash Pool이 설정되었습니다.
+
+** SSD를 지원합니다
+** SSD(FabricPool)
++
+SSD와 클라우드 계층을 결합합니다
+
+** VMDisk(SDS)
++
+가상 머신 내의 가상 디스크
+
+** VMDisk(FabricPool)
++
+가상 디스크와 클라우드 계층을 결합합니다
+
+** LUN(FlexArray)
+
+
+* * 클러스터 *
++
+Aggregate가 속한 클러스터의 이름입니다. 이름을 클릭하여 성능/클러스터 탐색기 페이지에 클러스터 세부 정보를 표시할 수 있습니다.
+
+* * 노드 *
++
+Aggregate의 디스크가 속해 있는 노드의 이름입니다. 이름을 클릭하여 성능/노드 탐색기 페이지에 노드 세부 정보를 표시할 수 있습니다.
+
+* * Flash Pool *
++
+Flash Pool Aggregate가 Yes인지 아니면 No인지 나타냅니다
+
++
+Flash Pool Aggregate는 SSD와 HDD로 구성된 하이브리드 Aggregate입니다.
+
+* * FabricPool *
++
+FabricPool 집계 여부: 예 또는 아니요
+
++
+FabricPool 애그리게이트는 SSD와 클라우드 계층으로 구성된 애그리게이트입니다.
+
+* * 비활성 데이터 보고 *
++
+이 애그리게이트에 비활성 데이터 보고 기능을 사용할 수 있는지 여부를 나타냅니다. 이 애그리게이트의 볼륨이 활성화되면 성능/볼륨 인벤토리 페이지에 콜드 데이터의 양이 표시됩니다.
+
++
+ONTAP 버전이 비활성 데이터 보고를 지원하지 않는 경우 이 필드의 값은 "N/A"입니다.
+
+

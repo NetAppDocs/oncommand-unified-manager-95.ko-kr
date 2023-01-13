@@ -1,0 +1,24 @@
+---
+permalink: performance-checker/concept-unified-manager-administration-navigation.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 관리 기능을 사용하면 사용자와 데이터 소스를 관리할 수 있습니다. 인증, AutoSupport, 전자 메일, HTTPS 인증서, 네트워크 등의 설정 작업을 수행할 수도 있습니다. 및 NTP 서버는 Unified Manager 관리 페이지를 사용합니다. 
+---
+= Unified Manager 관리 탐색
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 관리 기능을 사용하면 사용자와 데이터 소스를 관리할 수 있습니다. 인증, AutoSupport, 전자 메일, HTTPS 인증서, 네트워크 등의 설정 작업을 수행할 수도 있습니다. 및 NTP 서버는 Unified Manager 관리 페이지를 사용합니다.
+
+이는 가능한 여러 관리 탐색 경로의 한 가지 예입니다. Workflow Automation 서버에 대한 연결을 추가하거나 제거하려면 다음 탐색 예를 따르십시오.
+
+image::../media/admin-navigation.gif[관리자 탐색]
+
+[NOTE]
+====
+기본 Unified Manager 탐색 페이지로 돌아가려면 * 홈 * 아이콘을 클릭하십시오.
+
+====

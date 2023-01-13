@@ -1,0 +1,25 @@
+---
+permalink: performance-checker/concept-viewing-node-and-aggregate-available-iops-values.html 
+sidebar: sidebar 
+keywords:  
+summary: 모든 노드 또는 클러스터의 모든 애그리게이트에 대해 사용 가능한 IOPS 값을 모니터링하거나 단일 노드 또는 애그리게이트에 대한 세부 정보를 볼 수 있습니다. 
+---
+= 노드 및 애그리게이트 가용 IOPS 값 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+모든 노드 또는 클러스터의 모든 애그리게이트에 대해 사용 가능한 IOPS 값을 모니터링하거나 단일 노드 또는 애그리게이트에 대한 세부 정보를 볼 수 있습니다.
+
+사용 가능한 IOPS 값은 성능 탐색기 페이지 차트에 표시됩니다. 예를 들어, 성능/노드 탐색기 페이지에서 노드를 볼 때 목록에서 ""사용 가능한 IOPS"" 카운터 차트를 선택하면 해당 노드에 있는 여러 Aggregate에 대해 사용 가능한 IOPS 값을 비교할 수 있습니다.
+
+image::../media/available-iops-zoom.gif[사용 가능한 IOPS 확대/축소]
+
+사용 가능한 IOPS 카운터를 모니터링하여 다음을 식별할 수 있습니다.
+
+* 사용 가능한 IOPS 값이 가장 큰 노드 또는 애그리게이트를 사용하여 향후 워크로드를 구축할 위치를 결정할 수 있습니다.
+* 사용 가능한 최소 IOPS 값이 있는 노드 또는 애그리게이트는 향후 성능 문제가 발생할 수 있도록 모니터링해야 하는 리소스를 식별합니다.
+* 가용 IOPS 값이 작은 애그리게이트에서 가장 많이 사용되는 볼륨 및 LUN
+

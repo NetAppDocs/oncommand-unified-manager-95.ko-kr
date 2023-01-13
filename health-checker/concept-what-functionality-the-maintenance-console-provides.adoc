@@ -1,0 +1,26 @@
+---
+permalink: health-checker/concept-what-functionality-the-maintenance-console-provides.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 유지보수 콘솔을 사용하면 Unified Manager 시스템의 설정을 유지하고 문제 발생을 방지하기 위해 필요한 모든 변경을 수행할 수 있습니다. 
+---
+= 유지보수 콘솔에서 제공하는 기능은 무엇입니까
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 유지보수 콘솔을 사용하면 Unified Manager 시스템의 설정을 유지하고 문제 발생을 방지하기 위해 필요한 모든 변경을 수행할 수 있습니다.
+
+Unified Manager를 설치한 운영 체제에 따라 유지보수 콘솔에서 다음 기능을 제공합니다.
+
+* 특히 Unified Manager 웹 인터페이스를 사용할 수 없는 경우, 가상 어플라이언스 관련 문제를 해결합니다
+* 최신 버전의 Unified Manager로 업그레이드하십시오
+* 기술 지원 팀에 보낼 지원 번들을 생성합니다
+* 네트워크 설정을 구성합니다
+* 유지보수 사용자 암호를 변경합니다
+* 외부 데이터 공급자에 연결하여 성능 통계를 보냅니다
+* 성능 데이터 수집 내부 변경
+* 이전에 백업한 버전에서 Unified Manager 데이터베이스 및 구성 설정을 복원합니다.
+

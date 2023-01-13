@@ -1,0 +1,29 @@
+---
+permalink: health-checker/task-creating-a-project-using-birt.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager로 가져오기 위한 보고서를 만들기 전에 먼저 BIRT를 사용하여 프로젝트를 만들어야 합니다. 
+---
+= BIRT를 사용하여 프로젝트 만들기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager로 가져오기 위한 보고서를 만들기 전에 먼저 BIRT를 사용하여 프로젝트를 만들어야 합니다.
+
+
+
+== 시작하기 전에
+
+BIRT.zip 파일을 다운로드하고 압축을 풀어야 합니다.
+
+
+
+== 단계
+
+. Eclipse 인터페이스에서 * File * > * New * > * Project * 를 선택합니다.
+. 비즈니스 인텔리전스 및 보고 도구 * 폴더를 확장하고 * 보고서 프로젝트 * 를 선택한 후 * 다음 * 을 클릭합니다.
+. 프로젝트 이름을 입력하고 * Finish * 를 클릭합니다.
+

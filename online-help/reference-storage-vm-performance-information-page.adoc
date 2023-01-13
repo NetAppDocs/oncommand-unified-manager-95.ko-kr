@@ -1,0 +1,80 @@
+---
+permalink: online-help/reference-storage-vm-performance-information-page.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능/SVM 정보 페이지를 사용하여 SVM의 구성된 특성 목록을 확인하십시오. 이 정보는 성능 관련 질문에 답변하는 데 도움이 될 수 있습니다. 
+---
+= 성능/SVM 정보 페이지
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능/SVM 정보 페이지를 사용하여 SVM의 구성된 특성 목록을 확인하십시오. 이 정보는 성능 관련 질문에 답변하는 데 도움이 될 수 있습니다.
+
+
+
+== SVM 특성
+
+* * IP 주소 *
++
+정의되면 SVM 관리 LIF의 IPv4 또는 IPv6 주소입니다.
+
+* IPspace *
++
+이 SVM이 상주하는 IPspace
+
+* * 도메인 이름 *
++
+SVM 관리 LIF의 FQDN(정규화된 도메인 이름)입니다.
+
+* * 서비스 유형 *
++
+SVM 유형
+
++
+가능한 값으로는 클러스터 전체 관리 SVM을 위한 "Admin", IPspace에서 클러스터 수준 통신을 위한 "System", SVM을 위한 "Data", 노드 관리 SVM을 위한 "Node" 등이 있습니다.
+
+* * 용량(사용 가능/총) *
++
+SVM에서 사용 가능한 총 스토리지 용량(GB) 및 현재 사용 가능한 스토리지 양입니다.
+
+* * 클러스터 *
++
+SVM이 속한 클러스터의 이름입니다. 이름을 클릭하여 성능/클러스터 탐색기 페이지에 클러스터 세부 정보를 표시할 수 있습니다.
+
+* 볼륨 *
++
+SVM의 볼륨 수입니다. 번호를 클릭하여 Performance/Volume Inventory 페이지에 볼륨을 표시할 수 있습니다.
+
+* LIF *
++
+SVM에 사용 가능한 LIF 수 번호를 클릭하여 Performance/LIF Inventory 페이지에 LIF를 표시할 수 있습니다.
+
+* * 데이터 LIF *
++
+SVM에서 사용할 수 있는 데이터 LIF의 수와 유형입니다.
+
+* * 허용된 볼륨 유형 *
++
+SVM에서 생성할 수 있는 볼륨 유형입니다.
+
++
+SVM은 하나 이상의 FlexVol 볼륨 또는 FlexGroup 볼륨을 포함할 수 있습니다. FlexGroup 유형은 ONTAP 9.1 이상을 사용할 때 허용됩니다.
+
++
+[NOTE]
+====
+Unified Manager의 성능 페이지는 무한 확장 볼륨을 지원하지 않습니다.
+
+====
+* * 허용된 프로토콜 *
++
+이 SVM에서 처리할 수 있는 모든 프로토콜 목록 사용 가능한 프로토콜은 FC/FCoE, iSCSI, HTTP, NDMP, NVMe NFS 및 CIFS에 대해 설명합니다.
+
+* * 포트 세트 *
++
+FCP 또는 iSCSI 프로토콜에 대해 정의된 경우 이 SVM에 할당된 포트 세트입니다.
+
+

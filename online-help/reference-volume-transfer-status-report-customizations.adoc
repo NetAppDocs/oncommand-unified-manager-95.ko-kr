@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-transfer-status-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: '볼륨 전송 상태\(내역\) 보고서를 사용자 정의하여 특정 시간 간격으로 볼륨 전송에 대한 정보를 보고 분석할 수 있습니다. 필터를 사용하여 두 날짜 사이의 볼륨 전송 세부 정보를 볼 수 있습니다.' 
+---
+= 볼륨 전송 상태(내역) 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 전송 상태(내역) 보고서를 사용자 정의하여 특정 시간 간격으로 볼륨 전송에 대한 정보를 보고 분석할 수 있습니다. 필터를 사용하여 두 날짜 사이의 볼륨 전송 세부 정보를 볼 수 있습니다.

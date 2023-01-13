@@ -1,0 +1,64 @@
+---
+permalink: online-help/task-customizing-the-qtree-capacity-and-utilization-report-to-display-qtrees-that-have-breached-the-disk-soft-limit.html 
+sidebar: sidebar 
+keywords:  
+summary: Qtree 용량 및 활용률 보고서를 사용자 정의하여 디스크 소프트 제한값을 위반한 qtree를 표시할 수 있습니다. 사용된 디스크, 디스크 하드 제한값 및 디스크 소프트 제한값을 기준으로 필터링하고 정렬할 수 있습니다. 
+---
+= 디스크 소프트 제한값을 위반한 qtree를 표시하도록 Qtree 용량 및 활용률 보고서를 사용자 지정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Qtree 용량 및 활용률 보고서를 사용자 정의하여 디스크 소프트 제한값을 위반한 qtree를 표시할 수 있습니다. 사용된 디스크, 디스크 하드 제한값 및 디스크 소프트 제한값을 기준으로 필터링하고 정렬할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+보고서 페이지로 이동하여 해당 보고서에 대해 * 보고서 실행 * 을 클릭하여 이 작업을 수행할 수도 있습니다.
+
+
+
+== 단계
+
+. SVM, 클러스터 또는 볼륨을 기준으로 그룹화를 제거하려면 다음 단계를 수행하십시오.
++
+.. 그룹 해제할 열을 클릭합니다.
+.. 를 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭합니다.
+.. 그룹 * > * 내부 그룹 삭제 * 를 선택합니다.
+
+
+. 무제한 디스크 하드 제한값이 없는 qtree를 필터링하려면 * 디스크 하드 제한값 * 열을 클릭하고 를 클릭하여 * 필터 * 대화 상자를 엽니다 image:../media/click-to-filter.gif[""] 아이콘을 클릭합니다.
++
+.. 조건 * 드롭다운 목록에서 * 같지 않음 * 을 선택합니다.
+.. 값 선택 * 을 클릭하고 * 무제한 * 을 선택합니다.
+.. 확인 * 을 클릭합니다.
+
+
+. 무제한 디스크 소프트 제한값이 없는 qtree를 필터링하려면 * 디스크 소프트 제한값 * 열을 클릭하고 를 클릭하여 * 필터 * 대화 상자를 엽니다 image:../media/click-to-filter.gif[""] 아이콘을 클릭합니다.
++
+.. 조건 * 드롭다운 목록에서 * 같지 않음 * 을 선택합니다.
+.. 값 선택 * 을 클릭하고 * 무제한 * 을 선택합니다.
+.. 확인 * 을 클릭합니다.
+
+
+. 디스크 소프트 제한값을 위반한 qtree에 대한 컬럼을 추가하려면 다음 단계를 수행하십시오.
++
+.. 디스크 소프트 제한값 * 열을 클릭하고 을 클릭합니다 image:../media/click-to-see-menu.gif[""] 아이콘을 클릭하고 * 열 * > * 새 계산된 열 * 을 선택합니다
+.. 새 계산된 열 * 대화 상자에 를 입력합니다 `Breached Disk Soft Limit Capacity` 열 레이블 * 필드
+.. 범주 선택 목록에서 * 텍스트 * 를 선택합니다.
+.. Select Function * (기능 선택 *) 드롭다운 목록에서 * Advanced * (고급 *)를 선택합니다.
+.. Enter Expression * 필드에 를 입력합니다 `IF(([qtreeDiskUsedPercent] *[diskLimit]/100 > [softDiskLimit]), "Yes", "No")`.
+.. 확인 * 을 클릭합니다.
+
+
+. 소프트 디스크 제한을 위반한 qtree를 필터링하려면 * 위반 디스크 소프트 제한용량 * 열을 클릭하고 를 클릭하여 * 필터 * 대화 상자를 엽니다 image:../media/click-to-filter.gif[""] 아이콘을 클릭합니다.
++
+.. 조건 * 드롭다운 목록에서 * 같음 * 을 선택합니다.
+.. 값 선택 * 을 클릭하고 * 예 * 를 선택합니다.
+.. 확인 * 을 클릭합니다.
+
+
+

@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-annotations-windows-and-dialog-boxes.html 
+sidebar: sidebar 
+keywords:  
+summary: 관리/주석 페이지에서 모든 주석을 보고 관리할 수 있습니다. 또한 주석 규칙 탭에서 저장 개체에 대한 주석 규칙을 구성할 수도 있습니다. 
+---
+= 주석 창 및 대화 상자에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+관리/주석 페이지에서 모든 주석을 보고 관리할 수 있습니다. 또한 주석 규칙 탭에서 저장 개체에 대한 주석 규칙을 구성할 수도 있습니다.

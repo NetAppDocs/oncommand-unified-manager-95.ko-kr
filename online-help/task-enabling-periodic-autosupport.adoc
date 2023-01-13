@@ -1,0 +1,36 @@
+---
+permalink: online-help/task-enabling-periodic-autosupport.html 
+sidebar: sidebar 
+keywords:  
+summary: 환경을 올바르게 작동하고 환경의 무결성을 유지할 수 있도록 기술 지원 부서에 사전 정의된 특정 메시지를 자동으로 보내도록 선택할 수 있습니다. 
+---
+= Periodic AutoSupport 활성화
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+환경을 올바르게 작동하고 환경의 무결성을 유지할 수 있도록 기술 지원 부서에 사전 정의된 특정 메시지를 자동으로 보내도록 선택할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+유지보수 사용자로 로그인해야 합니다.
+
+
+
+== 이 작업에 대해
+
+NetApp Active IQ의 이점을 받으려면 AutoSupport를 활성화해야 합니다.
+
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]* 를 선택한 다음 * 설정 * 메뉴에서 * AutoSupport * 를 클릭합니다.
+. Periodic AutoSupport * 활성화 확인란을 선택합니다.
+. 필요한 경우 HTTP 프록시 서버의 이름, 포트 및 인증 정보를 정의합니다.
+. 저장 * 을 클릭합니다.
+

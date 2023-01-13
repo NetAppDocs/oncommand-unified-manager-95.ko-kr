@@ -1,0 +1,66 @@
+---
+permalink: online-help/task-displaying-all-lifs-in-a-svm-using-the-cli.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM에 있는 모든 LIF에 대한 정보를 표시할 수 있습니다. 사용 중일 수도 있고 이동해야 할 LIF를 결정하기 전에 모든 LIF를 표시할 수 있습니다. 
+---
+= CLI를 사용하여 SVM에서 모든 LIF 표시
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM에 있는 모든 LIF에 대한 정보를 표시할 수 있습니다. 사용 중일 수도 있고 이동해야 할 LIF를 결정하기 전에 모든 LIF를 표시할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+LIF의 운영 상태는 LIF가 특정 포트에 구성되어 있고 데이터를 제공할 수 있는지 여부에 따라 결정됩니다. SVM이 중지되면 연결된 데이터 LIF 및 SVM 관리 LIF가 더 이상 데이터를 제공할 수 없습니다. 이러한 LIF의 운영 상태가 로 바뀝니다 `down`.
+
+
+
+== 단계
+
+. SVM의 모든 LIF에 대한 정보를 표시하려면 다음 명령을 입력합니다. `network interface show -vserver vserver_name`
++
+명령은 다음 정보를 표시합니다.
+
++
+** LIF와 연결된 노드 또는 SVM
+** LIF 이름입니다
+** 관리 및 작동 상태
+** IP 주소입니다
+** 넷마스크
+** LIF가 구성된 노드 및 포트입니다
+
+
++
+홈 서버는 노드 또는 SVM이 될 수 있습니다.
+
++
+필드의 데이터를 사용할 수 없는 경우(예: 비활성 포트의 작동 이중화 및 속도) 해당 필드는 undef로 표시됩니다.
+
++
+[NOTE]
+====
+를 지정하면 사용 가능한 모든 정보를 얻을 수 있습니다 `-instance` 매개 변수.
+
+====
++
+다음 예는 SVM의 모든 LIF에 대한 일반 정보를 표시합니다.
+
++
+[listing]
+----
+vs1::> network interface show -vserver vs1
+            Logical    Status     Network            Current       Current Is
+Vserver     Interface  Admin/Oper Address/Mask       Node          Port    Home
+----------- ---------- ---------- ------------------ ------------- ------- ----
+vs1
+            lif1         up/up    192.0.2.253/24     node-01       e0b     false
+            d2           up/up    192.0.2.252/21     node-01       e0d     true
+            data3        up/up    192.0.2.251/20     node-02       e0c     true
+----
+

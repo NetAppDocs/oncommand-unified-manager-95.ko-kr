@@ -1,0 +1,18 @@
+---
+permalink: online-help/reference-clear-performance-threshold-policy-page-opm.html 
+sidebar: sidebar 
+keywords:  
+summary: 임계값 정책 지우기 페이지를 사용하여 하나 이상의 스토리지 객체에서 성능 임계값 정책을 제거하거나 지울 수 있습니다. 
+---
+= 성능 임계값 정책 페이지를 지웁니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+임계값 정책 지우기 페이지를 사용하여 하나 이상의 스토리지 객체에서 성능 임계값 정책을 제거하거나 _clear_를 수행할 수 있습니다.
+
+정책 목록은 선택한 개체에서 사용 중인 정책으로만 채워집니다.
+
+스토리지 오브젝트에서 제거할 정책을 선택한 다음 * 정책 지우기 * 를 클릭합니다.

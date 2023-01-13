@@ -1,0 +1,59 @@
+---
+permalink: online-help/task-installing-a-ca-signed-and-returned-https-certificate.html 
+sidebar: sidebar 
+keywords:  
+summary: 인증 기관이 서명하여 반환한 후에 보안 인증서를 업로드 및 설치할 수 있습니다. 업로드 및 설치하는 파일은 자체 서명된 기존 인증서의 서명된 버전이어야 합니다. CA 서명 인증서는 끼어들기 공격을 방지하고 자체 서명된 인증서보다 더 나은 보안 보호를 제공합니다. 
+---
+= HTTPS 보안 인증서를 설치하는 중입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+인증 기관이 서명하여 반환한 후에 보안 인증서를 업로드 및 설치할 수 있습니다. 업로드 및 설치하는 파일은 자체 서명된 기존 인증서의 서명된 버전이어야 합니다. CA 서명 인증서는 끼어들기 공격을 방지하고 자체 서명된 인증서보다 더 나은 보안 보호를 제공합니다.
+
+
+
+== 시작하기 전에
+
+다음 작업을 완료해야 합니다.
+
+* 인증서 서명 요청 파일을 다운로드하고 인증 기관에서 서명했습니다
+* 인증서 체인을 PEM 형식으로 저장했습니다
+* 중간 인증서를 비롯하여 Unified Manager 서버 인증서에서 루트 서명 인증서까지 체인에 있는 모든 인증서가 포함됩니다
+
+
+OnCommand 관리자 역할이 있어야 합니다.
+
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]* 를 입력한 다음 * 설정 * 메뉴에서 * HTTPS 인증서 * 를 클릭합니다.
+. HTTPS 인증서 설치 * 를 클릭합니다.
+. 표시되는 대화 상자에서 * 파일 선택... * 을 클릭하여 업로드할 파일을 찾습니다.
+. 파일을 선택한 다음 * 설치 * 를 클릭하여 파일을 설치합니다.
+
+
+
+
+== 인증서 체인의 예
+
+다음 예제에서는 인증서 체인 파일이 표시되는 방법을 보여 줍니다.
+
+[listing]
+----
+-----BEGIN CERTIFICATE-----
+<*Server certificate*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#1 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Intermediate certificate \#2 \(if present\)*>
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+<*Root signing certificate*>
+-----END CERTIFICATE-----
+----

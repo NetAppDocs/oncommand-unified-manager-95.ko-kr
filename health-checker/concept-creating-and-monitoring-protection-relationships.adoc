@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-creating-and-monitoring-protection-relationships.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 사용하면 보호 관계를 생성하고, 관리 대상 클러스터에 저장된 데이터의 미러 보호 및 백업 소산 보호를 모니터링 및 해결하고, 데이터를 덮어쓰거나 손실된 경우 데이터를 복원할 수 있습니다. 
+---
+= 보호 관계 생성, 모니터링 및 문제 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 사용하면 보호 관계를 생성하고, 관리 대상 클러스터에 저장된 데이터의 미러 보호 및 백업 소산 보호를 모니터링 및 해결하고, 데이터를 덮어쓰거나 손실된 경우 데이터를 복원할 수 있습니다.

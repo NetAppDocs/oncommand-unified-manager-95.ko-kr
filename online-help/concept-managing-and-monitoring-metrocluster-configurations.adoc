@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-and-monitoring-metrocluster-configurations.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager 웹 UI에서 MetroCluster 구성에 대한 모니터링 지원을 통해 MetroCluster 구성의 연결 문제를 확인할 수 있습니다. 연결 문제를 조기에 발견할 경우 MetroCluster 구성을 효과적으로 관리할 수 있습니다. 
+---
+= MetroCluster 구성 관리 및 모니터링
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 웹 UI에서 MetroCluster 구성에 대한 모니터링 지원을 통해 MetroCluster 구성의 연결 문제를 확인할 수 있습니다. 연결 문제를 조기에 발견할 경우 MetroCluster 구성을 효과적으로 관리할 수 있습니다.

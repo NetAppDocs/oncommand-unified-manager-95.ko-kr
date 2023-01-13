@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 이벤트는 모니터링되는 클러스터의 문제를 식별하는 데 도움이 됩니다. 
+---
+= 이벤트 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+이벤트는 모니터링되는 클러스터의 문제를 식별하는 데 도움이 됩니다.

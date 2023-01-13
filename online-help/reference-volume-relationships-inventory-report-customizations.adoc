@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-volume-relationships-inventory-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 볼륨 관계 인벤토리 보고서를 사용자 지정하여 장애 원인을 기준으로 필터링되는 볼륨 세부 정보를 볼 수 있습니다. 필터를 사용하여 일정에 따라 볼륨 관계 인벤토리 세부 정보를 표시하고 문제에 따라 볼륨 인벤토리 세부 정보를 그룹화할 수 있습니다. 
+---
+= 볼륨 관계 인벤토리 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+볼륨 관계 인벤토리 보고서를 사용자 지정하여 장애 원인을 기준으로 필터링되는 볼륨 세부 정보를 볼 수 있습니다. 필터를 사용하여 일정에 따라 볼륨 관계 인벤토리 세부 정보를 표시하고 문제에 따라 볼륨 인벤토리 세부 정보를 그룹화할 수 있습니다.

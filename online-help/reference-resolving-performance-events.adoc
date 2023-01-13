@@ -1,0 +1,16 @@
+---
+permalink: online-help/reference-resolving-performance-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 제안된 작업을 사용하여 직접 성능 이벤트를 시도하고 해결할 수 있습니다. 처음 세 가지 제안 사항은 항상 표시되며 네 번째 제안 아래에 있는 작업은 표시되는 이벤트 유형에 따라 달라집니다. 
+---
+= 성능 이벤트 해결
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+제안된 작업을 사용하여 직접 성능 이벤트를 시도하고 해결할 수 있습니다. 처음 세 가지 제안 사항은 항상 표시되며 네 번째 제안 아래에 있는 작업은 표시되는 이벤트 유형에 따라 달라집니다.
+
+Help Me Do this* 링크는 특정 작업 수행에 대한 지침을 포함하여 각 권장 조치에 대한 추가 정보를 제공합니다. 그 중에는 Unified Manager, OnCommand System Manager, OnCommand Workflow Automation, ONTAP CLI 명령 또는 이러한 툴의 조합을 사용하는 것도 포함될 수 있습니다.

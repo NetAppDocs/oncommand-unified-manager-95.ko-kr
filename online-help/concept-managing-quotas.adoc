@@ -1,0 +1,14 @@
+---
+permalink: online-help/concept-managing-quotas.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 및 그룹 할당량을 사용하여 사용자 또는 사용자 그룹이 사용할 수 있는 디스크 공간 또는 파일 수를 제한할 수 있습니다. 디스크 및 파일 사용, 디스크에 설정된 다양한 제한 등 사용자 및 사용자 그룹 할당량 정보를 볼 수 있습니다. 
+---
+= 할당량 관리
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 및 그룹 할당량을 사용하여 사용자 또는 사용자 그룹이 사용할 수 있는 디스크 공간 또는 파일 수를 제한할 수 있습니다. 디스크 및 파일 사용, 디스크에 설정된 다양한 제한 등 사용자 및 사용자 그룹 할당량 정보를 볼 수 있습니다.

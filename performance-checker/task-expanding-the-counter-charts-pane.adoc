@@ -1,0 +1,45 @@
+---
+permalink: performance-checker/task-expanding-the-counter-charts-pane.html 
+sidebar: sidebar 
+keywords:  
+summary: 차트를 더 크고 읽기 쉽게 만들 수 있도록 카운터 차트 창을 확장할 수 있습니다. 
+---
+= 카운터 차트 창 확장
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+차트를 더 크고 읽기 쉽게 만들 수 있도록 카운터 차트 창을 확장할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+카운터의 비교 개체와 시간 범위를 정의한 후에는 더 큰 카운터 차트 창을 볼 수 있습니다. 성능 탐색기 창의 중간에 있는 * < * 버튼을 사용하여 창을 확장합니다.
+
+
+
+== 단계
+
+. Counter Charts * 창을 확장하거나 축소합니다.
++
+|===
+| 대상... | 수행할 작업... 
+
+
+ a| 
+페이지 너비에 맞게 Counter Charts(카운터 차트) 창을 확장합니다
+ a| 
+* < * 버튼을 클릭합니다
+
+
+
+ a| 
+카운터 차트 창을 페이지의 오른쪽 반으로 줄입니다
+ a| 
+* > * 버튼을 클릭합니다
+
+|===
+

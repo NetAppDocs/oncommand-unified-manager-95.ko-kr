@@ -1,0 +1,465 @@
+---
+permalink: online-help/reference-storage-vm-events.html 
+sidebar: sidebar 
+keywords:  
+summary: SVM 이벤트는 SVM 상태에 대한 정보를 제공하여 잠재적 문제를 모니터링할 수 있습니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= SVM 이벤트
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SVM 이벤트는 SVM 상태에 대한 정보를 제공하여 잠재적 문제를 모니터링할 수 있습니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 영향 영역: 가용성
+
+별표(*)는 Unified Manager 이벤트로 변환된 EMS 이벤트를 나타냅니다.
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+SVM CIFS 서비스 중단(문서 VserverCifsServiceStatusDown)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM CIFS 서비스가 구성되지 않음(해당 없음)
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+
+
+ a| 
+존재하지 않는 CIFS 공유 * 에 연결을 시도합니다
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+CIFS NetBIOS 이름 충돌 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+CIFS 섀도우 복제본 작업이 실패했습니다 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+많은 CIFS 접속 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+최대 CIFS 접속이 초과되었습니다 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+사용자당 최대 CIFS 접속 수가 * 을 초과했습니다
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+SVM FC/FCoE 서비스 중단(문서 VserverFcServiceStatusDown)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM iSCSI 서비스 중단(문서 VserverIscsiServiceStatusDown)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM NFS 서비스 중지(ocumEvtVserverNfsServiceStatusDown)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM FC/FCoE 서비스가 구성되지 않음(해당 없음)
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+
+
+ a| 
+SVM iSCSI 서비스가 구성되지 않음(해당 없음)
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+
+
+ a| 
+SVM NFS 서비스가 구성되지 않음(해당 없음)
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+
+
+ a| 
+SVM 중지됨(ocumvserverDown)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+
+
+ a| 
+AV 서버 사용 중 이(가) 새 스캔 요청을 수락할 수 없습니다 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+바이러스 검사*에 대한 AV 서버 연결이 없습니다
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+등록된 AV 서버 없음 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+응답하지 않는 AV 서버 연결 *
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+
+
+ a| 
+권한이 없는 사용자가 AV 서버 * 를 시도합니다
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+AV 서버에서 바이러스 발견 *
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+무한 확장 볼륨 스토리지를 사용하는 SVM을 사용할 수 없음(문서 VserverStorageNotAvailable)
+ a| 
+사고
+ a| 
+무한 확장 볼륨을 사용하는 SVM
+ a| 
+심각
+
+
+
+ a| 
+무한 확장 볼륨 스토리지를 사용하는 SVM 부분 사용 가능(문서 VserverStoragePartiallyAvailable)
+ a| 
+위험입니다
+ a| 
+무한 확장 볼륨을 사용하는 SVM
+ a| 
+오류
+
+
+
+ a| 
+무한 확장 볼륨 네임스페이스를 사용하는 SVM 미러링 구성 가용성 문제가 있는 구성요소(문서 번호 serverNsMirrorabilityHavingIssues)
+ a| 
+위험입니다
+ a| 
+무한 확장 볼륨을 사용하는 SVM
+ a| 
+경고
+
+|===
+
+
+== 충격 영역: 용량
+
+다음 용량 이벤트는 무한 확장 볼륨이 있는 SVM에만 적용됩니다.
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+무한 확장 볼륨 공간이 가득 찬 SVM(doctVserverFull)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+무한 확장 볼륨 공간이 거의 가득 찬 SVM(doctVserverNearlyFull)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+
+
+ a| 
+무한 확장 볼륨 스냅샷 사용 제한이 초과된 SVM(EvocVserverSnapshotUsageExceeded)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+
+
+ a| 
+무한 확장 볼륨 네임스페이스 공간이 가득 찬 SVM(doctVserverNamespaceFull)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+오류
+
+
+
+ a| 
+무한 확장 볼륨 네임스페이스 공간이 거의 가득 찬 SVM(documvserverNamespaceNearlyFull)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+|===
+
+
+== 충격 영역: 구성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+SVM 발견됨(해당 없음)
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+
+
+ a| 
+SVM 삭제됨(해당 없음)
+ a| 
+이벤트
+ a| 
+클러스터
+ a| 
+정보
+
+
+
+ a| 
+이름이 바뀐 SVM(해당 없음)
+ a| 
+이벤트
+ a| 
+SVM
+ a| 
+정보
+
+|===
+
+
+== 충격 영역: 성능
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+SVM IOPS 중요 임계값 위반(문서 vmIopsIncident)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM IOPS 경고 임계값 위반(문서 vmIopsWarning)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+
+
+ a| 
+SVM MBPS 중요 위반 임계값(문서 vmMbpsIncident)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM MBps 경고 임계값 위반(문서 vmMbpsWarning)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+
+
+ a| 
+SVM 지연 시간 중요 임계값 위반(문서 vmLatencyIncident)
+ a| 
+사고
+ a| 
+SVM
+ a| 
+심각
+
+
+
+ a| 
+SVM 지연 경고 임계값 위반(문서 SSmLatencyWarning)
+ a| 
+위험입니다
+ a| 
+SVM
+ a| 
+경고
+
+|===

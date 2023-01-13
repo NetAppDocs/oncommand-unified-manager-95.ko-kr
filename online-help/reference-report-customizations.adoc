@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 스토리지 및 활용률 용량, 이벤트, 클러스터 인벤토리, NFS 엑스포트 또는 SVM 인벤토리를 기준으로 다양한 Unified Manager 보고서를 사용자 지정할 수 있습니다. . 
+---
+= 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 및 활용률 용량, 이벤트, 클러스터 인벤토리, NFS 엑스포트 또는 SVM 인벤토리를 기준으로 다양한 Unified Manager 보고서를 사용자 지정할 수 있습니다. .

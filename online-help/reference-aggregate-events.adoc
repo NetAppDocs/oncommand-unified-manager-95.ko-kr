@@ -1,0 +1,408 @@
+---
+permalink: online-help/reference-aggregate-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 집계 이벤트는 잠재적 문제를 모니터링할 수 있도록 집계 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= 이벤트를 집계합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+집계 이벤트는 잠재적 문제를 모니터링할 수 있도록 집계 상태에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 영향 영역: 가용성
+
+별표(*)는 Unified Manager 이벤트로 변환된 EMS 이벤트를 나타냅니다.
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+오프라인 애그리게이트(ocumaggregateStateOffline)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+집계 실패(문서 집계 실패)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+Aggregate Restricted(문서 집계 제한상태)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+Aggregate Reconstructing(ocumEvtAggregateRaidStateReconstructing)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+애그리게이트 성능 저하(document gagregateRaidStateDegraded)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+클라우드 계층에 부분적으로 연결 가능(ocEventCloudTierPartiallyReachable)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+Cloud Tier Unreachable(문서 클라우드연락할 수 없음)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+MetroCluster 집계 왼쪽(ocumEvtMetroCluster AggregateLeftBehind)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+MetroCluster 애그리게이트 미러링 성능 저하(ocumEvtMetroCluster및 AggregateMirrorDegraded)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+Aggregate 재배치 * 에 대한 오브젝트 저장소 액세스가 거부되었습니다
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+스토리지 페일오버 * 동안 애그리게이트 재배치에 대한 오브젝트 저장소 액세스가 거부되었습니다
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+|===
+
+
+== 충격 영역: 용량
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+애그리게이트 공간 거의 가득 참(ocumEvtAggregateNearlyFull)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+전체 애그리게이트 공간(ocumEvtAggregateFull)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+전체(ocumEvtAggregateDaysUntilFullSoon)까지 일 집계
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+OverCommitted 집계(ocumEvtAggregateOverCommitted)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+오류
+
+
+
+ a| 
+거의 커밋됨 집계(문서 집계)(ocumEvtAggregateAlmostOverCommitted)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+전체 스냅숏 예비 공간 집계(ocumEvtAggregateSnapReserveFull)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+애그리게이트 성장률 비정상(ocumEvtgeggateGrowthRateAbnormal)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+|===
+
+
+== 충격 영역: 구성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+검색된 애그리게이트(해당 없음)
+ a| 
+이벤트
+ a| 
+집계
+ a| 
+정보
+
+
+
+ a| 
+이름이 바뀐 애그리게이트(해당 없음)
+ a| 
+이벤트
+ a| 
+집계
+ a| 
+정보
+
+
+
+ a| 
+삭제된 애그리게이트(해당 없음)
+ a| 
+이벤트
+ a| 
+노드
+ a| 
+정보
+
+|===
+
+
+== 충격 영역: 성능
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+애그리게이트 IOPS 중요 임계값 위반(문서 애그리게이트게이트ateIopsIncident)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+애그리게이트 IOPS 경고 임계값 위반(문서 집계.ifssWarning)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+애그리게이트 MBps 중요 임계값 위반(문서 집계.MbpsIncident)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+애그리게이트 MBps 경고 임계값 위반(문서 집계.MbpsWarning)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+지연 시간에 심각한 임계값 위반(문서 집계 atrencyIncident)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+애그리게이트 지연 경고 임계값 위반(문서 집계 LatencyWarning)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+애그리게이트 성능 사용된 용량 위험 임계값 위반(문서 집계 성능 용량 UsedIncident)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+애그리게이트 성능 사용된 용량 경고 임계값 위반(문서 집계 PerfCapacityUsedWarning)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+총 활용률 주요 임계값 위반(문서 집계 활용률인시던트)
+ a| 
+사고
+ a| 
+집계
+ a| 
+심각
+
+
+
+ a| 
+애그리게이트 활용률 경고 임계값 위반(문서 집계 활용률경고)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+과도하게 사용된 임계값 침해(문서 집계 디스크OverUtilizedWarning)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+
+
+ a| 
+집계 동적 임계값 위반(문서 집계 DynamicEventWarning)
+ a| 
+위험입니다
+ a| 
+집계
+ a| 
+경고
+
+|===

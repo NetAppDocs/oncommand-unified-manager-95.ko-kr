@@ -1,0 +1,198 @@
+---
+permalink: online-help/reference-metrocluster-connectivity-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 연결 이벤트는 잠재적 문제를 모니터링할 수 있도록 MetroCluster 구성에서 클러스터 구성 요소와 클러스터 간 연결에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다. 
+---
+= MetroCluster 연결 이벤트입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+연결 이벤트는 잠재적 문제를 모니터링할 수 있도록 MetroCluster 구성에서 클러스터 구성 요소와 클러스터 간 연결에 대한 정보를 제공합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.
+
+
+
+== 영향 영역: 가용성
+
+|===
+| 이벤트 이름(트랩 이름) | 충격 수준 | 소스 유형 | 심각도입니다 
+
+
+ a| 
+모든 스위치 간 링크 다운(document tMetroClusterTM AllISLBetweenSwitchesDown)
+ a| 
+사고
+ a| 
+MetroCluster 스위치 간 연결
+ a| 
+심각
+
+
+
+ a| 
+MetroCluster 파트너 간의 모든 링크 다운(document.MetroClusterTM-AllLinksBetweenPartnersDown)
+ a| 
+사고
+ a| 
+MetroCluster 관계
+ a| 
+심각
+
+
+
+ a| 
+FC-SAS 브리지와 스토리지 스택 연결 연결 해제(문서 BridgeSasPortDown)
+ a| 
+사고
+ a| 
+MetroCluster 브리지 스택 연결
+ a| 
+심각
+
+
+
+ a| 
+MetroCluster 구성이 전환됨(문서 MetroCluster MetroCluster MetroCluster에 영향을 받음)
+ a| 
+위험입니다
+ a| 
+MetroCluster 관계
+ a| 
+경고
+
+
+
+ a| 
+MetroCluster 구성이 부분적으로 전환됨(documptMetroCluster MetroCluster소프트웨어 영향받음)
+ a| 
+위험입니다
+ a| 
+MetroCluster 관계
+ a| 
+오류
+
+
+
+ a| 
+영향을 받는 MetroCluster 재해 복구 기능(문서 MetroCluster MetroCluster MetroCluster: 영향 받음)
+ a| 
+위험입니다
+ a| 
+MetroCluster 관계
+ a| 
+심각
+
+
+
+ a| 
+피어링 네트워크를 통해 MetroCluster 파트너에게 연결할 수 없음(doctMetroCluster소프트웨어 파트너스NotReachableOverPeeringNetwork)
+ a| 
+사고
+ a| 
+MetroCluster 관계
+ a| 
+심각
+
+
+
+ a| 
+노드에서 FC 스위치까지 모든 FC-VI 상호 연결 링크 다운(문서 MccNodeSwitchFcviLinksDown)
+ a| 
+사고
+ a| 
+MetroCluster 노드 스위치 연결
+ a| 
+심각
+
+
+
+ a| 
+노드-FC 스위치 하나 이상의 FC-이니시에이터 링크 다운(문서 EvtMccNodeSwitchFcLinksOneOrMoreDown)
+ a| 
+위험입니다
+ a| 
+MetroCluster 노드 스위치 연결
+ a| 
+경고
+
+
+
+ a| 
+노드에서 FC 스위치로 모든 FC Initiator 링크 다운(문서 MccNodeSwitchFcLinksDown)
+ a| 
+사고
+ a| 
+MetroCluster 노드 스위치 연결
+ a| 
+심각
+
+
+
+ a| 
+FC-SAS 브리지 FC 링크로 전환 다운됨(문서 MccSwitchBridgeFcLinksDown)
+ a| 
+사고
+ a| 
+MetroCluster 스위치 브리지 연결
+ a| 
+심각
+
+
+
+ a| 
+노드 간 모든 FC VI 상호 연결 링크 다운(문서 MccInterNodeLinksDown)
+ a| 
+사고
+ a| 
+노드 간 연결입니다
+ a| 
+심각
+
+
+
+ a| 
+노드 간 하나 이상의 FC VI 상호 연결 링크 다운(document MccInterNodeLinksOneOrMoreDown)
+ a| 
+위험입니다
+ a| 
+노드 간 연결입니다
+ a| 
+경고
+
+
+
+ a| 
+노드-브리지 링크 다운(문서:EvtMccNodeBridgeLinksDown)
+ a| 
+사고
+ a| 
+노드 브리지 연결
+ a| 
+심각
+
+
+
+ a| 
+노드에서 스토리지까지 모든 SAS 링크 다운(문서 MccNodeStackLinksDown)
+ a| 
+사고
+ a| 
+노드 스택 연결
+ a| 
+심각
+
+
+
+ a| 
+스토리지 스택에 대한 노드 하나 이상의 SAS 링크 다운(문서 MccNodeStackLinksOneOrMoreDown)
+ a| 
+위험입니다
+ a| 
+노드 스택 연결
+ a| 
+경고
+
+|===

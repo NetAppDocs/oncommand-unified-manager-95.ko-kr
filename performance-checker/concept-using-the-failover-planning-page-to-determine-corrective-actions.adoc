@@ -1,0 +1,16 @@
+---
+permalink: performance-checker/concept-using-the-failover-planning-page-to-determine-corrective-actions.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능/노드 장애 조치 계획 페이지에 표시되는 정보를 기반으로, 장애 조치가 HA 쌍의 성능을 허용 수준 아래로 떨어뜨지 않도록 조치를 취할 수 있습니다. 
+---
+= 노드 장애 조치 계획 페이지를 사용하여 수정 조치를 결정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능/노드 장애 조치 계획 페이지에 표시되는 정보를 기반으로, 장애 조치가 HA 쌍의 성능을 허용 수준 아래로 떨어뜨지 않도록 조치를 취할 수 있습니다.
+
+예를 들어, 페일오버의 예상 성능 영향을 줄이려면 HA 쌍의 노드에서 일부 볼륨 또는 LUN을 클러스터의 다른 노드로 이동할 수 있습니다. 이렇게 하면 운영 노드가 페일오버 후에도 계속해서 적절한 성능을 제공할 수 있습니다.

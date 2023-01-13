@@ -1,0 +1,64 @@
+---
+permalink: health-checker/task-creating-a-jdbc-data-source-using-birt.html 
+sidebar: sidebar 
+keywords: Unified Manager 
+summary: BIRT를 사용하여 새 보고서를 생성한 후 Unified Manager에 보고서를 연결하려면 데이터 소스를 생성해야 합니다. 
+---
+= BIRT를 사용하여 JDBC 데이터 소스 만들기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+BIRT를 사용하여 새 보고서를 생성한 후 Unified Manager에 보고서를 연결하려면 데이터 소스를 생성해야 합니다.
+
+
+
+== 시작하기 전에
+
+BIRT를 사용하여 보고서를 만들어야 합니다.
+
+MySQL Connector/J를 다운로드하여 설치해야 합니다
+
+보고서 스키마 역할을 사용하여 데이터베이스 사용자를 만들어야 합니다.
+
+
+
+== 단계
+
+. Eclipse에서 * Data Explorer * > * Data Sources * > * New Data Source * 를 선택합니다.
+. 다음 목록의 데이터 소스 유형에서 * 만들기를 선택합니다.
+. JDBC 데이터 소스 * 를 선택한 후 * 다음 * 을 클릭합니다.
+. New JDBC Data Source Profile * 대화 상자에서 * com.mysql.jdbc.Driver (v5.1) * 를 선택합니다.
++
+.. MySQL 드라이버가 나타나지 않으면 * 드라이버 관리 * 를 클릭합니다.
+.. JDBC 드라이버 관리 * 대화 상자에서 * 추가 * 를 클릭합니다.
+.. MySQL Connector/J가 있는 위치를 찾습니다 `.jar` 파일이 설치된 다음 파일을 선택합니다.
+.. 확인 * 을 클릭합니다.
++
+MySQL 드라이버를 보고 선택할 수 있어야 합니다.
+
+
+
+. 적절한 형식을 사용하여 Unified Manager 인스턴스의 정규화된 호스트 이름 또는 IP 주소를 입력합니다.
++
+|===
+| 주소 유형 | 형식 
+
+
+ a| 
+IPv4
+ a| 
+`jdbc:mysql://xx.xx.xx.xx:3306/ocum_report`
+
+
+
+ a| 
+IPv6
+ a| 
+`jdbc:mysql://address=(protocol=tcp)(host=xx:xx:xx:xx:xx:xx:xx:xx)(port=3306)/ocum_report`
+
+|===
+. 데이터베이스 사용자의 사용자 이름을 입력하고 암호를 입력한 다음 * 마침 * 을 클릭합니다.
+

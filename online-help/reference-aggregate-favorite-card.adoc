@@ -1,0 +1,59 @@
+---
+permalink: online-help/reference-aggregate-favorite-card.html 
+sidebar: sidebar 
+keywords:  
+summary: Aggregate Favorite 카드를 사용하면 즐겨찾기로 표시한 애그리게이트의 용량 및 성능 세부 정보를 확인할 수 있습니다. 
+---
+= 즐겨찾기 카드를 통합합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aggregate Favorite 카드를 사용하면 즐겨찾기로 표시한 애그리게이트의 용량 및 성능 세부 정보를 확인할 수 있습니다.
+
+
+
+== 집계 속성
+
+애그리게이트 즐겨찾기 카드에는 다음과 같은 집계 특성이 표시됩니다.
+
+* * 상태 집계 *
++
+애그리게이트의 상태를 나타내는 아이콘입니다. 가능한 값은 Normal(정상), Warning(경고), Error(오류) 및 Critical(위험)입니다.
+
+* * 집계 이름 *
++
+애그리게이트의 이름입니다.
+
++
+Aggregate 이름 위에 커서를 놓으면 Aggregate가 속한 클러스터의 이름이 표시됩니다.
+
+* * 용량 *
++
+Aggregate에서 사용 가능한 여유 공간의 비율과 aggregate가 꽉 찰 때까지 남은 예상 일 수.
+
++
+FabricPool 애그리게이트의 경우 이 정보에는 로컬 성능 계층의 용량만 반영됩니다. 용량 타일을 클릭하여 상태/애그리게이트 세부 정보 페이지에 대한 자세한 정보를 봅니다.
+
+* * 성능 *
++
+애그리게이트의 성능 세부 정보입니다.
+
++
+** IOPS *
++
+지난 72시간 동안 초당 평균 I/O 작업 수입니다.
+
+** * 처리량 *
++
+최근 72시간 동안의 평균 처리량(Mbps 단위)
+
+** * 지연 시간 *
++
+작업에 필요한 평균 응답 시간(밀리초)입니다.
+
+
+
+

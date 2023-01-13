@@ -1,0 +1,20 @@
+---
+permalink: performance-checker/concept-analyzing-workload-performance.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 사용하면 클러스터에서 볼륨 워크로드의 I/O 성능을 모니터링하고 분석할 수 있습니다. 클러스터에 성능 문제가 있는지, 스토리지가 문제인지 여부를 확인할 수 있습니다. 
+---
+= 워크로드 성능 분석
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 사용하면 클러스터에서 볼륨 워크로드의 I/O 성능을 모니터링하고 분석할 수 있습니다. 클러스터에 성능 문제가 있는지, 스토리지가 문제인지 여부를 확인할 수 있습니다.
+
+[NOTE]
+====
+이 장에서는 성능/볼륨 세부 정보 페이지와 이벤트 세부 정보 페이지를 사용하여 워크로드 성능을 분석하는 방법에 대해 설명합니다.
+
+====

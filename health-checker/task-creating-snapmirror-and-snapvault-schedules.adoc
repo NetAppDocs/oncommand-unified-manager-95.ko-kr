@@ -1,0 +1,50 @@
+---
+permalink: health-checker/task-creating-snapmirror-and-snapvault-schedules.html 
+sidebar: sidebar 
+keywords:  
+summary: 기본 또는 고급 SnapMirror 및 SnapVault 일정을 생성하여 데이터 변경 빈도에 따라 소스 또는 기본 볼륨에서 자동 데이터 보호 전송을 가능하게 할 수 있습니다. 
+---
+= SnapMirror 및 SnapVault 일정 생성
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본 또는 고급 SnapMirror 및 SnapVault 일정을 생성하여 데이터 변경 빈도에 따라 소스 또는 기본 볼륨에서 자동 데이터 보호 전송을 가능하게 할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+* OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+* 보호 구성 대화 상자에서 대상 정보 영역을 이미 완료해야 합니다.
+* 이 작업을 수행하려면 Workflow Automation을 설정해야 합니다.
+
+
+
+
+== 단계
+
+. 보호 구성 * 대화 상자의 * SnapMirror * 탭 또는 * SnapVault * 탭에서 * 관계 설정 * 영역에서 * 일정 생성 * 링크를 클릭합니다.
++
+Create Schedule 대화상자가 표시됩니다.
+
+. [일정 이름] * 필드에 일정에 부여할 이름을 입력합니다.
+. 다음 중 하나를 선택합니다.
++
+** * 기본 *
++
+기본 간격 스타일 일정을 만들려면 선택합니다.
+
+** * 고급 *
++
+cron 스타일 일정을 만들려면 선택합니다.
+
+
+
+. Create * 를 클릭합니다.
++
+새 일정이 SnapMirror 일정 또는 SnapVault 일정 드롭다운 목록에 표시됩니다.
+
+

@@ -1,0 +1,37 @@
+---
+permalink: health-checker/task-editing-individual-qtree-health-threshold-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: 하나 이상의 qtree에 대한 qtree 용량의 상태 임계값 설정을 편집할 수 있습니다. 임계값이 초과되면 알림이 생성되고 알림이 수신됩니다. 이러한 알림은 생성된 이벤트를 기반으로 예방 조치를 취하는 데 도움이 됩니다. 
+---
+= 개별 qtree 상태 임계값 설정 편집
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+하나 이상의 qtree에 대한 qtree 용량의 상태 임계값 설정을 편집할 수 있습니다. 임계값이 초과되면 알림이 생성되고 알림이 수신됩니다. 이러한 알림은 생성된 이벤트를 기반으로 예방 조치를 취하는 데 도움이 됩니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+임계값 변경에 따라 다음 모니터링 주기에서 이벤트가 생성되거나 폐기됩니다.
+
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 상태 * > * SVM * 을 클릭합니다.
+. 상태/스토리지 가상 시스템 * 인벤토리 페이지에서 qtree가 있는 SVM을 선택합니다.
+. 상태/스토리지 가상 머신 * 세부 정보 페이지에서 qtree 탭을 클릭합니다.
+. 하나 이상의 qtree를 선택한 다음 * 임계값 편집 * 을 클릭합니다.
+. [Qtree 임계값 편집] * 대화 상자에서 선택한 qtree 또는 qtree의 용량 임계값을 변경하고 * [저장]을 클릭합니다.
+

@@ -1,0 +1,36 @@
+---
+permalink: health-checker/task-editing-the-group-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager에서 생성한 그룹의 이름과 설명을 편집할 수 있습니다. 
+---
+= 그룹 편집
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager에서 생성한 그룹의 이름과 설명을 편집할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+OnCommand 관리자 또는 스토리지 관리자 역할이 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+이름을 업데이트하기 위해 그룹을 편집할 때 고유한 이름을 지정해야 합니다. 기존 그룹 이름은 사용할 수 없습니다.
+
+
+
+== 단계
+
+. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]를 클릭한 다음 * 관리 * > * 그룹 * 을 클릭합니다.
+. 그룹 * 탭에서 편집할 그룹을 선택한 다음 * 편집 * 을 클릭합니다.
+. 그룹 편집 * 대화 상자에서 그룹의 이름, 설명 또는 둘 다를 변경합니다.
+. 저장 * 을 클릭합니다.
+

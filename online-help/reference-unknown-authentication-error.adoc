@@ -1,0 +1,34 @@
+---
+permalink: online-help/reference-unknown-authentication-error.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= 알 수 없는 인증 오류입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+* * 문제 *
++
+원격 사용자 또는 그룹을 추가, 편집, 삭제 또는 테스트하는 등의 인증 관련 작업을 수행하는 경우 다음 오류 메시지가 표시될 수 있습니다. `Unknown authentication error`.
+
+* * 원인 *
++
+이 문제는 다음 옵션에 대해 잘못된 값을 설정한 경우 발생할 수 있습니다.
+
++
+** Active Directory 인증 서비스의 관리자 이름입니다
+** OpenLDAP 인증 서비스의 고유 이름을 바인딩합니다
+
+
+* * 시정 조치 *
++
+.. 도구 모음에서 * 를 클릭합니다image:../media/clusterpage-settings-icon.gif[""]* 를 클릭한 다음 * 설정 * > * 인증 * 을 클릭합니다.
+.. 선택한 인증 서비스에 따라 관리자 이름 또는 고유 이름 바인딩에 대한 적절한 정보를 입력합니다.
+.. 인증 테스트 * 를 클릭하여 지정한 세부 정보로 인증을 테스트합니다.
+.. 저장 후 닫기 * 를 클릭합니다.
+
+
+

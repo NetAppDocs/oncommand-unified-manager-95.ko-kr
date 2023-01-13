@@ -1,0 +1,56 @@
+---
+permalink: performance-checker/concept-volume-behavior-during-switchover-and-switchback.html 
+sidebar: sidebar 
+keywords:  
+summary: 스위치오버 또는 스위치백을 트리거하는 이벤트는 활성 볼륨을 재해 복구 그룹의 다른 클러스터로 이동합니다. 활성 상태이고 클라이언트에 데이터를 제공하는 클러스터의 볼륨이 중지되고 다른 클러스터의 볼륨이 활성화되며 데이터 제공을 시작합니다. Unified Manager는 활성 상태이고 실행 중인 볼륨만 모니터링합니다. 
+---
+= 스위치오버 및 스위치백 중 볼륨 동작
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스위치오버 또는 스위치백을 트리거하는 이벤트는 활성 볼륨을 재해 복구 그룹의 다른 클러스터로 이동합니다. 활성 상태이고 클라이언트에 데이터를 제공하는 클러스터의 볼륨이 중지되고 다른 클러스터의 볼륨이 활성화되며 데이터 제공을 시작합니다. Unified Manager는 활성 상태이고 실행 중인 볼륨만 모니터링합니다.
+
+볼륨이 한 클러스터에서 다른 클러스터로 이동되므로 두 클러스터를 모두 모니터링하는 것이 좋습니다. Unified Manager의 단일 인스턴스가 MetroCluster 구성에서 두 클러스터를 모두 모니터링할 수 있지만, 두 위치 간 거리가 필요한 경우 두 Unified Manager 인스턴스를 사용하여 두 클러스터를 모니터링해야 하는 경우도 있습니다. 다음 그림에서는 Unified Manager의 단일 인스턴스를 보여 줍니다.
+
+image::../media/opm-mcc-switchover.gif[OPM MCC 절체]
+
+이름에 p 가 있는 볼륨은 기본 볼륨을 나타내고, 이름에 b 가 있는 볼륨은 SnapMirror에서 만든 미러링된 백업 볼륨입니다.
+
+정상 작동 시:
+
+* 클러스터 A에는 Vol1p와 Vol2p의 두 개의 활성 볼륨이 있습니다.
+* 클러스터 B에는 Vol3p와 Vol4p의 두 개의 활성 볼륨이 있습니다.
+* 클러스터 A에는 Vol3b와 Vol4b의 두 개의 비활성 볼륨이 있습니다.
+* 클러스터 B에는 Vol1b와 Vol2b라는 두 개의 비활성 볼륨이 있습니다.
+
+
+각 활성 볼륨(통계, 이벤트 등)에 대한 정보는 Unified Manager에서 수집합니다. Vol1p 및 Vol2p 통계는 클러스터 A에 의해 수집되고 Vol3p 및 Vol4p 통계는 클러스터 B에 의해 수집됩니다
+
+심각한 장애가 발생하면 클러스터 B에서 클러스터 A로 활성 볼륨이 전환됩니다.
+
+* 클러스터 A에는 Vol1p, Vol2p, Vol3b 및 Vol4b의 4개의 활성 볼륨이 있습니다.
+* 클러스터 B에는 Vol3p, Vol4p, Vol1b 및 Vol2b의 4개의 비활성 볼륨이 있습니다.
+
+
+정상 작동 중에 각 활성 볼륨과 관련된 정보가 Unified Manager에서 수집됩니다. 그러나 이 경우 Vol1p 및 Vol2p 통계는 클러스터 A에 의해 수집되고 Vol3b 및 Vol4b 통계도 클러스터 A에 의해 수집됩니다
+
+Vol3p와 Vol3b는 서로 다른 클러스터에 있으므로 동일한 볼륨이 아닙니다. Vol3p용 Unified Manager의 정보는 Vol3b와 다릅니다.
+
+* 클러스터 A로 전환하는 동안 Vol3p 통계 및 이벤트가 표시되지 않습니다.
+* 첫 번째 스위치오버에서는 Vol3b가 기록 정보가 없는 새 볼륨으로 보입니다.
+
+
+클러스터 B가 복구되고 스위치백 이 수행되면 클러스터 B에서 Vol3p가 다시 활성화되며, 전환 중에 기간별 통계 및 기간의 통계 차이가 표시됩니다. Vol3b는 다른 전환이 발생할 때까지 클러스터 A에서 볼 수 없습니다.
+
+image::../media/opm-mcc-volumes.gif[OPM MCC 볼륨]
+
+[NOTE]
+====
+* 스위치백 후 클러스터 A의 Vol3b와 같이 비활성 상태인 MetroCluster 볼륨은 "'이 볼륨이 삭제되었습니다.' 메시지로 식별됩니다. 이 볼륨은 실제로 삭제되지 않지만 활성 볼륨이 아니기 때문에 현재 Unified Manager에서 모니터링되지 않습니다.
+* 단일 Unified Manager가 MetroCluster 구성에서 두 클러스터를 모두 모니터링하는 경우, 볼륨 검색은 해당 시점에 활성 상태인 볼륨에 대한 정보를 반환합니다. 예를 들어, ""Vol3""을 검색하면 클러스터 A에서 Vol3b에 대한 통계 및 이벤트가 반환되고, 클러스터 A에서 Vol3이 활성화됩니다
+
+
+====

@@ -1,0 +1,50 @@
+---
+permalink: install/task-deploying-unified-manager-vapp.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager를 구축하려면 소프트웨어 다운로드, 가상 어플라이언스 구축, 유지보수 사용자 이름 및 암호 생성, 웹 UI에서 초기 설정 작업이 포함됩니다. 
+---
+= Unified Manager 구축
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager를 구축하려면 소프트웨어 다운로드, 가상 어플라이언스 구축, 유지보수 사용자 이름 및 암호 생성, 웹 UI에서 초기 설정 작업이 포함됩니다.
+
+
+
+== 시작하기 전에
+
+* 구축을 위한 시스템 요구 사항을 완료해야 합니다.
++
+xref:concept-requirements-for-installing-unified-manager.adoc[시스템 요구 사항]
+
+* 다음 정보가 있어야 합니다.
++
+** NetApp Support 사이트의 로그인 자격 증명
+** VMware vCenter Server 및 vSphere Web Client(vSphere 버전 6.5용) 또는 vSphere Client(vSphere 버전 5.5 또는 6.0용)에 액세스하기 위한 자격 증명
+** Unified Manager 가상 어플라이언스를 구축하고 있는 ESXi 서버의 IP 주소입니다
+** 데이터 저장소의 스토리지 공간 및 메모리 요구 사항과 같은 데이터 센터에 대한 세부 정보입니다
+** IPv6 주소 할당을 사용하려면 호스트에서 IPv6을 활성화해야 합니다.
+** VMware Tools의 CD-ROM 또는 ISO 이미지
+
+
+
+
+
+
+== 이 작업에 대해
+
+Unified Manager를 VMware ESXi 서버에 가상 어플라이언스로 구축할 수 있습니다.
+
+SSH를 사용하지 않고 VMware 콘솔을 사용하여 유지보수 콘솔에 액세스해야 합니다.
+
+VMware 툴은 Unified Manager에 포함되어 있지 않습니다``.ova`` 파일, 및 는 별도로 설치해야 합니다.
+
+
+
+== 작업을 마친 후
+
+배포 및 초기 설정을 완료한 후 클러스터를 추가하거나 유지 관리 콘솔에서 추가 네트워크 설정을 구성한 다음 웹 UI에 액세스할 수 있습니다.

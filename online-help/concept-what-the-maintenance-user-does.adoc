@@ -1,0 +1,16 @@
+---
+permalink: online-help/concept-what-the-maintenance-user-does.html 
+sidebar: sidebar 
+keywords:  
+summary: '유지 관리 사용자는 Red Hat Enterprise Linux 또는 CentOS 시스템에 Unified Manager를 설치하는 동안 생성됩니다. 유지보수 사용자 이름은 "umadmin" 사용자입니다. 유지 관리 사용자는 웹 UI에서 OnCommand 관리자 역할을 가지고 있으며, 사용자는 후속 사용자를 만들고 해당 역할을 할당할 수 있습니다.' 
+---
+= 유지 관리 사용자가 수행하는 작업
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+유지 관리 사용자는 Red Hat Enterprise Linux 또는 CentOS 시스템에 Unified Manager를 설치하는 동안 생성됩니다. 유지보수 사용자 이름은 "'umadmin'' 사용자입니다. 유지 관리 사용자는 웹 UI에서 OnCommand 관리자 역할을 가지고 있으며, 사용자는 후속 사용자를 만들고 해당 역할을 할당할 수 있습니다.
+
+유지보수 사용자 또는 umadmin 사용자도 Unified Manager 유지보수 콘솔에 액세스할 수 있습니다.

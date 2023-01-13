@@ -1,0 +1,40 @@
+---
+permalink: install/task-restarting-the-unified-manager-virtual-machine.html 
+sidebar: sidebar 
+keywords:  
+summary: '유지보수 콘솔에서 Unified Manager 가상 머신 \(VM\)을 다시 시작할 수 있습니다. 새 보안 인증서를 생성한 후 또는 VM에 문제가 있는 경우 VM을 다시 시작해야 합니다.' 
+---
+= Unified Manager 가상 머신을 재시작합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+유지보수 콘솔에서 Unified Manager 가상 머신(VM)을 다시 시작할 수 있습니다. 새 보안 인증서를 생성한 후 또는 VM에 문제가 있는 경우 VM을 다시 시작해야 합니다.
+
+
+
+== 시작하기 전에
+
+* 가상 어플라이언스의 전원을 켜야 합니다.
+* 유지보수 사용자로 Unified Manager 유지보수 콘솔에 로그인해야 합니다.
+
+
+
+
+== 이 작업에 대해
+
+VMware * Restart Guest * 옵션을 사용하여 vSphere에서 가상 머신을 재시작할 수도 있습니다.
+
+
+
+== 단계
+
+. 유지보수 콘솔에서 * 시스템 구성 * > * 가상 시스템 재부팅 * 을 선택합니다.
+. 브라우저에서 Unified Manager 그래픽 사용자 인터페이스(GUI)를 시작하고 로그인합니다.
+
+
+* 관련 정보 *
+
+https://www.vmware.com/support/developer/PowerCLI/PowerCLI41/html/Restart-VMGuest.html["VMware vSphere PowerCLI cmdlet 참조: 재시작 - VMGuest"]

@@ -1,0 +1,68 @@
+---
+permalink: config/task-subscribing-to-ontap-ems-events.html 
+sidebar: sidebar 
+keywords:  
+summary: 'ONTAP 소프트웨어와 함께 설치된 시스템에서 생성된 이벤트 관리 시스템\(EMS\) 이벤트를 구독할 수 있습니다. EMS 이벤트의 하위 집합이 Unified Manager에 자동으로 보고되지만 이러한 이벤트에 가입한 경우에만 추가 EMS 이벤트가 보고됩니다.' 
+---
+= ONTAP EMS 이벤트 가입
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ONTAP 소프트웨어가 설치된 시스템에서 생성되는 EMS(이벤트 관리 시스템) 이벤트를 구독하여 받을 수 있습니다. EMS 이벤트의 하위 집합이 Unified Manager에 자동으로 보고되지만 이러한 이벤트에 가입한 경우에만 추가 EMS 이벤트가 보고됩니다.
+
+
+
+== 시작하기 전에
+
+Unified Manager에 이미 추가된 EMS 이벤트를 자동으로 구독하지 마십시오. 동일한 문제에 대해 두 개의 이벤트를 수신할 때 혼란이 발생할 수 있습니다.
+
+
+
+== 이 작업에 대해
+
+EMS 이벤트 수에 관계없이 구독할 수 있습니다. 구독하는 모든 이벤트의 유효성을 검증하며, 검증된 이벤트만 Unified Manager에서 모니터링하는 클러스터에 적용됩니다. _ONTAP 9 EMS 이벤트 카탈로그_는 지정된 버전의 ONTAP 9 소프트웨어에 대한 모든 EMS 메시지에 대한 자세한 정보를 제공합니다. 해당 이벤트 목록을 보려면 ONTAP 9 제품 설명서 페이지에서 해당 버전의 _EMS 이벤트 카탈로그_를 찾으십시오.
+
+https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62286["ONTAP 9 제품 라이브러리"]
+
+구독하는 ONTAP EMS 이벤트에 대한 알림을 구성할 수 있으며 이러한 이벤트에 대해 실행할 사용자 지정 스크립트를 만들 수 있습니다.
+
+[NOTE]
+====
+구독한 ONTAP EMS 이벤트를 수신하지 않으면 클러스터의 DNS 구성에 문제가 발생하여 클러스터가 Unified Manager 서버에 도달하지 못할 수 있습니다. 이 문제를 해결하려면 클러스터 관리자가 클러스터의 DNS 구성을 수정한 다음 Unified Manager를 다시 시작해야 합니다. 이렇게 하면 보류 중인 EMS 이벤트가 Unified Manager 서버로 플러시됩니다.
+
+====
+
+
+== 단계
+
+. 왼쪽 탐색 창에서 * 구성 * > * 이벤트 관리 * 를 클릭합니다.
+. Configuration/Manage Events * 페이지에서 * Subscribe to EMS events * 버튼을 클릭합니다.
+. EMS 이벤트 가입 * 대화 상자에서 가입하려는 ONTAP EMS 이벤트의 이름을 입력합니다.
++
+가입할 수 있는 EMS 이벤트의 이름을 보려면 ONTAP 클러스터 쉘에서 을 사용할 수 있습니다 `event route show` 명령(ONTAP 9 이전) 또는 `event catalog show` 명령(ONTAP 9 이상)
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Infrastructure_Management/OnCommand_Suite/How_to_configure_ONTAP_EMS_Event_Subscriptions_in_OnCommand_Unified_Manager_%2F%2F_Active_IQ_Unified_Manager["OnCommand Unified Manager/Active IQ Unified Manager에서 ONTAP EMS 이벤트 구독을 구성하는 방법"]
+
+. 추가 * 를 클릭합니다.
++
+EMS 이벤트는 가입된 EMS 이벤트 목록에 추가되지만, 해당 to Cluster 열에 추가한 EMS 이벤트에 대한 상태가 ""Unknown""으로 표시됩니다.
+
+. Save and Close * 를 클릭하여 EMS 이벤트 구독을 클러스터에 등록합니다.
+. EMS 이벤트 가입 * 을 다시 클릭합니다.
++
+추가한 EMS 이벤트에 대해 클러스터에 적용 가능한 열에 ""예"" 상태가 표시됩니다.
+
++
+상태가 "예"가 아닌 경우 ONTAP EMS 이벤트 이름의 철자를 확인합니다. 이름을 잘못 입력한 경우 잘못된 이벤트를 제거한 다음 이벤트를 다시 추가해야 합니다.
+
+
+
+
+
+== 작업을 마친 후
+
+ONTAP EMS 이벤트가 발생하면 이벤트 페이지에 이벤트가 표시됩니다. Event details 페이지에서 EMS 이벤트에 대한 세부 정보를 볼 이벤트를 선택할 수 있다. 이벤트 처리를 관리하거나 이벤트에 대한 알림을 생성할 수도 있습니다.

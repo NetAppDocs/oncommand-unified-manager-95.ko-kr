@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-prioritizing-storage-objects-using-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 주석 규칙을 생성하고 스토리지 객체에 적용하여 적용된 주석 유형과 우선 순위에 따라 해당 객체를 식별하고 필터링할 수 있습니다. 
+---
+= 주석을 사용하여 스토리지 오브젝트 이벤트 우선 순위 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+주석 규칙을 생성하고 스토리지 객체에 적용하여 적용된 주석 유형과 우선 순위에 따라 해당 객체를 식별하고 필터링할 수 있습니다.

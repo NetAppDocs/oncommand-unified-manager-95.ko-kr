@@ -1,0 +1,42 @@
+---
+permalink: performance-checker/task-viewing-svm-iops-traffic-by-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: 성능/SVM 탐색기 페이지를 사용하여 SVM에 대한 자세한 IOPS 정보를 볼 수 있습니다. IOPS - 총 카운터 차트는 SVM의 총 IOPS 사용량을 보여 주며 IOPS - 분석 카운터 차트는 SVM에 대한 읽기, 쓰기 및 기타 IOPS의 영향을 확인하는 데 유용합니다. 
+---
+= 프로토콜별 SVM IOPS 트래픽 보기
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+성능/SVM 탐색기 페이지를 사용하여 SVM에 대한 자세한 IOPS 정보를 볼 수 있습니다. IOPS - 총 카운터 차트는 SVM의 총 IOPS 사용량을 보여 주며 IOPS - 분석 카운터 차트는 SVM에 대한 읽기, 쓰기 및 기타 IOPS의 영향을 확인하는 데 유용합니다.
+
+
+
+== 이 작업에 대해
+
+또한 IOPS-프로토콜 차트에서는 SVM에서 사용 중인 각 프로토콜의 IOPS 트래픽을 자세하게 비교하여 보여줍니다. 다음 프로토콜을 사용할 수 있습니다.
+
+* CIFS를 선택합니다
+* NFS 를 참조하십시오
+* FCP
+* iSCSI
+* NVMe를 참조하십시오
+
+
+
+
+== 단계
+
+. 선택한 SVM에 대한 * 성능/SVM 탐색기 * 페이지의 IOPS 차트에서 드롭다운 메뉴에서 * 프로토콜 * 을 선택합니다.
++
+IOPS - 프로토콜 차트가 표시됩니다.
+
+. 더 큰 버전의 차트를 보려면 * 확대/축소 보기 * 를 선택합니다.
++
+IOPS 고급 프로토콜 비교 차트가 표시됩니다. 을 선택 취소하거나 선택하여 비교를 제한할 수 있습니다 image:../media/eye-icon.gif[""] 이는 프로토콜과 관련이 있습니다.
+
+. 특정 값을 보려면 커서를 차트 중 하나의 차트 영역으로 이동하여 팝업 창을 표시합니다.
+

@@ -1,0 +1,57 @@
+---
+permalink: health-checker/task-disabling-saml-authentication-from-the-maintenance-console-um.html 
+sidebar: sidebar 
+keywords:  
+summary: Unified Manager GUI에 액세스할 수 없는 경우 유지보수 콘솔에서 SAML 인증을 비활성화해야 할 수 있습니다. 이 문제는 구성이 잘못되거나 IDP에 액세스할 수 없는 경우에 발생할 수 있습니다. 
+---
+= 유지 관리 콘솔에서 SAML 인증을 사용하지 않도록 설정합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager GUI에 액세스할 수 없는 경우 유지보수 콘솔에서 SAML 인증을 비활성화해야 할 수 있습니다. 이 문제는 구성이 잘못되거나 IDP에 액세스할 수 없는 경우에 발생할 수 있습니다.
+
+
+
+== 시작하기 전에
+
+유지보수 사용자로서 유지보수 콘솔에 액세스할 수 있어야 합니다.
+
+
+
+== 이 작업에 대해
+
+SAML 인증이 비활성화된 경우 Active Directory 또는 LDAP와 같이 구성된 디렉토리 서비스 공급자가 로그온 인증을 수행합니다. 로컬 사용자 및 유지 관리 사용자는 구성된 원격 사용자 외에도 그래픽 사용자 인터페이스에 액세스할 수 있습니다.
+
+UI의 설정/인증 페이지에서 SAML 인증을 비활성화할 수도 있습니다.
+
+[NOTE]
+====
+SAML 인증이 비활성화된 후 Unified Manager가 자동으로 다시 시작됩니다.
+
+====
+
+
+== 단계
+
+. 유지보수 콘솔에 로그인합니다.
+. 주 메뉴 * 에서 * SAML 인증 비활성화 * 옵션에 대한 번호를 입력합니다.
++
+SAML 인증을 비활성화하고 Unified Manager를 다시 시작할지 확인하는 메시지가 표시됩니다.
+
+. y * 를 입력한 다음 Enter 키를 누르면 Unified Manager가 다시 시작됩니다.
+
+
+
+
+== 결과
+
+다음 번에 원격 사용자가 Unified Manager 그래픽 인터페이스에 액세스하려고 할 때 IDP 로그인 페이지 대신 Unified Manager 로그인 페이지에 자격 증명을 입력합니다.
+
+
+
+== 작업을 마친 후
+
+필요한 경우 IDP에 액세스하고 Unified Manager 서버 URL 및 메타데이터를 삭제합니다.

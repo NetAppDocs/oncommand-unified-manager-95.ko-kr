@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-description-of-dashboard-windows.html 
+sidebar: sidebar 
+keywords:  
+summary: 대시보드 페이지를 사용하여 모니터링 중인 개체를 빠르게 확인할 수 있습니다. 
+---
+= 대시보드 창에 대한 설명입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+대시보드 페이지를 사용하여 모니터링 중인 개체를 빠르게 확인할 수 있습니다.

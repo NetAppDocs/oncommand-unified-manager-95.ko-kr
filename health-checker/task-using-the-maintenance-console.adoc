@@ -1,0 +1,14 @@
+---
+permalink: health-checker/task-using-the-maintenance-console.html 
+sidebar: sidebar 
+keywords:  
+summary: 유지보수 콘솔을 사용하여 네트워크 설정을 구성하고, Unified Manager가 설치된 시스템을 구성 및 관리하고, 기타 유지보수 작업을 수행하여 발생할 수 있는 문제를 예방하고 해결할 수 있습니다. 
+---
+= 유지보수 콘솔 사용
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+유지보수 콘솔을 사용하여 네트워크 설정을 구성하고, Unified Manager가 설치된 시스템을 구성 및 관리하고, 기타 유지보수 작업을 수행하여 발생할 수 있는 문제를 예방하고 해결할 수 있습니다.

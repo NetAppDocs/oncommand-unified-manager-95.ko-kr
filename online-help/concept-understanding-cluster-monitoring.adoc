@@ -1,0 +1,20 @@
+---
+permalink: online-help/concept-understanding-cluster-monitoring.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Unified Manager 데이터베이스에 클러스터를 추가하여 가용성, 용량 및 기타 세부 정보(예: CPU 사용, 인터페이스 통계, 사용 가능한 디스크 공간, qtree 사용, 섀시 환경)를 클러스터에서 모니터링할 수 있습니다.' 
+---
+= 클러스터 모니터링 이해
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager 데이터베이스에 클러스터를 추가하여 가용성, 용량 및 기타 세부 정보(예: CPU 사용, 인터페이스 통계, 사용 가능한 디스크 공간, qtree 사용, 섀시 환경)를 클러스터에서 모니터링할 수 있습니다.
+
+상태가 비정상이거나 사전 정의된 임계값이 위반되는 경우 이벤트가 생성됩니다. 그렇게 하도록 구성된 경우 Unified Manager는 이벤트가 경고를 트리거할 때 지정된 수신자에게 알림을 보냅니다.
+
+다음 순서도는 Unified Manager 모니터링 프로세스를 보여줍니다.
+
+image::../media/cluster-monitoring2.gif[클러스터 모니터링2]

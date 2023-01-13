@@ -1,0 +1,14 @@
+---
+permalink: health-checker/concept-understanding-more-about-annotations.html 
+sidebar: sidebar 
+keywords:  
+summary: 주석에 대한 개념을 이해하면 환경의 스토리지 오브젝트와 관련된 이벤트를 관리하는 데 도움이 됩니다. 
+---
+= 주석에 대한 자세한 이해
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+주석에 대한 개념을 이해하면 환경의 스토리지 오브젝트와 관련된 이벤트를 관리하는 데 도움이 됩니다.

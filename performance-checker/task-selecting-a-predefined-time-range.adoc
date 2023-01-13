@@ -1,0 +1,23 @@
+---
+permalink: performance-checker/task-selecting-a-predefined-time-range.html 
+sidebar: sidebar 
+keywords:  
+summary: 사전 정의된 시간 범위를 선택하면 클러스터 오브젝트 성능 데이터를 볼 때 데이터 출력을 사용자 지정하고 초점을 맞출 수 있는 빠르고 효율적인 방법이 있습니다. 미리 정의된 시간 범위를 선택하면 최대 13개월까지 데이터를 사용할 수 있습니다. 
+---
+= 미리 정의된 시간 범위 선택
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사전 정의된 시간 범위를 선택하면 클러스터 오브젝트 성능 데이터를 볼 때 데이터 출력을 사용자 지정하고 초점을 맞출 수 있는 빠르고 효율적인 방법이 있습니다. 미리 정의된 시간 범위를 선택하면 최대 13개월까지 데이터를 사용할 수 있습니다.
+
+
+
+== 단계
+
+. Performance Explorer * 페이지 오른쪽 상단에서 * 시간 범위 * 를 클릭합니다.
+. Time Range Selection* 패널의 오른쪽에서 미리 정의된 시간 범위를 선택합니다.
+. 범위 적용 * 을 클릭합니다.
+

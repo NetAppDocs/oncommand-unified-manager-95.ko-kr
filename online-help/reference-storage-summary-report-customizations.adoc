@@ -1,0 +1,14 @@
+---
+permalink: online-help/reference-storage-summary-report-customizations.html 
+sidebar: sidebar 
+keywords:  
+summary: 스토리지 요약 보고서를 사용자 지정하여 HA 쌍의 스토리지 용량에 대한 정보를 보고 분석할 수 있습니다. 필터를 사용하면 클러스터 모델별 스토리지 사용률, 할당되지 않은 LUN의 용량, 사용 가능한 HA 쌍의 용량을 표시하여 새 볼륨 및 LUN을 프로비저닝할 수 있습니다. 
+---
+= 스토리지 요약 보고서 사용자 지정
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 요약 보고서를 사용자 지정하여 HA 쌍의 스토리지 용량에 대한 정보를 보고 분석할 수 있습니다. 필터를 사용하면 클러스터 모델별 스토리지 사용률, 할당되지 않은 LUN의 용량, 사용 가능한 HA 쌍의 용량을 표시하여 새 볼륨 및 LUN을 프로비저닝할 수 있습니다.

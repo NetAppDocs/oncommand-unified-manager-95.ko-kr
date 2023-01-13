@@ -1,0 +1,59 @@
+---
+section: config
+title: 구성 및 관리 작업을 수행합니다
+entries:
+- title: Unified Manager 구성
+  url: "/config/concept-configuring-unified-manager.html"
+  entries:
+  - title: 구성 시퀀스의 개요
+    url: "/config/concept-overview-of-the-configuration-sequence.html"
+  - title: Unified Manager 웹 UI에 액세스
+    url: "/config/task-accessing-oncommand-unified-manager-web-ui.html"
+  - title: Unified Manager 웹 UI의 초기 설정 수행
+    url: "/config/task-performing-the-initial-setup-of-the-unified-manager-web-ui.html"
+  - title: 클러스터 추가
+    url: "/config/task-adding-clusters.html"
+  - title: 경고 알림을 보내도록 Unified Manager 구성
+    url: "/config/task-configuring-unified-manager-to-send-alert-notifications.html"
+    entries:
+    - title: 이벤트 알림 설정을 구성하는 중입니다
+      url: "/config/task-configuring-event-notification-settings.html"
+    - title: 원격 인증 활성화 중
+      url: "/config/task-enabling-remote-authentication.html"
+    - title: 원격 인증에서 중첩 그룹을 해제합니다
+      url: "/config/task-disabling-nested-groups-from-remote-authentication.html"
+    - title: 인증 서버 추가
+      url: "/config/task-adding-authentication-servers.html"
+    - title: 인증 서버의 구성을 테스트하는 중입니다
+      url: "/config/task-testing-the-configuration-of-authentication-servers-um-6-0.html"
+    - title: 사용자 추가
+      url: "/config/task-adding-users.html"
+    - title: 알림 추가
+      url: "/config/task-adding-alerts.html"
+  - title: Unified Manager에 자동으로 추가되는 EMS 이벤트입니다
+    url: "/config/reference-ems-events-that-are-added-automatically-to-unified-manager.html"
+  - title: ONTAP EMS 이벤트 가입
+    url: "/config/task-subscribing-to-ontap-ems-events.html"
+  - title: SAML 인증 설정 관리
+    url: "/config/concept-managing-saml-authentication-settings-um.html"
+    entries:
+    - title: ID 공급자 요구 사항
+      url: "/config/reference-identity-provider-requirements-um.html"
+    - title: SAML 인증을 사용하도록 설정합니다
+      url: "/config/task-enabling-saml-authentication-um.html"
+  - title: 데이터베이스 백업 설정을 구성하는 중입니다
+    url: "/config/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html"
+  - title: 로컬 사용자 암호 변경
+    url: "/config/task-changing-the-local-user-password.html"
+  - title: Unified Manager 호스트 이름을 변경하는 중입니다
+    url: "/config/concept-changing-the-unified-manager-host-name.html"
+    entries:
+    - title: Unified Manager 가상 어플라이언스 호스트 이름을 변경하는 중입니다
+      url: "/config/task-changing-the-unified-manager-host-name-on-vmware.html"
+      entries:
+      - title: HTTPS 보안 인증서를 생성하는 중입니다
+        url: "/config/task-generating-an-https-security-certificate-ocf.html"
+      - title: Unified Manager 가상 머신을 재시작합니다
+        url: "/config/task-restarting-the-unified-manager-virtual-machine.html"
+    - title: Linux 시스템에서 Unified Manager 호스트 이름 변경
+      url: "/config/task-changing-the-unified-manager-host-name-on-rhel-or-centos.html"
