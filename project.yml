@@ -19,7 +19,7 @@ settings:
   - name: Unified Manager를 참조하십시오
     url: "/active-iq-unified-manager-97"
     version-number: '9.7'
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: OnCommand Unified Manager 9.5 문서
