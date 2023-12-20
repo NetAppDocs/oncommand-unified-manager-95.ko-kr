@@ -45,7 +45,7 @@ https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=6
 가입할 수 있는 EMS 이벤트의 이름을 보려면 ONTAP 클러스터 쉘에서 을 사용할 수 있습니다 `event route show` 명령(ONTAP 9 이전) 또는 `event catalog show` 명령(ONTAP 9 이상) 개별 EMS 이벤트 식별에 대한 자세한 지침은 Knowledgebase Answer 1072320을 참조하십시오.
 
 +
-https://kb.netapp.com/app/answers/answer_view/a_id/1072320["KB 1072320 - Unified Manager에서 ONTAP EMS 이벤트 등록을 구성하는 방법"]
+https://kb.netapp.com/mgmt/AIQUM/How_to_configure_and_receive_alerts_from_ONTAP_EMS_Event_Subscription_in_Active_IQ_Unified_Manager["Active IQ Unified Manager에서 ONTAP EMS 이벤트 가입으로부터 알림을 구성 및 수신하는 방법"^]
 
 . 추가 * 를 클릭합니다.
 +
