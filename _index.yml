@@ -1,0 +1,43 @@
+---
+indexpage:
+  title: OnCommand Unified Manager 설명서
+  summary: OnCommand Unified Manager를 사용하면 단일 인터페이스에서 ONTAP 스토리지 시스템의 상태 및 성능을 모니터링
+    및 관리할 수 있습니다. 이 설명서 라이브러리에는 버전 9.5에 대한 정보가 포함되어 있습니다.
+  keywords: oncommand unified manager, release notes, 95
+  lead: OnCommand Unified Manager를 사용하면 단일 인터페이스에서 ONTAP 스토리지 시스템의 상태 및 성능을 모니터링 및
+    관리할 수 있습니다. 이 설명서 라이브러리에는 버전 9.5에 대한 정보가 포함되어 있습니다.
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 릴리스 정보
+      url: "/release-notes.html"
+    - title: VMware vSphere를 위한 빠른 시작 설치
+      url: qsg-vapp.html
+    - title: Linux용 빠른 시작 설치
+      url: qsg-linux.html
+    - title: Windows용 빠른 시작 설치
+      url: qsg-windows.html
+  - title: Configure Unified Manager를 설치합니다
+    links:
+    - title: VMware vSphere 시스템에 업그레이드를 설치합니다
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software-on-vmware-vsphere.html
+    - title: Linux 시스템에 업그레이드를 설치합니다
+      url: install/concept-install-upgrade-and-remove-unified-manager-software.html
+    - title: Windows 시스템에 업그레이드를 설치합니다
+      url: install/concept-installing-upgrading-and-removing-unified-manager-software.html
+    - title: Unified Manager를 구성합니다
+      url: config/concept-configuring-unified-manager.html
+  - title: 성능 모니터링
+    links:
+    - title: 성능 임계값
+      url: performance-checker/concept-managing-performance-thresholds.html
+    - title: 클러스터 성능
+      url: performance-checker/concept-monitoring-cluster-performance-from-the-dashboard.html
+  - title: 더 많은 리소스
+    links:
+    - title: Unified Manager 비디오
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7mp3jFSg0IJgo3oeDQRY-Gl
+    - title: Unified Manager 블로그
+      url: https://www.netapp.com/blog/#q=active%20iq%20unified%20manager&t=Blogs&sort=%40publish-date-mktg%20descending&layout=card&f:@facet-language-mktg=[English]
+    - title: 최신 버전의 Unified Manager에 대한 문서
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/index.html

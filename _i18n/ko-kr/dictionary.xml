@@ -512,7 +512,6 @@
   <block id="cf84f1efc2b94e2be0cfb3168fbb6f79" category="list-text">데이터베이스 연결 마법사에서 MySQL 루트 암호를 입력합니다.</block>
   <block id="57e365413f6a91c23a8885041e991e3d" category="list-text">나머지 메시지에 따라 설치를 완료합니다.</block>
   <block id="1f7fcc341d4eca6cda713029ed9f55ea" category="list-text">설치가 끝나면 * Finish * 를 클릭하면 Unified Manager 웹 UI가 표시됩니다.</block>
-  <block id="b1d05b1498f934fd9fdb5242af6b4ee6" category="summary">OnCommand Unified Manager용 문서</block>
   <block id="a26233650deb6cb0bb9c28069615b351" category="doc">OnCommand Unified Manager 설명서</block>
   <block id="38e6765f489199cbac8d654040013a22" category="doc">Linux 설치를 위한 빠른 시작 지침</block>
   <block id="d6eda01f5a2148c2383c259caccbdf81" category="list-text">운영 체제: Red Hat Enterprise Linux 또는 CentOS 64비트 버전 7.x 아키텍처, OS 설치 프로그램의 소프트웨어 선택 옵션에서 "GUI가 있는 서버" 기본 환경을 사용하여 설치</block>
@@ -12215,4 +12214,5 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">Active IQ Unified Manager에서 ONTAP EMS 이벤트 가입으로부터 알림을 구성 및 수신하는 방법</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
+  <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">OnCommand Unified Manager를 사용하면 단일 인터페이스에서 ONTAP 스토리지 시스템의 상태 및 성능을 모니터링 및 관리할 수 있습니다. 이 설명서 라이브러리에는 버전 9.5에 대한 정보가 포함되어 있습니다.</block>
 </blocks>
