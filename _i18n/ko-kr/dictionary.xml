@@ -1030,7 +1030,6 @@
   <block id="713d9eb7bae81414a341cd2b9ad04f0e" category="paragraph">적은 용량의 메모리가 있는 시스템에 Unified Manager를 설치할 수 있지만 권장되는 12GB RAM을 사용하면 최적의 성능을 위해 충분한 메모리를 사용할 수 있으며, 따라서 시스템이 구성 증가에 따라 추가 클러스터 및 스토리지 오브젝트를 수용할 수 있습니다. Unified Manager가 구축된 VM에서 메모리 제한을 설정하지 않아야 하며 소프트웨어에서 시스템에서 할당된 메모리를 사용하지 못하도록 하는 기능(예: 풍선 벌루닝)을 사용하면 안 됩니다.</block>
   <block id="1ba321baad6e31e95cddb86bd159a0ab" category="paragraph">또한 Unified Manager의 두 번째 인스턴스를 설치하기 전에 Unified Manager의 단일 인스턴스에서 모니터링할 수 있는 노드 수에 제한이 있습니다. 자세한 내용은 _모범 사례 가이드_를 참조하십시오.</block>
   <block id="9650789293045a87cc14a47729b5ebfc" category="inline-link">기술 보고서 4621: Unified Manager 모범 사례 가이드</block>
-  <block id="badef135127b32313f0e0eebe283472f" category="paragraph"><block ref="badef135127b32313f0e0eebe283472f" category="inline-link-rx"></block></block>
   <block id="ccd350b03208f21a01e8434aa29bf22c" category="paragraph">메모리 페이지 스와핑은 시스템 및 관리 응용 프로그램의 성능에 부정적인 영향을 줍니다. 전체 호스트 활용률로 인해 CPU 리소스를 사용하지 않는 경우 성능이 저하될 수 있습니다.</block>
   <block id="4019b02afc32a61e39e48a05d352cdf9" category="section-title">전용 사용 요구 사항</block>
   <block id="f8a1acaf90775fd387de63d0c7d02a5a" category="paragraph">Unified Manager를 설치하는 물리적 또는 가상 시스템은 Unified Manager에만 사용해야 하며 다른 애플리케이션과 공유해서는 안 됩니다. 다른 애플리케이션은 시스템 리소스를 소모하며 Unified Manager의 성능을 크게 줄일 수 있습니다.</block>
@@ -6555,7 +6554,6 @@
   <block id="11e8e4f244f4ff642a8c627e453e7ac8" category="paragraph">OnCommand System Manager나 ONTAP 명령을 사용하여 Flash Cache가 설치되어 있는지, 설정되어 있지 않은 경우 사용하도록 설정할 수 있습니다. 다음 명령을 실행하면 특정 노드에서 Flash Cache가 설정되었는지 여부가 표시됩니다.<block ref="48de88639c7fbb304293e385f1577ff8" prefix=" " category="inline-code"></block></block>
   <block id="4226c3da2a5d50e1c8abfdfbf9bd3780" category="paragraph">Flash Cache 및 Flash Cache 사용에 대한 자세한 내용은 다음 기술 보고서를 참조하십시오.</block>
   <block id="4d594fa378085e019a42ca73e740986c" category="inline-link">기술 보고서 3832: Flash Cache 모범 사례 가이드 를 참조하십시오</block>
-  <block id="e9f146d71f531c29c1d0c53c51f7c325" category="paragraph"><block ref="e9f146d71f531c29c1d0c53c51f7c325" category="inline-link-rx"></block></block>
   <block id="ed46215834ece9df6f6e928ec99fb8b8" category="summary">기존 클러스터를 추가하여 클러스터를 모니터링하고 상태, 용량, 구성 및 성능에 대한 정보를 얻을 수 있습니다.</block>
   <block id="0130853463bbe8886a65910adc3f54b2" category="doc">Add Cluster 대화 상자</block>
   <block id="67417a585c57d841c0ff1ea84e382fcd" category="paragraph">다음 값을 지정하여 클러스터를 추가할 수 있습니다.</block>
@@ -7651,7 +7649,6 @@
   <block id="f804ed2945f8b8f58e9c8ebf45b6d70a" category="paragraph">Unified Manager 애플리케이션 상태 및 성능 문제에 대한 데이터</block>
   <block id="030a4fbaf40ce64a3de26a58a2349f3b" category="paragraph">보고서 스키마 역할을 가진 데이터베이스 사용자인 보고 사용자는 이러한 테이블의 데이터에 액세스할 수 있습니다. 이 사용자는 Unified Manager 데이터베이스에서 직접 보고 및 기타 데이터베이스 뷰에 대한 읽기 전용 액세스를 가집니다. 이 사용자는 사용자 데이터 또는 클러스터 자격 증명 정보가 포함된 테이블에 액세스할 수 있는 권한이 없습니다.</block>
   <block id="43c57f8ab49b52141a07a60ab8386a94" category="inline-link">Unified Manager 보고를 위한 기술 보고서</block>
-  <block id="ef284f778ff870c90bd04052fa19e3d6" category="paragraph">를 참조하십시오<block ref="204d4ee1ca42e994250ea354be144e73" category="inline-link-rx"></block> (TR-4565)를 참조하십시오.</block>
   <block id="d5115a56160e45240d2698485e7e3777" category="summary">이벤트에 대한 개념을 이해하면 클러스터 및 클러스터 객체를 효율적으로 관리하고 경고를 적절하게 정의할 수 있습니다.</block>
   <block id="71d8a1201a22de215395582e8721d30e" category="doc">이벤트에 대한 자세한 정보</block>
   <block id="65326e6b22fde34c92c7ea8237cc8412" category="summary">SVM 스토리지 클래스 이벤트에서 스토리지 클래스의 상태에 대한 정보를 확인할 수 있으므로 잠재적 문제를 모니터링할 수 있습니다. SVM 스토리지 클래스는 무한 확장 볼륨을 가진 SVM에만 존재합니다. 이벤트는 영향 영역별로 그룹화되며 이벤트 및 트랩 이름, 영향 수준, 소스 유형 및 심각도를 포함합니다.</block>
@@ -11885,7 +11882,6 @@
   <block id="7c48a0120101491ea5a781058b5716de" category="doc">디스크를 추가하고 애그리게이트 레이아웃 재구성을 수행합니다</block>
   <block id="fdf3b7352c190d213c24db064ec3a78e" category="paragraph">이벤트 세부 정보 페이지에서 시스템 정의 임계값 이벤트를 수신하면 이벤트 설명 텍스트에 문제가 있는 애그리게이트의 이름이 나열됩니다. 이 애그리게이트에서 디스크를 추가하고 데이터를 재구성할 수 있습니다.</block>
   <block id="c993772a65e087ac68acfde3645c3287" category="inline-link">기술 보고서 3838: 스토리지 서브시스템 구성 가이드</block>
-  <block id="0379ced083df169219dc62cc5068b75c" category="paragraph"><block ref="0379ced083df169219dc62cc5068b75c" category="inline-link-rx"></block></block>
   <block id="877f5e27a442690f512bdd4fa77d8cb6" category="summary">Unified Manager를 사용하여 MetroCluster 구성에서 클러스터의 운영 상태 및 구성 요소를 확인할 수 있습니다. 클러스터가 Unified Manager에서 감지한 성능 이벤트에 참여한 경우 상태 를 통해 하드웨어 또는 소프트웨어 문제가 이벤트에 기여했는지 여부를 확인할 수 있습니다.</block>
   <block id="5e9e3cac8906fbac9ab062f3f912efc9" category="doc">MetroCluster 구성에서 클러스터 상태 확인</block>
   <block id="1e86f8bde1a87a2deac3175345884436" category="list-text">MetroCluster 구성에 대한 성능 이벤트를 분석하고 관련 클러스터의 이름을 확인해야 합니다.</block>
@@ -11967,7 +11963,6 @@
   <block id="4a62775f3719d6969e4b9d4bd0578ca6" category="paragraph">보호 구성 대화 상자에서 * 적용 * 을 클릭하면 선택한 효율성 설정을 저장하고 적용합니다.</block>
   <block id="cfc05fb84db9c30b38a419540c16db12" category="paragraph">선택 사항을 취소하고 고급 대상 설정 대화 상자를 닫습니다.</block>
   <block id="ae66a56126cf2726904ab28390ff838b" category="inline-link">NetApp 기술 보고서 3966: NetApp 데이터 압축 및 중복제거 구축 및 구현 가이드(clustered Data ONTAP)</block>
-  <block id="df4f489fd8783506ee2d692048efa87d" category="paragraph"><block ref="df4f489fd8783506ee2d692048efa87d" category="inline-link-rx"></block></block>
   <block id="f3a8d1f0654a5e8b0761614bebc1ad16" category="summary">MetroCluster 구성을 사용하면 데이터 미러링을 수행하고 전체 사이트를 사용할 수 없게 될 경우 페일오버를 시작할 수 있는 추가 기능을 제공합니다. MetroCluster 구성에서 클러스터 간 데이터 미러링 상태는 정상 또는 미러링을 사용할 수 없음이 될 수 있습니다. 상태를 이해하면 MetroCluster 구성을 효과적으로 관리할 수 있습니다.</block>
   <block id="baf5d44e1d7facdf126425b9dacabd71" category="doc">데이터 미러링 상태 정의</block>
   <block id="f4eb4da5d6840b7010c0afd8cb3a5816" category="cell">데이터 미러링 상태</block>
@@ -12215,4 +12210,9 @@
   <block id="1acf808d5167e8d3738f46ff5b4e301e" category="inline-link">Active IQ Unified Manager에서 ONTAP EMS 이벤트 가입으로부터 알림을 구성 및 수신하는 방법</block>
   <block id="9df7d5af79770924171ad1bae7e6fd64" category="paragraph"><block ref="9df7d5af79770924171ad1bae7e6fd64" category="inline-link-rx"></block></block>
   <block id="31787eb1cdcbc7b2acf891b9fa7f133e" category="sidebar">OnCommand Unified Manager를 사용하면 단일 인터페이스에서 ONTAP 스토리지 시스템의 상태 및 성능을 모니터링 및 관리할 수 있습니다. 이 설명서 라이브러리에는 버전 9.5에 대한 정보가 포함되어 있습니다.</block>
+  <block id="ee26087a8b7ec790988603a3298c45f3" category="paragraph"><block ref="ee26087a8b7ec790988603a3298c45f3" category="inline-link-rx"></block></block>
+  <block id="06c70b026e4d10bfcd7be2ebfa770d1c" category="paragraph"><block ref="06c70b026e4d10bfcd7be2ebfa770d1c" category="inline-link-rx"></block></block>
+  <block id="a87e9b78df20679676eb71ecb2dadaf4" category="paragraph">자세한 내용은 (TR-4565)를<block ref="7a573ad874e1456bf6b4f96b852006f2" category="inline-link-rx"></block> 참조하십시오.</block>
+  <block id="ec41073735b02d172b0bc1ee60ea5ec9" category="paragraph"><block ref="ec41073735b02d172b0bc1ee60ea5ec9" category="inline-link-rx"></block></block>
+  <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
 </blocks>

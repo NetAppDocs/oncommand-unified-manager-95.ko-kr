@@ -71,4 +71,4 @@ Unified Manager 애플리케이션 상태 및 성능 문제에 대한 데이터
 |===
 보고서 스키마 역할을 가진 데이터베이스 사용자인 보고 사용자는 이러한 테이블의 데이터에 액세스할 수 있습니다. 이 사용자는 Unified Manager 데이터베이스에서 직접 보고 및 기타 데이터베이스 뷰에 대한 읽기 전용 액세스를 가집니다. 이 사용자는 사용자 데이터 또는 클러스터 자격 증명 정보가 포함된 테이블에 액세스할 수 있는 권한이 없습니다.
 
-를 참조하십시오 http://www.netapp.com/us/media/tr-4565.pdf["Unified Manager 보고를 위한 기술 보고서"] (TR-4565)를 참조하십시오.
+자세한 내용은 (TR-4565)를 https://www.netapp.com/pdf.html?item=/media/16308-tr-4565pdf.pdf["Unified Manager 보고를 위한 기술 보고서"^] 참조하십시오.

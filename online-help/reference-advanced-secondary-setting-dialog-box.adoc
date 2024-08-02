@@ -88,4 +88,4 @@ SnapVault 관계에서 2차 볼륨의 중복제거를 지원하여 중복 데이
 
 * 관련 정보 *
 
-http://www.netapp.com/us/media/tr-3966.pdf["NetApp 기술 보고서 3966: NetApp 데이터 압축 및 중복제거 구축 및 구현 가이드(clustered Data ONTAP)"]
+https://www.netapp.com/pdf.html?item=/media/19753-tr-3966.pdf["NetApp 기술 보고서 3966: NetApp 데이터 압축 및 중복제거 구축 및 구현 가이드(clustered Data ONTAP)"^]

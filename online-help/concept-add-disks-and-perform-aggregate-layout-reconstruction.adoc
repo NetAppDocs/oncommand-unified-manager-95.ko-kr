@@ -17,4 +17,4 @@ Aggregate에 디스크를 추가하면 스토리지 용량과 해당 애그리�
 
 Aggregate에 추가하는 디스크가 클러스터에 이미 존재해야 합니다. 클러스터에 사용 가능한 추가 디스크가 없는 경우 관리자에게 문의하거나 더 많은 디스크를 구매해야 할 수 있습니다. OnCommand System Manager 또는 ONTAP 명령을 사용하여 애그리게이트에 디스크를 추가할 수 있습니다.
 
-http://www.netapp.com/us/media/tr-3838.pdf["기술 보고서 3838: 스토리지 서브시스템 구성 가이드"]
+https://www.netapp.com/pdf.html?item=/media/19675-tr-3838.pdf["기술 보고서 3838: 스토리지 서브시스템 구성 가이드"^]
